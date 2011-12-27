@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="5aff789f-df82-49ce-8eb3-c7b290778bca" name="lgrodriguez@JLUIS-PC 2011-12-26 12:38:18" runUser="TEAMPRO\lgrodriguez" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="6e0364cb-68a2-4e01-800d-e15a2f073550">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="lgrodriguez_JLUIS-PC 2011-12-26 12_38_18">
+      <DeploymentItem filename="c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataDecember\CodeKataDecember\bin\Debug\CodeKataDecember.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-12-26T12:38:18.9025632+01:00" queuing="2011-12-26T12:38:19.1275857+01:00" start="2011-12-26T12:38:19.1675897+01:00" finish="2011-12-26T12:38:19.6886418+01:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="3" executed="3" passed="3" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Stop_WithOutStart" storage="c:\users\lgrodriguez\documents\visual studio 2010\projects\codekatadecember\codekatadecember_test\bin\debug\codekatadecember_test.dll" id="39e690be-624a-560f-8918-a1aaa5e44560">
+      <Execution id="aa2cb29f-3bdd-4062-a4d7-fdd4b9f26f04" />
+      <TestMethod codeBase="C:/Users/lgrodriguez/documents/visual studio 2010/Projects/CodeKataDecember/CodeKataDecember_Test/bin/Debug/CodeKataDecember_Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CodeKataDecember_Test.PomodoroTest, CodeKataDecember_Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Stop_WithOutStart" />
+    </UnitTest>
+    <UnitTest name="Constructor_WithOutMinutes" storage="c:\users\lgrodriguez\documents\visual studio 2010\projects\codekatadecember\codekatadecember_test\bin\debug\codekatadecember_test.dll" id="3796392f-973f-8ed2-c73c-5f94aafee584">
+      <Execution id="2a7564ce-226c-48c9-897c-0319db3721ad" />
+      <TestMethod codeBase="C:/Users/lgrodriguez/documents/visual studio 2010/Projects/CodeKataDecember/CodeKataDecember_Test/bin/Debug/CodeKataDecember_Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CodeKataDecember_Test.PomodoroTest, CodeKataDecember_Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Constructor_WithOutMinutes" />
+    </UnitTest>
+    <UnitTest name="Constructor_WithMinutes" storage="c:\users\lgrodriguez\documents\visual studio 2010\projects\codekatadecember\codekatadecember_test\bin\debug\codekatadecember_test.dll" id="f786ea38-3d34-89b7-ed6b-240d41e5cd04">
+      <Execution id="63469977-07de-4db7-9281-228ba398dd66" />
+      <TestMethod codeBase="C:/Users/lgrodriguez/documents/visual studio 2010/Projects/CodeKataDecember/CodeKataDecember_Test/bin/Debug/CodeKataDecember_Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CodeKataDecember_Test.PomodoroTest, CodeKataDecember_Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Constructor_WithMinutes" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="3796392f-973f-8ed2-c73c-5f94aafee584" executionId="2a7564ce-226c-48c9-897c-0319db3721ad" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="39e690be-624a-560f-8918-a1aaa5e44560" executionId="aa2cb29f-3bdd-4062-a4d7-fdd4b9f26f04" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f786ea38-3d34-89b7-ed6b-240d41e5cd04" executionId="63469977-07de-4db7-9281-228ba398dd66" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="2a7564ce-226c-48c9-897c-0319db3721ad" testId="3796392f-973f-8ed2-c73c-5f94aafee584" testName="Constructor_WithOutMinutes" computerName="JLUIS-PC" duration="00:00:00.0181656" startTime="2011-12-26T12:38:19.1885918+01:00" endTime="2011-12-26T12:38:19.6346364+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2a7564ce-226c-48c9-897c-0319db3721ad">
+    </UnitTestResult>
+    <UnitTestResult executionId="aa2cb29f-3bdd-4062-a4d7-fdd4b9f26f04" testId="39e690be-624a-560f-8918-a1aaa5e44560" testName="Stop_WithOutStart" computerName="JLUIS-PC" duration="00:00:00.0004926" startTime="2011-12-26T12:38:19.6416371+01:00" endTime="2011-12-26T12:38:19.6476377+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="aa2cb29f-3bdd-4062-a4d7-fdd4b9f26f04">
+    </UnitTestResult>
+    <UnitTestResult executionId="63469977-07de-4db7-9281-228ba398dd66" testId="f786ea38-3d34-89b7-ed6b-240d41e5cd04" testName="Constructor_WithMinutes" computerName="JLUIS-PC" duration="00:00:00.0004644" startTime="2011-12-26T12:38:19.6556385+01:00" endTime="2011-12-26T12:38:19.6626392+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="63469977-07de-4db7-9281-228ba398dd66">
+    </UnitTestResult>
+  </Results>
+</TestRun>
