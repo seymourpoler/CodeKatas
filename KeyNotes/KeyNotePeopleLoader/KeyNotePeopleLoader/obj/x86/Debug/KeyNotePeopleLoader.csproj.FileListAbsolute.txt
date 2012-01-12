@@ -1,0 +1,5 @@
+c:\users\lgrodriguez\documents\visual studio 2010\Projects\KeyNotePeopleLoader\KeyNotePeopleLoader\bin\Debug\KeyNotePeopleLoader.exe
+c:\users\lgrodriguez\documents\visual studio 2010\Projects\KeyNotePeopleLoader\KeyNotePeopleLoader\bin\Debug\KeyNotePeopleLoader.pdb
+c:\users\lgrodriguez\documents\visual studio 2010\Projects\KeyNotePeopleLoader\KeyNotePeopleLoader\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\lgrodriguez\documents\visual studio 2010\Projects\KeyNotePeopleLoader\KeyNotePeopleLoader\obj\x86\Debug\KeyNotePeopleLoader.exe
+c:\users\lgrodriguez\documents\visual studio 2010\Projects\KeyNotePeopleLoader\KeyNotePeopleLoader\obj\x86\Debug\KeyNotePeopleLoader.pdb
