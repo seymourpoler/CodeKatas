@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="7e1e90ac-7893-4317-aa4a-d8591981f5dd" name="lgrodriguez@JLUIS-PC 2012-01-24 18:42:13" runUser="TEAMPRO\lgrodriguez" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="e54bb5c5-b0ee-4d9b-bd01-a43e3ea2e8ef">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="lgrodriguez_JLUIS-PC 2012-01-24 18_42_13">
+      <DeploymentItem filename="c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataFizzBuzz\CodeKataFizzBuzz\bin\Debug\CodeKataFizzBuzz.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-01-24T18:42:13.9298751+01:00" queuing="2012-01-24T18:42:15.1958751+01:00" start="2012-01-24T18:42:15.3158751+01:00" finish="2012-01-24T18:42:17.0258751+01:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="7" executed="7" passed="7" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ZeroNumber_PrintFizzBuzzTest" storage="c:\users\lgrodriguez\documents\visual studio 2010\projects\codekatafizzbuzz\codekatafizzbuzz_test\bin\debug\codekatafizzbuzz_test.dll" id="0801d06f-ae66-d25a-a2d3-8958e18a08c8">
+      <Execution id="d20ea42a-94b0-4014-a74f-f30bb2f9a6e5" />
+      <TestMethod codeBase="c:/users/lgrodriguez/documents/visual studio 2010/Projects/CodeKataFizzBuzz/CodeKataFizzBuzz_Test/bin/Debug/CodeKataFizzBuzz_Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CodeKataFizzBuzz_Test.NumberTest, CodeKataFizzBuzz_Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ZeroNumber_PrintFizzBuzzTest" />
+    </UnitTest>
+    <UnitTest name="FizzBuzzNumber_PrintFizzBuzzTest" storage="c:\users\lgrodriguez\documents\visual studio 2010\projects\codekatafizzbuzz\codekatafizzbuzz_test\bin\debug\codekatafizzbuzz_test.dll" id="e2917c5e-8edb-05b8-8a56-d8ba7a6da49c">
+      <Execution id="9edc26ad-bb01-4f12-94dc-9b8e13fd8d78" />
+      <TestMethod codeBase="c:/users/lgrodriguez/documents/visual studio 2010/Projects/CodeKataFizzBuzz/CodeKataFizzBuzz_Test/bin/Debug/CodeKataFizzBuzz_Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CodeKataFizzBuzz_Test.NumberTest, CodeKataFizzBuzz_Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="FizzBuzzNumber_PrintFizzBuzzTest" />
+    </UnitTest>
+    <UnitTest name="FizzAndBuzzNumber_PrintFizzBuzzTest" storage="c:\users\lgrodriguez\documents\visual studio 2010\projects\codekatafizzbuzz\codekatafizzbuzz_test\bin\debug\codekatafizzbuzz_test.dll" id="af824488-1218-7033-a7b7-5cdff2745de4">
+      <Execution id="3ccc2c87-ca2b-4db3-8656-765c80c10c44" />
+      <TestMethod codeBase="c:/users/lgrodriguez/documents/visual studio 2010/Projects/CodeKataFizzBuzz/CodeKataFizzBuzz_Test/bin/Debug/CodeKataFizzBuzz_Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CodeKataFizzBuzz_Test.NumberTest, CodeKataFizzBuzz_Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="FizzAndBuzzNumber_PrintFizzBuzzTest" />
+    </UnitTest>
+    <UnitTest name="FizzNumber_PrintFizzBuzzTest" storage="c:\users\lgrodriguez\documents\visual studio 2010\projects\codekatafizzbuzz\codekatafizzbuzz_test\bin\debug\codekatafizzbuzz_test.dll" id="a9b76ba3-76c1-eaab-57b3-9c0ff1f6c242">
+      <Execution id="196cebfe-9c9c-40ba-9277-51e81f679083" />
+      <TestMethod codeBase="c:/users/lgrodriguez/documents/visual studio 2010/Projects/CodeKataFizzBuzz/CodeKataFizzBuzz_Test/bin/Debug/CodeKataFizzBuzz_Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CodeKataFizzBuzz_Test.NumberTest, CodeKataFizzBuzz_Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="FizzNumber_PrintFizzBuzzTest" />
+    </UnitTest>
+    <UnitTest name="ThreeNumbers_PrintFizzBuzzTest" storage="c:\users\lgrodriguez\documents\visual studio 2010\projects\codekatafizzbuzz\codekatafizzbuzz_test\bin\debug\codekatafizzbuzz_test.dll" id="5280af30-12ca-5649-80cf-2007ca7d85a3">
+      <Execution id="4fd8cfc2-a550-4454-82b0-4dd0f65c2def" />
+      <TestMethod codeBase="c:/users/lgrodriguez/documents/visual studio 2010/Projects/CodeKataFizzBuzz/CodeKataFizzBuzz_Test/bin/Debug/CodeKataFizzBuzz_Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CodeKataFizzBuzz_Test.NumberTest, CodeKataFizzBuzz_Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ThreeNumbers_PrintFizzBuzzTest" />
+    </UnitTest>
+    <UnitTest name="NegativeNumber_PrintFizzBuzzTest" storage="c:\users\lgrodriguez\documents\visual studio 2010\projects\codekatafizzbuzz\codekatafizzbuzz_test\bin\debug\codekatafizzbuzz_test.dll" id="40f2919d-3b28-0624-ed11-02cee3be3af7">
+      <Execution id="7fad43a5-26cf-44d9-82d3-a17269ceb2e5" />
+      <TestMethod codeBase="c:/users/lgrodriguez/documents/visual studio 2010/Projects/CodeKataFizzBuzz/CodeKataFizzBuzz_Test/bin/Debug/CodeKataFizzBuzz_Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CodeKataFizzBuzz_Test.NumberTest, CodeKataFizzBuzz_Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="NegativeNumber_PrintFizzBuzzTest" />
+    </UnitTest>
+    <UnitTest name="TwoNumbers_PrintFizzBuzzTest" storage="c:\users\lgrodriguez\documents\visual studio 2010\projects\codekatafizzbuzz\codekatafizzbuzz_test\bin\debug\codekatafizzbuzz_test.dll" id="ee077f22-12de-be45-b120-fc0356edf5fc">
+      <Execution id="5f76bfa0-47b4-44ea-ab1d-a7170d93f5c1" />
+      <TestMethod codeBase="c:/users/lgrodriguez/documents/visual studio 2010/Projects/CodeKataFizzBuzz/CodeKataFizzBuzz_Test/bin/Debug/CodeKataFizzBuzz_Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CodeKataFizzBuzz_Test.NumberTest, CodeKataFizzBuzz_Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="TwoNumbers_PrintFizzBuzzTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0801d06f-ae66-d25a-a2d3-8958e18a08c8" executionId="d20ea42a-94b0-4014-a74f-f30bb2f9a6e5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="40f2919d-3b28-0624-ed11-02cee3be3af7" executionId="7fad43a5-26cf-44d9-82d3-a17269ceb2e5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5280af30-12ca-5649-80cf-2007ca7d85a3" executionId="4fd8cfc2-a550-4454-82b0-4dd0f65c2def" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a9b76ba3-76c1-eaab-57b3-9c0ff1f6c242" executionId="196cebfe-9c9c-40ba-9277-51e81f679083" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="af824488-1218-7033-a7b7-5cdff2745de4" executionId="3ccc2c87-ca2b-4db3-8656-765c80c10c44" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e2917c5e-8edb-05b8-8a56-d8ba7a6da49c" executionId="9edc26ad-bb01-4f12-94dc-9b8e13fd8d78" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ee077f22-12de-be45-b120-fc0356edf5fc" executionId="5f76bfa0-47b4-44ea-ab1d-a7170d93f5c1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="d20ea42a-94b0-4014-a74f-f30bb2f9a6e5" testId="0801d06f-ae66-d25a-a2d3-8958e18a08c8" testName="ZeroNumber_PrintFizzBuzzTest" computerName="JLUIS-PC" duration="00:00:00.0246898" startTime="2012-01-24T18:42:15.3908751+01:00" endTime="2012-01-24T18:42:16.8258751+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d20ea42a-94b0-4014-a74f-f30bb2f9a6e5">
+    </UnitTestResult>
+    <UnitTestResult executionId="7fad43a5-26cf-44d9-82d3-a17269ceb2e5" testId="40f2919d-3b28-0624-ed11-02cee3be3af7" testName="NegativeNumber_PrintFizzBuzzTest" computerName="JLUIS-PC" duration="00:00:00.0012671" startTime="2012-01-24T18:42:16.8408751+01:00" endTime="2012-01-24T18:42:16.8528751+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7fad43a5-26cf-44d9-82d3-a17269ceb2e5">
+    </UnitTestResult>
+    <UnitTestResult executionId="4fd8cfc2-a550-4454-82b0-4dd0f65c2def" testId="5280af30-12ca-5649-80cf-2007ca7d85a3" testName="ThreeNumbers_PrintFizzBuzzTest" computerName="JLUIS-PC" duration="00:00:00.0004883" startTime="2012-01-24T18:42:16.8628751+01:00" endTime="2012-01-24T18:42:16.8728751+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4fd8cfc2-a550-4454-82b0-4dd0f65c2def">
+    </UnitTestResult>
+    <UnitTestResult executionId="196cebfe-9c9c-40ba-9277-51e81f679083" testId="a9b76ba3-76c1-eaab-57b3-9c0ff1f6c242" testName="FizzNumber_PrintFizzBuzzTest" computerName="JLUIS-PC" duration="00:00:00.0006111" startTime="2012-01-24T18:42:16.8848751+01:00" endTime="2012-01-24T18:42:16.8968751+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="196cebfe-9c9c-40ba-9277-51e81f679083">
+    </UnitTestResult>
+    <UnitTestResult executionId="3ccc2c87-ca2b-4db3-8656-765c80c10c44" testId="af824488-1218-7033-a7b7-5cdff2745de4" testName="FizzAndBuzzNumber_PrintFizzBuzzTest" computerName="JLUIS-PC" duration="00:00:00.0012397" startTime="2012-01-24T18:42:16.9108751+01:00" endTime="2012-01-24T18:42:16.9248751+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3ccc2c87-ca2b-4db3-8656-765c80c10c44">
+    </UnitTestResult>
+    <UnitTestResult executionId="9edc26ad-bb01-4f12-94dc-9b8e13fd8d78" testId="e2917c5e-8edb-05b8-8a56-d8ba7a6da49c" testName="FizzBuzzNumber_PrintFizzBuzzTest" computerName="JLUIS-PC" duration="00:00:00.0008082" startTime="2012-01-24T18:42:16.9358751+01:00" endTime="2012-01-24T18:42:16.9468751+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9edc26ad-bb01-4f12-94dc-9b8e13fd8d78">
+    </UnitTestResult>
+    <UnitTestResult executionId="5f76bfa0-47b4-44ea-ab1d-a7170d93f5c1" testId="ee077f22-12de-be45-b120-fc0356edf5fc" testName="TwoNumbers_PrintFizzBuzzTest" computerName="JLUIS-PC" duration="00:00:00.0004071" startTime="2012-01-24T18:42:16.9568751+01:00" endTime="2012-01-24T18:42:16.9668751+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5f76bfa0-47b4-44ea-ab1d-a7170d93f5c1">
+    </UnitTestResult>
+  </Results>
+</TestRun>

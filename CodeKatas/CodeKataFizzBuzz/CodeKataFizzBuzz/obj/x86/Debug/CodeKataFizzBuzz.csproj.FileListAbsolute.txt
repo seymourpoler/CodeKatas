@@ -1,0 +1,5 @@
+c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataFizzBuzz\CodeKataFizzBuzz\bin\Debug\CodeKataFizzBuzz.exe
+c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataFizzBuzz\CodeKataFizzBuzz\bin\Debug\CodeKataFizzBuzz.pdb
+c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataFizzBuzz\CodeKataFizzBuzz\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataFizzBuzz\CodeKataFizzBuzz\obj\x86\Debug\CodeKataFizzBuzz.exe
+c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataFizzBuzz\CodeKataFizzBuzz\obj\x86\Debug\CodeKataFizzBuzz.pdb
