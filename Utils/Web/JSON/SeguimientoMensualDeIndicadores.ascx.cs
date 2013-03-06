@@ -5,11 +5,10 @@ using System.Collections.Generic;
 using Microsoft.SharePoint;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
-using Ieci.Optima.PortalClientes.Entidades;
-using Ieci.Optima.PortalClientes.Representacion;
-using Ieci.Optima.Comunes.Log.GestionExcepciones;
+using Entidades;
+using Representacion;
 
-namespace Ieci.Optima.PortalClientes.Web.ControlTemplates
+namespace Web.ControlTemplates
 {
     public partial class SeguimientoMensualDeIndicadores : UserControl, ISeguimientoMensualDeIndicadoresVista
     {
@@ -64,7 +63,6 @@ namespace Ieci.Optima.PortalClientes.Web.ControlTemplates
 
         public SeguimientoMensualDeIndicadores()
         {
-            _gestorDeError = new GestorExcepciones("Ieci.Optima.PortalClientes.Web.ControlTemplates", "SeguimientoMensualDeIndicadores");
         }
 
         protected void Page_Load(object sender, EventArgs e)
@@ -94,7 +92,6 @@ namespace Ieci.Optima.PortalClientes.Web.ControlTemplates
                 Presentador.PintarError();
                 _gestorDeError.TratarExcepcion(ex,
                                                    "Fallo en la carga de la página",
-                                                   OptimaException.CapaOrigenExcepcion.Presentacion,
                                                    "Page_Load");
             }
         }
@@ -112,7 +109,6 @@ namespace Ieci.Optima.PortalClientes.Web.ControlTemplates
             {
                 _gestorDeError.TratarExcepcion(ex,
                                                    ex.ToString(),
-                                                   OptimaException.CapaOrigenExcepcion.Presentacion,
                                                    "Buscar");
             }
         }
@@ -128,7 +124,6 @@ namespace Ieci.Optima.PortalClientes.Web.ControlTemplates
             {
                 _gestorDeError.TratarExcepcion(ex,
                                                    " Error En la carga de los años de las evoluciones mensuales de los indicadores",
-                                                   OptimaException.CapaOrigenExcepcion.Presentacion,
                                                    "CargarAnio");
             }
         }
@@ -145,7 +140,6 @@ namespace Ieci.Optima.PortalClientes.Web.ControlTemplates
             {
                 _gestorDeError.TratarExcepcion(ex,
                                                    "En la carga del último mes de las evoluciones mensuales de los indicadores",
-                                                   OptimaException.CapaOrigenExcepcion.Presentacion,
                                                    "CargarMes");
             }
         }
@@ -161,7 +155,6 @@ namespace Ieci.Optima.PortalClientes.Web.ControlTemplates
             {
                 _gestorDeError.TratarExcepcion(ex,
                                                    "En la carga de las evoluciones mensuales de los indicadores",
-                                                   OptimaException.CapaOrigenExcepcion.Presentacion,
                                                    "CagarTodosLosDatos");
             }
         }

@@ -1,12 +1,7 @@
 ﻿
-<%@ Register Tagprefix="asp" Namespace="System.Web.UI" Assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" %>
-
-<!-- Control Language="C#" AutoEventWireup="true" CodeBehind="SeguimientoMensualDeIndicadores.ascx.cs" Inherits="Ieci.Optima.PortalClientes.Web.ControlTemplates.SeguimientoDeIndicadores" %> -->
-<%@ Control Inherits="Ieci.Optima.PortalClientes.Web.ControlTemplates.SeguimientoMensualDeIndicadores, Ieci.Optima.PortalClientes.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=4322afe458bddc01" %>
-
-<script type="text/javascript" src="/_layouts/1033/PortalCliente/js/funciones.js"></script>
-<script type="text/javascript" src="/_layouts/1033/PortalCliente/js/jquery.dataTables.js"></script>
-<script type="text/javascript" src="/_layouts/1033/PortalCliente/js/gestorHTMLControles.js"></script>
+<script type="text/javascript" src="/js/funciones.js"></script>
+<script type="text/javascript" src="/js/jquery.dataTables.js"></script>
+<script type="text/javascript" src="/js/gestorHTMLControles.js"></script>
 
 <script type="text/javascript">
     function buscarDatos() {
@@ -92,7 +87,7 @@
                               "bVisible": true,
                               "sWidth" : "80px",
                               "fnRender": function (evolucionMensual) {
-                                  return "<a href='Indicadores_Evolucion.aspx?guidIndicador=" + evolucionMensual.aData[0] + "&mes=" + mes + "&anio=" + anio + "'><img src='/_layouts/1033/PortalCliente/images/ico_grafica.png' width='16' height='15' alt='Evolución' /></a>";
+                                  return "<a href='Indicadores_Evolucion.aspx?guidIndicador=" + evolucionMensual.aData[0] + "&mes=" + mes + "&anio=" + anio + "'><img src='/images/ico_grafica.png' width='16' height='15' alt='Evolución' /></a>";
                               }
                           }
                         ]
