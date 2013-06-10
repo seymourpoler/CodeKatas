@@ -1,0 +1,43 @@
+ Wifi: Manaslu
+ Clave: 8163Himalaya201304
+
+ -- Carlos Ble --
+ 1ºProblema
+ Validador de contraseñas. Si es buena o mala.
+ Al menos 4 carácteres.
+ Al menos un número y una letra
+ Al menos una mayúscula
+ Al menos una minúscula
+
+ -No escribir ninguna línea de producción sin un test que esté en rojo.
+ -tdd inside-out <--> tdd outside-in
+ -schools U.K. - school U.S.A.
+
+ -Programar con métdo. Ser metódico. Disciplina y esfuerzo.
+ -Escribir código para la máquina o para las personas: profesionalidad. Escribir código para otros seres humanos.
+ Poner cuidado en el código.
+
+ -Libro: Clean Code - Robert C. Martin
+ -Videos: cleancoders.com
+
+ -No solo un punto de retorno. Cuando antes se termine, mejor, para no poner ruido al código.
+ -Un método no debe de tener más de 5 líneas.
+ -Método hagan una cosa --> SOLID
+ -Métodos que sean de 2 ó 3 líneas, con un nombre muy muy bueno. Mal nombre es contra-producente, para no entrar a ver lo que hace.
+ -No comentar el código. Salvo un frameWork, una api y una clase añadirle la información de su contexto. Salva guardar la expresividad del código.
+ -Pensar antes de añadir un comentario, para no mentir y no estar invirtiendo tiempo en el mantenimiento.
+ -La función ideal no debe de tener parámetros. Puede tener como máximo 3 parámetros, pero no parámetros booleanos. Si tienes demasiados parámetros tiene que pasar un objeto.
+ -Clases no tener más de 2 ó 3 público y 2 ó 3 métodos privados. Con una cantiadad de 25 y 200 líneas.
+ -Nada de duplicidad y nombres expresivos.
+ -Números mágicos
+
+.Unit Test.
+ -Agrupar los test, por contexto.
+ -Test repetible e inocuo. Si trabaja con la base de datos, luego tiene que limpiarla.
+ -Los test, no tienen que depender, unos de otros.
+ -Test muy rápidos y unitarios.
+ -No hay verdades absolutas
+ -Test de integración, necesita un entorno de verdad, igual al de producción. Comprobar integración con los sistemas.
+ -Los test de base de datos, son de end2end, pero se hacen al final, son costosos y tienen que ser pocos, porque son muy lentos
+
+ .Doubles.
