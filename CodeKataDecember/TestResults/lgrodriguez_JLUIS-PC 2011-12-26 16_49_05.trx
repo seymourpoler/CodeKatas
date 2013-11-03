@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="1e9fc8f8-3db0-4c61-a51c-453d092fc0c6" name="lgrodriguez@JLUIS-PC 2011-12-26 16:49:05" runUser="TEAMPRO\lgrodriguez" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="6e0364cb-68a2-4e01-800d-e15a2f073550">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="lgrodriguez_JLUIS-PC 2011-12-26 16_49_05">
+      <DeploymentItem filename="c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataDecember\CodeKataDecember\bin\Debug\CodeKataDecember.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-12-26T16:49:05.2358383+01:00" queuing="2011-12-26T16:49:06.4110733+01:00" start="2011-12-26T16:49:06.5020915+01:00" finish="2011-12-26T16:49:08.1814273+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="4" executed="4" passed="3" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Count_theInterruptiions" storage="c:\users\lgrodriguez\documents\visual studio 2010\projects\codekatadecember\codekatadecember_test\bin\debug\codekatadecember_test.dll" id="2181e752-2172-5180-e352-bb666ae92357">
+      <Execution id="907e85b4-206b-4ed7-bb46-6ce45c5f7099" />
+      <TestMethod codeBase="C:/Users/lgrodriguez/documents/visual studio 2010/Projects/CodeKataDecember/CodeKataDecember_Test/bin/Debug/CodeKataDecember_Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CodeKataDecember_Test.PomodoroTest, CodeKataDecember_Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Count_theInterruptiions" />
+    </UnitTest>
+    <UnitTest name="Stop_WithOutStart" storage="c:\users\lgrodriguez\documents\visual studio 2010\projects\codekatadecember\codekatadecember_test\bin\debug\codekatadecember_test.dll" id="39e690be-624a-560f-8918-a1aaa5e44560">
+      <Execution id="a7bd9b47-d57a-419c-8786-451bdfcb6409" />
+      <TestMethod codeBase="C:/Users/lgrodriguez/documents/visual studio 2010/Projects/CodeKataDecember/CodeKataDecember_Test/bin/Debug/CodeKataDecember_Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CodeKataDecember_Test.PomodoroTest, CodeKataDecember_Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Stop_WithOutStart" />
+    </UnitTest>
+    <UnitTest name="Constructor_WithOutMinutes" storage="c:\users\lgrodriguez\documents\visual studio 2010\projects\codekatadecember\codekatadecember_test\bin\debug\codekatadecember_test.dll" id="3796392f-973f-8ed2-c73c-5f94aafee584">
+      <Execution id="94f142e8-fa76-4000-9e4e-695b70728c93" />
+      <TestMethod codeBase="C:/Users/lgrodriguez/documents/visual studio 2010/Projects/CodeKataDecember/CodeKataDecember_Test/bin/Debug/CodeKataDecember_Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CodeKataDecember_Test.PomodoroTest, CodeKataDecember_Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Constructor_WithOutMinutes" />
+    </UnitTest>
+    <UnitTest name="Constructor_WithMinutes" storage="c:\users\lgrodriguez\documents\visual studio 2010\projects\codekatadecember\codekatadecember_test\bin\debug\codekatadecember_test.dll" id="f786ea38-3d34-89b7-ed6b-240d41e5cd04">
+      <Execution id="c59de89a-f79e-49a0-9a7d-7065b3a6b93a" />
+      <TestMethod codeBase="C:/Users/lgrodriguez/documents/visual studio 2010/Projects/CodeKataDecember/CodeKataDecember_Test/bin/Debug/CodeKataDecember_Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CodeKataDecember_Test.PomodoroTest, CodeKataDecember_Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Constructor_WithMinutes" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="2181e752-2172-5180-e352-bb666ae92357" executionId="907e85b4-206b-4ed7-bb46-6ce45c5f7099" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3796392f-973f-8ed2-c73c-5f94aafee584" executionId="94f142e8-fa76-4000-9e4e-695b70728c93" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="39e690be-624a-560f-8918-a1aaa5e44560" executionId="a7bd9b47-d57a-419c-8786-451bdfcb6409" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f786ea38-3d34-89b7-ed6b-240d41e5cd04" executionId="c59de89a-f79e-49a0-9a7d-7065b3a6b93a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="907e85b4-206b-4ed7-bb46-6ce45c5f7099" testId="2181e752-2172-5180-e352-bb666ae92357" testName="Count_theInterruptiions" computerName="JLUIS-PC" duration="00:00:00.0283210" startTime="2011-12-26T16:49:06.5571025+01:00" endTime="2011-12-26T16:49:07.9233757+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="907e85b4-206b-4ed7-bb46-6ce45c5f7099">
+    </UnitTestResult>
+    <UnitTestResult executionId="94f142e8-fa76-4000-9e4e-695b70728c93" testId="3796392f-973f-8ed2-c73c-5f94aafee584" testName="Constructor_WithOutMinutes" computerName="JLUIS-PC" duration="00:00:00.0005041" startTime="2011-12-26T16:49:07.9413793+01:00" endTime="2011-12-26T16:49:07.9533817+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="94f142e8-fa76-4000-9e4e-695b70728c93">
+    </UnitTestResult>
+    <UnitTestResult executionId="a7bd9b47-d57a-419c-8786-451bdfcb6409" testId="39e690be-624a-560f-8918-a1aaa5e44560" testName="Stop_WithOutStart" computerName="JLUIS-PC" duration="00:00:00.1128076" startTime="2011-12-26T16:49:07.9633837+01:00" endTime="2011-12-26T16:49:08.0884087+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a7bd9b47-d57a-419c-8786-451bdfcb6409">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method CodeKataDecember_Test.PomodoroTest.Stop_WithOutStart did not throw expected exception System.Exception.</Message>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c59de89a-f79e-49a0-9a7d-7065b3a6b93a" testId="f786ea38-3d34-89b7-ed6b-240d41e5cd04" testName="Constructor_WithMinutes" computerName="JLUIS-PC" duration="00:00:00.0003429" startTime="2011-12-26T16:49:08.0994109+01:00" endTime="2011-12-26T16:49:08.1124135+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c59de89a-f79e-49a0-9a7d-7065b3a6b93a">
+    </UnitTestResult>
+  </Results>
+</TestRun>

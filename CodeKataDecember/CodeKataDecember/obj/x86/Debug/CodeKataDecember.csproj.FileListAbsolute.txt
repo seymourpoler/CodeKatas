@@ -1,0 +1,5 @@
+c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataDecember\CodeKataDecember\bin\Debug\CodeKataDecember.exe
+c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataDecember\CodeKataDecember\bin\Debug\CodeKataDecember.pdb
+c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataDecember\CodeKataDecember\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataDecember\CodeKataDecember\obj\x86\Debug\CodeKataDecember.exe
+c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataDecember\CodeKataDecember\obj\x86\Debug\CodeKataDecember.pdb

@@ -1,0 +1,4 @@
+c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataJuly\Code\bin\Debug\Code.dll
+c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataJuly\Code\bin\Debug\Code.pdb
+c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataJuly\Code\obj\Debug\Code.dll
+c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataJuly\Code\obj\Debug\Code.pdb

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="b49e3ef7-bbd7-4832-aeaa-7df50dc50475" name="lgrodriguez@JLUIS-PC 2011-11-30 12:28:01" runUser="TEAMPRO\lgrodriguez" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="5e058b59-d295-461c-8811-f255c864e834">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="lgrodriguez_JLUIS-PC 2011-11-30 12_28_01">
+      <DeploymentItem filename="c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataNovember\CodeKataNovember\bin\Debug\CodeKataNovember.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-11-30T12:28:01.3429600+01:00" queuing="2011-11-30T12:28:02.2930550+01:00" start="2011-11-30T12:28:02.3840641+01:00" finish="2011-11-30T12:28:03.8222079+01:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="2" executed="2" passed="2" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GetPrice_One_Book" storage="c:\users\lgrodriguez\documents\visual studio 2010\projects\codekatanovember\codekatanovember_test\bin\debug\codekatanovember_test.dll" id="d0cbfbfa-2157-8259-1cf6-0b6ff5c04099">
+      <Execution id="2701a1da-849c-49e5-b806-41786ac349ef" />
+      <TestMethod codeBase="c:/users/lgrodriguez/documents/visual studio 2010/Projects/CodeKataNovember/CodeKataNovember_Test/bin/Debug/CodeKataNovember_Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CodeKataNovember_Test.BooksTest, CodeKataNovember_Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetPrice_One_Book" />
+    </UnitTest>
+    <UnitTest name="GetPrice_Two_diffent_Books" storage="c:\users\lgrodriguez\documents\visual studio 2010\projects\codekatanovember\codekatanovember_test\bin\debug\codekatanovember_test.dll" id="4267a5b0-1d18-75e2-da81-cb30c2487f71">
+      <Execution id="acf3ee8d-f00e-461b-a6eb-82d4d9e17552" />
+      <TestMethod codeBase="c:/users/lgrodriguez/documents/visual studio 2010/Projects/CodeKataNovember/CodeKataNovember_Test/bin/Debug/CodeKataNovember_Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="CodeKataNovember_Test.BooksTest, CodeKataNovember_Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetPrice_Two_diffent_Books" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="4267a5b0-1d18-75e2-da81-cb30c2487f71" executionId="acf3ee8d-f00e-461b-a6eb-82d4d9e17552" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d0cbfbfa-2157-8259-1cf6-0b6ff5c04099" executionId="2701a1da-849c-49e5-b806-41786ac349ef" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="acf3ee8d-f00e-461b-a6eb-82d4d9e17552" testId="4267a5b0-1d18-75e2-da81-cb30c2487f71" testName="GetPrice_Two_diffent_Books" computerName="JLUIS-PC" duration="00:00:00.0274002" startTime="2011-11-30T12:28:02.4430700+01:00" endTime="2011-11-30T12:28:03.6831940+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="acf3ee8d-f00e-461b-a6eb-82d4d9e17552">
+    </UnitTestResult>
+    <UnitTestResult executionId="2701a1da-849c-49e5-b806-41786ac349ef" testId="d0cbfbfa-2157-8259-1cf6-0b6ff5c04099" testName="GetPrice_One_Book" computerName="JLUIS-PC" duration="00:00:00.0004516" startTime="2011-11-30T12:28:03.7011958+01:00" endTime="2011-11-30T12:28:03.7131970+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2701a1da-849c-49e5-b806-41786ac349ef">
+    </UnitTestResult>
+  </Results>
+</TestRun>

@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="8ca0cef1-e2a9-4623-95b3-1f25436d30b1" name="lgrodriguez@JLUIS-PC 2011-12-02 09:02:12" runUser="TEAMPRO\lgrodriguez" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="786f1411-af9e-488b-991b-c71ea8ad9eab">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="lgrodriguez_JLUIS-PC 2011-12-02 09_02_12">
+      <DeploymentItem filename="c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataDuplicatedArray\CodeKataDuplicatedArray\bin\Debug\CodeKataDuplicatedArray.exe" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-12-02T09:02:12.0317927+01:00" queuing="2011-12-02T09:02:12.4078303+01:00" start="2011-12-02T09:02:12.4718367+01:00" finish="2011-12-02T09:02:13.1749070+01:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="8" executed="8" passed="8" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GetDuplicated_Three_Numbers_Test" storage="c:\users\lgrodriguez\documents\visual studio 2010\projects\codekataduplicatedarray\lista_test\bin\debug\lista_test.dll" id="65dd8f66-8c94-737d-c3b8-bbf49bf17816">
+      <Execution id="7da34073-58c7-41bc-8c51-3f8248eb629b" />
+      <TestMethod codeBase="C:/Users/lgrodriguez/documents/visual studio 2010/Projects/CodeKataDuplicatedArray/Lista_Test/bin/Debug/Lista_Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Lista_Test.ListaTest, Lista_Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetDuplicated_Three_Numbers_Test" />
+    </UnitTest>
+    <UnitTest name="GetDuplicatedTest" storage="c:\users\lgrodriguez\documents\visual studio 2010\projects\codekataduplicatedarray\lista_test\bin\debug\lista_test.dll" id="c4b6a8fe-b79d-ad12-719c-96caa17cc7f1">
+      <Execution id="9fc0c0be-fd95-4749-9cd0-8e318b13b7dd" />
+      <TestMethod codeBase="C:/Users/lgrodriguez/documents/visual studio 2010/Projects/CodeKataDuplicatedArray/Lista_Test/bin/Debug/Lista_Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Lista_Test.ListaTest, Lista_Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetDuplicatedTest" />
+    </UnitTest>
+    <UnitTest name="GetDuplicated_Five_Numbers_Test" storage="c:\users\lgrodriguez\documents\visual studio 2010\projects\codekataduplicatedarray\lista_test\bin\debug\lista_test.dll" id="fea35c0e-3381-df5f-aa47-84ee24cd9ee2">
+      <Execution id="3885c447-3808-475e-b488-8e55a525ac8e" />
+      <TestMethod codeBase="C:/Users/lgrodriguez/documents/visual studio 2010/Projects/CodeKataDuplicatedArray/Lista_Test/bin/Debug/Lista_Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Lista_Test.ListaTest, Lista_Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetDuplicated_Five_Numbers_Test" />
+    </UnitTest>
+    <UnitTest name="RemoveDuplicated_Four_Numbers_Duplicated_Test" storage="c:\users\lgrodriguez\documents\visual studio 2010\projects\codekataduplicatedarray\lista_test\bin\debug\lista_test.dll" id="0d51de15-0c8f-a8cc-2325-68eb06aab4dc">
+      <Execution id="6adcb040-68a1-4831-a604-8059c77a0ab2" />
+      <TestMethod codeBase="C:/Users/lgrodriguez/documents/visual studio 2010/Projects/CodeKataDuplicatedArray/Lista_Test/bin/Debug/Lista_Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Lista_Test.ListaTest, Lista_Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RemoveDuplicated_Four_Numbers_Duplicated_Test" />
+    </UnitTest>
+    <UnitTest name="RemoveDuplicated_Two_Numbers_Duplicated_Test" storage="c:\users\lgrodriguez\documents\visual studio 2010\projects\codekataduplicatedarray\lista_test\bin\debug\lista_test.dll" id="aa6c6c42-aa07-720e-4418-f6a4dcbe364b">
+      <Execution id="4607a070-245c-4784-8863-0ff09082c248" />
+      <TestMethod codeBase="C:/Users/lgrodriguez/documents/visual studio 2010/Projects/CodeKataDuplicatedArray/Lista_Test/bin/Debug/Lista_Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Lista_Test.ListaTest, Lista_Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RemoveDuplicated_Two_Numbers_Duplicated_Test" />
+    </UnitTest>
+    <UnitTest name="RemoveDuplicated_Three_Numbers_Duplicated_Test" storage="c:\users\lgrodriguez\documents\visual studio 2010\projects\codekataduplicatedarray\lista_test\bin\debug\lista_test.dll" id="cd3fdf50-30aa-9915-c8d6-912f31c2c6e4">
+      <Execution id="19d5c8d1-63b5-4bd2-8871-c7b47084499b" />
+      <TestMethod codeBase="C:/Users/lgrodriguez/documents/visual studio 2010/Projects/CodeKataDuplicatedArray/Lista_Test/bin/Debug/Lista_Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Lista_Test.ListaTest, Lista_Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="RemoveDuplicated_Three_Numbers_Duplicated_Test" />
+    </UnitTest>
+    <UnitTest name="GetDuplicated_Four_Numbers_Test" storage="c:\users\lgrodriguez\documents\visual studio 2010\projects\codekataduplicatedarray\lista_test\bin\debug\lista_test.dll" id="0f34b71b-4151-4311-5c6a-a48387dafeec">
+      <Execution id="35debe10-01e4-4aa2-abcf-69da32c5ce02" />
+      <TestMethod codeBase="C:/Users/lgrodriguez/documents/visual studio 2010/Projects/CodeKataDuplicatedArray/Lista_Test/bin/Debug/Lista_Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Lista_Test.ListaTest, Lista_Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetDuplicated_Four_Numbers_Test" />
+    </UnitTest>
+    <UnitTest name="GetDuplicated_Two_Numbers_Test" storage="c:\users\lgrodriguez\documents\visual studio 2010\projects\codekataduplicatedarray\lista_test\bin\debug\lista_test.dll" id="ced0db7b-a780-d868-1dfa-2d9a9a539826">
+      <Execution id="b6a1f981-0483-42cf-8bc4-3f546753844b" />
+      <TestMethod codeBase="C:/Users/lgrodriguez/documents/visual studio 2010/Projects/CodeKataDuplicatedArray/Lista_Test/bin/Debug/Lista_Test.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Lista_Test.ListaTest, Lista_Test, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetDuplicated_Two_Numbers_Test" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0d51de15-0c8f-a8cc-2325-68eb06aab4dc" executionId="6adcb040-68a1-4831-a604-8059c77a0ab2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0f34b71b-4151-4311-5c6a-a48387dafeec" executionId="35debe10-01e4-4aa2-abcf-69da32c5ce02" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="65dd8f66-8c94-737d-c3b8-bbf49bf17816" executionId="7da34073-58c7-41bc-8c51-3f8248eb629b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="aa6c6c42-aa07-720e-4418-f6a4dcbe364b" executionId="4607a070-245c-4784-8863-0ff09082c248" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c4b6a8fe-b79d-ad12-719c-96caa17cc7f1" executionId="9fc0c0be-fd95-4749-9cd0-8e318b13b7dd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cd3fdf50-30aa-9915-c8d6-912f31c2c6e4" executionId="19d5c8d1-63b5-4bd2-8871-c7b47084499b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ced0db7b-a780-d868-1dfa-2d9a9a539826" executionId="b6a1f981-0483-42cf-8bc4-3f546753844b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fea35c0e-3381-df5f-aa47-84ee24cd9ee2" executionId="3885c447-3808-475e-b488-8e55a525ac8e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="6adcb040-68a1-4831-a604-8059c77a0ab2" testId="0d51de15-0c8f-a8cc-2325-68eb06aab4dc" testName="RemoveDuplicated_Four_Numbers_Duplicated_Test" computerName="JLUIS-PC" duration="00:00:00.0171388" startTime="2011-12-02T09:02:12.5348430+01:00" endTime="2011-12-02T09:02:13.0108906+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6adcb040-68a1-4831-a604-8059c77a0ab2">
+    </UnitTestResult>
+    <UnitTestResult executionId="35debe10-01e4-4aa2-abcf-69da32c5ce02" testId="0f34b71b-4151-4311-5c6a-a48387dafeec" testName="GetDuplicated_Four_Numbers_Test" computerName="JLUIS-PC" duration="00:00:00.0009681" startTime="2011-12-02T09:02:13.0218917+01:00" endTime="2011-12-02T09:02:13.0308926+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="35debe10-01e4-4aa2-abcf-69da32c5ce02">
+    </UnitTestResult>
+    <UnitTestResult executionId="7da34073-58c7-41bc-8c51-3f8248eb629b" testId="65dd8f66-8c94-737d-c3b8-bbf49bf17816" testName="GetDuplicated_Three_Numbers_Test" computerName="JLUIS-PC" duration="00:00:00.0003960" startTime="2011-12-02T09:02:13.0368932+01:00" endTime="2011-12-02T09:02:13.0428938+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7da34073-58c7-41bc-8c51-3f8248eb629b">
+    </UnitTestResult>
+    <UnitTestResult executionId="4607a070-245c-4784-8863-0ff09082c248" testId="aa6c6c42-aa07-720e-4418-f6a4dcbe364b" testName="RemoveDuplicated_Two_Numbers_Duplicated_Test" computerName="JLUIS-PC" duration="00:00:00.0004563" startTime="2011-12-02T09:02:13.0478943+01:00" endTime="2011-12-02T09:02:13.0548950+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4607a070-245c-4784-8863-0ff09082c248">
+    </UnitTestResult>
+    <UnitTestResult executionId="9fc0c0be-fd95-4749-9cd0-8e318b13b7dd" testId="c4b6a8fe-b79d-ad12-719c-96caa17cc7f1" testName="GetDuplicatedTest" computerName="JLUIS-PC" duration="00:00:00.0004438" startTime="2011-12-02T09:02:13.0598955+01:00" endTime="2011-12-02T09:02:13.0658961+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9fc0c0be-fd95-4749-9cd0-8e318b13b7dd">
+    </UnitTestResult>
+    <UnitTestResult executionId="19d5c8d1-63b5-4bd2-8871-c7b47084499b" testId="cd3fdf50-30aa-9915-c8d6-912f31c2c6e4" testName="RemoveDuplicated_Three_Numbers_Duplicated_Test" computerName="JLUIS-PC" duration="00:00:00.0005529" startTime="2011-12-02T09:02:13.0708966+01:00" endTime="2011-12-02T09:02:13.0778973+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="19d5c8d1-63b5-4bd2-8871-c7b47084499b">
+    </UnitTestResult>
+    <UnitTestResult executionId="b6a1f981-0483-42cf-8bc4-3f546753844b" testId="ced0db7b-a780-d868-1dfa-2d9a9a539826" testName="GetDuplicated_Two_Numbers_Test" computerName="JLUIS-PC" duration="00:00:00.0003771" startTime="2011-12-02T09:02:13.0828978+01:00" endTime="2011-12-02T09:02:13.0888984+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b6a1f981-0483-42cf-8bc4-3f546753844b">
+    </UnitTestResult>
+    <UnitTestResult executionId="3885c447-3808-475e-b488-8e55a525ac8e" testId="fea35c0e-3381-df5f-aa47-84ee24cd9ee2" testName="GetDuplicated_Five_Numbers_Test" computerName="JLUIS-PC" duration="00:00:00.0004387" startTime="2011-12-02T09:02:13.0938989+01:00" endTime="2011-12-02T09:02:13.0998995+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3885c447-3808-475e-b488-8e55a525ac8e">
+    </UnitTestResult>
+  </Results>
+</TestRun>
