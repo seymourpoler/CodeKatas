@@ -1,7 +1,0 @@
-c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataJuly\Test\bin\Debug\Test.dll
-c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataJuly\Test\bin\Debug\Test.pdb
-c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataJuly\Test\bin\Debug\Code.dll
-c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataJuly\Test\bin\Debug\Code.pdb
-c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataJuly\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
-c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataJuly\Test\obj\Debug\Test.dll
-c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataJuly\Test\obj\Debug\Test.pdb

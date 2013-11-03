@@ -1,7 +1,0 @@
-c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataDuplicatedArray\Lista_Test\bin\Debug\Lista_Test.dll
-c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataDuplicatedArray\Lista_Test\bin\Debug\Lista_Test.pdb
-c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataDuplicatedArray\Lista_Test\bin\Debug\CodeKataDuplicatedArray.exe
-c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataDuplicatedArray\Lista_Test\bin\Debug\CodeKataDuplicatedArray.pdb
-c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataDuplicatedArray\Lista_Test\obj\Debug\ResolveAssemblyReference.cache
-c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataDuplicatedArray\Lista_Test\obj\Debug\Lista_Test.dll
-c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataDuplicatedArray\Lista_Test\obj\Debug\Lista_Test.pdb

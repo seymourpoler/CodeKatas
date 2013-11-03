@@ -1,7 +1,0 @@
-c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataNovember\CodeKataNovember_Test\obj\Debug\ResolveAssemblyReference.cache
-c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataNovember\CodeKataNovember_Test\bin\Debug\CodeKataNovember_Test.dll
-c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataNovember\CodeKataNovember_Test\bin\Debug\CodeKataNovember_Test.pdb
-c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataNovember\CodeKataNovember_Test\bin\Debug\CodeKataNovember.exe
-c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataNovember\CodeKataNovember_Test\bin\Debug\CodeKataNovember.pdb
-c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataNovember\CodeKataNovember_Test\obj\Debug\CodeKataNovember_Test.dll
-c:\users\lgrodriguez\documents\visual studio 2010\Projects\CodeKataNovember\CodeKataNovember_Test\obj\Debug\CodeKataNovember_Test.pdb
