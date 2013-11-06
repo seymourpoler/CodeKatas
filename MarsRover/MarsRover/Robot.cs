@@ -9,12 +9,16 @@ namespace MarsRover
 		private const string RIGHT = "R";
 		private const string FORWARD = "F";
 		private const string BACKWARD = "B";
+		private const string LIFE = "C";
 
 		public IEngine RightMotor{get;set;}
 		public IEngine LeftMotor{get;set;}
+		private Position _position;
 
 		public Robot ()
 		{
+			_position = Position();
+
 		}
 
 		public void Move (string[] movements)
@@ -55,15 +59,21 @@ namespace MarsRover
 				{
 				case FORWARD:
 					MoveForward(command.Seconds);
+					_position.Y += command.Seconds;
 					break;
 				case BACKWARD:
 					MoveBackWard(command.Seconds);
+					_position.Y -= command.Seconds;
 					break;
 				case RIGHT:
 					MoveRight(command.Seconds);
+					_position.X += command.Seconds;
 					break;
 				case LEFT:
 					MoveLeft(command.Seconds);
+					_position.X -= command.Seconds;
+					break;
+				case LIFE:
 					break;
 				}
 		}
