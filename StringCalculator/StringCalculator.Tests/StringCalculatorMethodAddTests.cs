@@ -76,5 +76,12 @@ namespace StringCalculator.Tests
             var result = _calculator.Add("2 + 1001");
             Assert.AreEqual(2, result);
         }
+
+        [TestMethod]
+        public void When_entry_some_numbers_with_different_length_delimiters_Should_Return_the_sum()
+        {
+            var result = _calculator.Add("//****\n1****2****3");
+            Assert.AreEqual(6, result);
+        }
     }
 }
