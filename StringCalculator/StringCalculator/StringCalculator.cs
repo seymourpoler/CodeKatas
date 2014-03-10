@@ -26,7 +26,9 @@ namespace StringCalculator
                     .Select(
                         number =>
                         {
-                            return ConvertToInt(number);
+                            var integer = ConvertToInt(number);
+                            Validation(integer);
+                            return integer;
                         })
                     .Sum();
         }
@@ -56,6 +58,14 @@ namespace StringCalculator
         {
             var values = entry.Split(separator);
             return Sum(values);
+        }
+
+        private void Validation(int number)
+        {
+            if (number < 0)
+            {
+                throw new Exception();
+            }
         }
     }
 }

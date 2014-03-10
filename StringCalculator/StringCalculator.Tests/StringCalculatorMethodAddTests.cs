@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using System;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace StringCalculator.Tests
 {
@@ -60,5 +61,15 @@ namespace StringCalculator.Tests
             var result = calculator.Add("//;\n1;2");
             Assert.AreEqual(3, result);
         }
+
+        [TestMethod]
+        [ExpectedException(typeof(Exception))]
+        public void When_entry_some_number_is_negative_Should_Return_an_exception()
+        {
+            var calculator = new StringCalculator();
+            var result = calculator.Add("1,2,-3");
+            Assert.Fail("Exception expected");
+        }
+
     }
 }
