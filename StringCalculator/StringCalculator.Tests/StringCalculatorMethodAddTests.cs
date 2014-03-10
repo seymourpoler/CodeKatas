@@ -52,5 +52,13 @@ namespace StringCalculator.Tests
             var result = calculator.Add("1,2,3,4,");
             Assert.AreEqual(10, result);
         }
+
+        [TestMethod]
+        public void When_entry_some_numbers_with_different_delimiters_Should_Return_the_sum()
+        {
+            var calculator = new StringCalculator();
+            var result = calculator.Add("//;\n1;2");
+            Assert.AreEqual(3, result);
+        }
     }
 }
