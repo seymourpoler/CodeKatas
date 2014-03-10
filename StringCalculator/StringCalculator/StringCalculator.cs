@@ -25,12 +25,17 @@ namespace StringCalculator
             return numbers
                     .Select(
                         number =>
-                        {
-                            var integer = ConvertToInt(number);
-                            Validation(integer);
-                            return integer;
-                        })
+                            {
+                                return ManageNumber(number);
+                            })
                     .Sum();
+        }
+
+        private int ManageNumber(string number)
+        {
+            var integer = ConvertToInt(number);
+            Validation(integer);
+            return integer;
         }
 
         private int ConvertToInt(string value)
