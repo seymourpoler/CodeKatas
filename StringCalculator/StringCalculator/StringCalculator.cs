@@ -34,7 +34,10 @@ namespace StringCalculator
         private int ManageNumber(string number)
         {
             var integer = ConvertToInt(number);
-            Validation(integer);
+            if (!IsValid(integer))
+            {
+                throw new Exception();
+            }
             return integer;
         }
 
@@ -65,12 +68,9 @@ namespace StringCalculator
             return Sum(values);
         }
 
-        private void Validation(int number)
+        private bool IsValid(int number)
         {
-            if (number < 0)
-            {
-                throw new Exception();
-            }
+            return number >= 0;
         }
     }
 }
