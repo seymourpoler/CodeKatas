@@ -5,3 +5,10 @@ C:\tmp\StringCalculator\StringCalculator.Tests\bin\Debug\StringCalculator.dll
 C:\tmp\StringCalculator\StringCalculator.Tests\bin\Debug\StringCalculator.pdb
 C:\tmp\StringCalculator\StringCalculator.Tests\obj\Debug\StringCalculator.Tests.dll
 C:\tmp\StringCalculator\StringCalculator.Tests\obj\Debug\StringCalculator.Tests.pdb
+C:\Users\luis.rodriguez\Documents\GitHub\CodeKatas\CodeKatas\StringCalculator\StringCalculator.Tests\bin\Debug\StringCalculator.Tests.dll
+C:\Users\luis.rodriguez\Documents\GitHub\CodeKatas\CodeKatas\StringCalculator\StringCalculator.Tests\bin\Debug\StringCalculator.Tests.pdb
+C:\Users\luis.rodriguez\Documents\GitHub\CodeKatas\CodeKatas\StringCalculator\StringCalculator.Tests\bin\Debug\StringCalculator.dll
+C:\Users\luis.rodriguez\Documents\GitHub\CodeKatas\CodeKatas\StringCalculator\StringCalculator.Tests\bin\Debug\StringCalculator.pdb
+C:\Users\luis.rodriguez\Documents\GitHub\CodeKatas\CodeKatas\StringCalculator\StringCalculator.Tests\obj\Debug\StringCalculator.Tests.csprojResolveAssemblyReference.cache
+C:\Users\luis.rodriguez\Documents\GitHub\CodeKatas\CodeKatas\StringCalculator\StringCalculator.Tests\obj\Debug\StringCalculator.Tests.dll
+C:\Users\luis.rodriguez\Documents\GitHub\CodeKatas\CodeKatas\StringCalculator\StringCalculator.Tests\obj\Debug\StringCalculator.Tests.pdb
