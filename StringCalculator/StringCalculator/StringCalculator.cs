@@ -5,7 +5,7 @@ namespace StringCalculator
 {
     public class StringCalculator
     {
-        private  char[] CHARACTERS = new[] { ',', '\n' };
+        private  char[] CHARACTERS = new[] { ',', '\n', '+' };
 
         public int Add(string entry)
         {
@@ -37,6 +37,10 @@ namespace StringCalculator
             if (!IsValid(integer))
             {
                 throw new Exception();
+            }
+            if (integer > 1000)
+            {
+                integer = 0;
             }
             return integer;
         }

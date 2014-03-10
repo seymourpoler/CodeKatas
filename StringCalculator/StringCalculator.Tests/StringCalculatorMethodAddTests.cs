@@ -69,5 +69,12 @@ namespace StringCalculator.Tests
             _calculator.Add("1,2,-3");
             Assert.Fail("Exception expected");
         }
+
+        [TestMethod]
+        public void When_some_number_is_bigger_than_1000_Should_be_ignored()
+        {
+            var result = _calculator.Add("2 + 1001");
+            Assert.AreEqual(2, result);
+        }
     }
 }
