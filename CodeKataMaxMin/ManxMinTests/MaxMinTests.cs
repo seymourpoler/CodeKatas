@@ -27,10 +27,21 @@ namespace ManxMinTests
         }
 
         [TestMethod]
+        public void MaxMinManager_return_zero_when_input_in_min_is_empty()
+        {
+            var expected = 0;
+            var data = new List<int>();
+
+            var result = _maxMin.Min(data);
+
+            Assert.AreEqual(expected, result);
+        }
+
+        [TestMethod]
         public void MaxMinManager_return_max_number_when_input_has_one_value()
         {
             var expected = 3;
-            var data = new List<int>{3};
+            var data = new List<int>{ 3 };
 
             var result = _maxMin.Max(data);
 
@@ -43,16 +54,27 @@ namespace ManxMinTests
             var expected = 3;
             var data = new List<int> { 3 };
 
+            var result = _maxMin.Min(data);
+
+            Assert.AreEqual(expected, result);
+        }
+
+        [TestMethod]
+        public void MaxMinManager_Max()
+        {
+            var expected = 5;
+            var data = new List<int> { 1, 5, 3, 2 };
+
             var result = _maxMin.Max(data);
 
             Assert.AreEqual(expected, result);
         }
 
         [TestMethod]
-        public void MaxMinManager_return_zero_when_input_in_min_is_empty()
+        public void MaxMinManager_Min()
         {
-            var expected = 0;
-            var data = new List<int>();
+            var expected = 1;
+            var data = new List<int> { 1, 5, 3, 2 };
 
             var result = _maxMin.Min(data);
 

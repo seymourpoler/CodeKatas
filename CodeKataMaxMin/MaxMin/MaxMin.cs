@@ -28,7 +28,7 @@ namespace MaxMin
             {
                 return 0;
             }
-            var result = int.MinValue;
+            var result = int.MaxValue;
             data.ForEach(number =>
             {
                 if (number < result)
