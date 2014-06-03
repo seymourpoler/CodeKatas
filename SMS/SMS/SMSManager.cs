@@ -28,15 +28,19 @@ namespace SMS
 
         public List<string> GetNumbers(string numbers)
         {
-            var result = new List<string>();
-            var acumulationNumbers = new StringBuilder();
-            var beforeNumber = string.Empty;
-            var currentNumber = string.Empty;
-
             if (numbers.Length == 1)
             {
                 return new List<string> { numbers };
             }
+            return GetStringNumbers(numbers);
+        }
+
+        private List<string> GetStringNumbers(string numbers)
+        {
+            var result = new List<string>();
+            var acumulationNumbers = new StringBuilder();
+            var beforeNumber = string.Empty;
+            var currentNumber = string.Empty;
 
             for (var position = 0; position < numbers.Length; position++)
             {

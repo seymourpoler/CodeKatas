@@ -40,6 +40,17 @@ namespace SMSTests
         }
 
         [TestMethod]
+        public void SMSManager_GetNumbers_return_list_string_empty_when_is_string_empty()
+        {
+            var sms = string.Empty;
+            var expected = new List<string> { };
+
+            var result = _smsManager.GetNumbers(sms);
+
+            CollectionAssert.AreEquivalent(expected, result);
+        }
+
+        [TestMethod]
         public void SMSManager_GetNumbers_return_the_number()
         {
             var sms = "2";
