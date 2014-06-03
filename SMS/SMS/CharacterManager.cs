@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 
 namespace SMS
 {
@@ -64,7 +65,14 @@ namespace SMS
 
         public string GetCharacter(string number)
         {
-            return _data[number].ToString();
+            try
+            {
+                return _data[number].ToString();
+            }
+            catch (Exception)
+            {
+                return string.Empty;
+            }
         }
     }
 }
