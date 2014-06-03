@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Peaje", "Peaje\Peaje.csproj", "{8B276E04-0AC8-4112-936B-77F2F865B7D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeajeTests", "PeajeTests\PeajeTests.csproj", "{8DB31E3A-C4E5-4B86-BD6B-5D8B72EC52CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8B276E04-0AC8-4112-936B-77F2F865B7D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B276E04-0AC8-4112-936B-77F2F865B7D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B276E04-0AC8-4112-936B-77F2F865B7D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B276E04-0AC8-4112-936B-77F2F865B7D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DB31E3A-C4E5-4B86-BD6B-5D8B72EC52CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DB31E3A-C4E5-4B86-BD6B-5D8B72EC52CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DB31E3A-C4E5-4B86-BD6B-5D8B72EC52CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DB31E3A-C4E5-4B86-BD6B-5D8B72EC52CB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
