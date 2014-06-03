@@ -6,7 +6,6 @@ namespace SMS
 {
     public class SMSManager
     {
-        private const char SEPARATOR = ' ';
         private ICharacterManager _characterManager;
 
         public SMSManager(ICharacterManager characterManager)
