@@ -1,18 +1,7 @@
 function removeElementInArray(number, vector){
-	if(vector == []){
-		return vector;
-	}
-
-	var result = [];
-	var head;
-
-	for(var position = 0; position < vector.length; position++){
-		head = vector[position];
-		if(head != number){
-			result.push(head);
-		}
-	}
-	return result;
+	return vector.filter(function(element){
+		return (element != number);
+	});
 }
 
 exports.remove = removeElementInArray;
