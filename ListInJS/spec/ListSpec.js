@@ -1,12 +1,26 @@
-describe("linq in javascript using TDD", function(){
+describe("list in javascript using TDD", function(){
 	describe(".count()", function(){
-		it("Given empty array when call Count method then returns zero ", function(){
+		it("Given empty list when call Count method then returns zero ", function(){
 			var numbers = new List();
-			expect(numbers.count()).toEqual(0);
+			expect(numbers.count()).to.eql(0);
 		});
-		it("Given array when call Count method then returns the number of elements ", function(){
+		it("Given list when call Count method then returns the number of elements ", function(){
 			var numbers = new List([1,2,3,4]);
-			expect(numbers.count()).toEqual(4);	
+			expect(numbers.count()).to.eql(4);	
+		});
+	});
+	xdescribe(".sum()", function(){
+		it("Given list when call Sum method then returns Zero ", function(){
+			var numbers = new List();
+			expect(numbers.sum()).to.eql(0);
+		});
+		it("Given list with numbers when call Sum method then returns the sumatory", function(){
+			var numbers = new List([1,2,3,4]);
+			expect(numbers.sum()).to.eql(10);
+		});
+		it("Given list with strings when call Sum method then returns only the sum of the numbers ", function(){
+			var numbers = new List([1,'w', {a:1, b:3}, 5, 'rdf']);
+			expect(numbers.sum()).to.eql(6);
 		});
 	});
 });
