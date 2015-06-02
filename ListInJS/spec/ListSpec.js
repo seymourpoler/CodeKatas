@@ -9,7 +9,7 @@ describe("list in javascript using TDD", function(){
 			expect(numbers.count()).to.eql(4);	
 		});
 	});
-	xdescribe(".sum()", function(){
+	describe(".sum()", function(){
 		it("Given list when call Sum method then returns Zero ", function(){
 			var numbers = new List();
 			expect(numbers.sum()).to.eql(0);
