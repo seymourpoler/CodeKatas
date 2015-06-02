@@ -36,7 +36,18 @@
     <Compile Include="Robot.cs" />
     <Compile Include="IEngine.cs" />
     <Compile Include="Movement.cs" />
-    <Compile Include="Position.cs" />
+    <Compile Include="Commands\ICommand.cs" />
+    <Compile Include="Commands\LeftCommand.cs" />
+    <Compile Include="Commands\CommandFactory.cs" />
+    <Compile Include="Commands\BackwardCommand.cs" />
+    <Compile Include="Commands\ForwardCommand.cs" />
+    <Compile Include="Commands\RightCommand.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Commands\" />
+  </ItemGroup>
 </Project>

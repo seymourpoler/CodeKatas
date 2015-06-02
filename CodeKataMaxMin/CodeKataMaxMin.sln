@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaxMin", "MaxMin\MaxMin.csproj", "{415F4585-6E20-4F02-8DEC-CFBE3D6E27F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManxMinTests", "ManxMinTests\ManxMinTests.csproj", "{EA46F947-3431-4940-BB3B-8F8DE9B39CEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{415F4585-6E20-4F02-8DEC-CFBE3D6E27F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{415F4585-6E20-4F02-8DEC-CFBE3D6E27F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{415F4585-6E20-4F02-8DEC-CFBE3D6E27F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{415F4585-6E20-4F02-8DEC-CFBE3D6E27F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA46F947-3431-4940-BB3B-8F8DE9B39CEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA46F947-3431-4940-BB3B-8F8DE9B39CEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA46F947-3431-4940-BB3B-8F8DE9B39CEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA46F947-3431-4940-BB3B-8F8DE9B39CEC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

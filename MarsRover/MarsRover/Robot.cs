@@ -5,20 +5,11 @@ namespace MarsRover
 {
 	public class Robot
 	{
-		private const string LEFT = "L";
-		private const string RIGHT = "R";
-		private const string FORWARD = "F";
-		private const string BACKWARD = "B";
-		private const string LIFE = "C";
+		private CommandFactory _commandFactory;
 
-		public IEngine RightMotor{get;set;}
-		public IEngine LeftMotor{get;set;}
-		private Position _position;
-
-		public Robot ()
+		public Robot (IEngine rightMotor, IEngine leftMotor)
 		{
-			_position = Position();
-
+			_commandFactory = new CommandFactory (rightMotor, leftMotor);
 		}
 
 		public void Move (string[] movements)
@@ -34,7 +25,7 @@ namespace MarsRover
 			foreach (string command in movements) {
 				if(command != before){
 					result.Add(new Movement(){
-						Command = command,
+						Command = _commandFactory.Create(command),
 						Seconds = 1
 					});
 					before = command;
@@ -46,58 +37,11 @@ namespace MarsRover
 			return result;
 		}
 
-		private void ProcessCommands (IList<Movement> commands)
+		private void ProcessCommands (IList<Movement> movements)
 		{
-			foreach (var command in commands) {
-				ProcessCommand(command);
+			foreach (var movement in movements) {
+				movement.Move ();
 			}
-		}
-
-		private void ProcessCommand (Movement command)
-		{
-			switch(command.Command)
-				{
-				case FORWARD:
-					MoveForward(command.Seconds);
-					_position.Y += command.Seconds;
-					break;
-				case BACKWARD:
-					MoveBackWard(command.Seconds);
-					_position.Y -= command.Seconds;
-					break;
-				case RIGHT:
-					MoveRight(command.Seconds);
-					_position.X += command.Seconds;
-					break;
-				case LEFT:
-					MoveLeft(command.Seconds);
-					_position.X -= command.Seconds;
-					break;
-				case LIFE:
-					break;
-				}
-		}
-
-		private void MoveLeft(int seconds)
-		{
-			RightMotor.Backward (seconds);
-		}
-
-		private void MoveRight(int seconds)
-		{
-			LeftMotor.Backward (seconds);
-		}
-
-		private void MoveForward(int seconds)
-		{
-			LeftMotor.Forward (seconds);
-			RightMotor.Forward (seconds);
-		}
-
-		private void MoveBackWard(int seconds)
-		{
-			LeftMotor.Backward (seconds);
-			RightMotor.Backward (seconds);
 		}
 	}
 }

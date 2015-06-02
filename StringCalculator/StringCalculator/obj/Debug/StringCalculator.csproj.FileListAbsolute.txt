@@ -1,0 +1,10 @@
+C:\tmp\StringCalculator\StringCalculator\bin\Debug\StringCalculator.dll
+C:\tmp\StringCalculator\StringCalculator\bin\Debug\StringCalculator.pdb
+C:\tmp\StringCalculator\StringCalculator\obj\Debug\StringCalculator.csprojResolveAssemblyReference.cache
+C:\tmp\StringCalculator\StringCalculator\obj\Debug\StringCalculator.dll
+C:\tmp\StringCalculator\StringCalculator\obj\Debug\StringCalculator.pdb
+C:\Users\luis.rodriguez\Documents\GitHub\CodeKatas\CodeKatas\StringCalculator\StringCalculator\bin\Debug\StringCalculator.dll
+C:\Users\luis.rodriguez\Documents\GitHub\CodeKatas\CodeKatas\StringCalculator\StringCalculator\bin\Debug\StringCalculator.pdb
+C:\Users\luis.rodriguez\Documents\GitHub\CodeKatas\CodeKatas\StringCalculator\StringCalculator\obj\Debug\StringCalculator.csprojResolveAssemblyReference.cache
+C:\Users\luis.rodriguez\Documents\GitHub\CodeKatas\CodeKatas\StringCalculator\StringCalculator\obj\Debug\StringCalculator.dll
+C:\Users\luis.rodriguez\Documents\GitHub\CodeKatas\CodeKatas\StringCalculator\StringCalculator\obj\Debug\StringCalculator.pdb
