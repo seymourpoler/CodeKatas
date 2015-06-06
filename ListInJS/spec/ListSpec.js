@@ -91,4 +91,15 @@ describe("list in javascript using TDD", function(){
 		  expect(result.isEqual(new List([5,3,7,9, 1,2,3,4,5,6,7]))).to.be(true);
 	    });
 	});
+	describe(".reverse(<array>)", function(){
+		it("Given list  with numbers when call reverse method then returns a new array with the reverse of the elements", function(){
+		  var result = new List([5,3,7,9]).reverse();
+		  expect(result.isEqual(new List([9,7,3,5]))).to.be(true);
+	    });
+		it("Given an empty array when call reverse method then returns an empty array", function(){
+		  var numbers = new List();
+		  var result = numbers.reverse();
+		  expect(result.isEqual(new List())).to.be(true);
+	    });
+	});
 });

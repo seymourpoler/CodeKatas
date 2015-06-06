@@ -62,4 +62,13 @@ function List(arrayData){
 		};
 		return self;
 	}
+	this.reverse = function(){
+		var result = new List();
+		var item;
+		for (var position = self.count() - 1; position >= 0; position --) {
+			item = self.getItem(position);
+			result.add(item)
+		};
+		return result;
+	}
 }
