@@ -20,12 +20,16 @@ function List(arrayData){
 		return result;
 	};
 	this.take = function(numberOfElements){
-		var result = [];
+		var result = new List([]);
 		for (var position = 0; position < this.count() && position < numberOfElements; position ++) {
-			result.push(data[position])
+			result.add(data[position])
 		};
-		return new List(result);
+		return result;
 	};
+	this.add = function(element){
+		data.push(element);
+		return new List(data);
+	}
 	this.getItem = function(position){
 		return data[position];
 	}
