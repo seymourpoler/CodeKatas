@@ -56,4 +56,10 @@ function List(arrayData){
 		}
 		return result;
 	};
+	this.union = function(list){
+		for (var position = 0; position < list.count(); position ++) {
+			self.add(list.getItem(position));
+		};
+		return self;
+	}
 }
