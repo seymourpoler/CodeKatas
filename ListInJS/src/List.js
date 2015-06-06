@@ -10,7 +10,7 @@ function List(arrayData){
 	this.sum = function(filter){
 		var result = 0;
 		var number;
-		for (var position = 0; position < this.count(); position ++) {
+		for (var position = 0; position < self.count(); position ++) {
 			if(filter != 'undefined' && typeof(filter) === 'function'){
 				result = result + filter(data[position]);
 			}
@@ -22,7 +22,7 @@ function List(arrayData){
 	};
 	this.take = function(numberOfElements){
 		var result = new List([]);
-		for (var position = 0; position < this.count() && position < numberOfElements; position ++) {
+		for (var position = 0; position < self.count() && position < numberOfElements; position ++) {
 			result.add(data[position])
 		};
 		return result;
@@ -35,10 +35,10 @@ function List(arrayData){
 		return data[position];
 	}
 	this.isEqual = function(list){
-		if(this.count() != list.count()){
+		if(self.count() != list.count()){
 			return false;
 		}
-		for (var position = 0; position < this.count() ; position ++) {
+		for (var position = 0; position < self.count() ; position ++) {
 			if(data[position] != list.getItem(position)){
 				return false;
 			}
