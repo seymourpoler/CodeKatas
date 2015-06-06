@@ -6,10 +6,14 @@ function List(arrayData){
 	this.count = function(){
 		return data.length;
 	};
-	this.sum = function(){
+	this.sum = function(filter){
 		var result = 0;
+		var number;
 		for (var position = 0; position < this.count(); position ++) {
-			if(typeof(data[position]) === 'number'){
+			if(filter != 'undefined' && typeof(filter) === 'function'){
+				result = result + filter(data[position]);
+			}
+			else if(typeof(data[position]) === 'number'){
 				result = result + data[position];
 			}
 		};
