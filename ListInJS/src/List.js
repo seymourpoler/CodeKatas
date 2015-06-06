@@ -19,4 +19,7 @@ function List(arrayData){
 		};
 		return result;
 	};
+	this.take = function(position){
+		return new List();
+	}
 }

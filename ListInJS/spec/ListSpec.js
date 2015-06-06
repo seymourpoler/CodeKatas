@@ -29,4 +29,11 @@ describe("list in javascript using TDD", function(){
 								})).to.eql(7);
 		});
 	});
+	describe(".take(<number>)", function(){
+	    it("Given list when call Take method then returns new empty List ", function(){
+	      var numbers = new List();
+	      var result = numbers.take(3);
+	      expect(result.count()).to.eql(0);
+	    });
+  	});
 });
