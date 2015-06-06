@@ -41,4 +41,23 @@ describe("list in javascript using TDD", function(){
 	      expect(result.isEqual(new List([5,3]))).to.be(true);
 	    });
   	});
+  	describe(".add()", function(){
+  		it("Given empty List, add new element, return a list with this element", function(){
+  			var listOfNumbers = new List();
+  			listOfNumbers.add()
+  			expect();
+  		});
+  	});
+  	describe(".where(<condition>)", function(){
+		it("Given array  with numbers when call where with a condition method then returns a new array with applied the condition", function(){
+		  var numbers = new List([5,3,7,9]);
+		  var result = numbers.where(function(x){ return x > 5;});
+		  expect(result.isEqual(new List([7,9]))).to.be(true);
+	    });
+		it("Given array  with numbers when call where with a condition method then returns a new array with applied the condition", function(){
+		  var numbers = new List([5,3,7,9]);
+		  var result = numbers.where(function(x){ return x > 458});
+		  expect(result.isEqual(new List())).to.be(true);
+	    });
+  	});
 });

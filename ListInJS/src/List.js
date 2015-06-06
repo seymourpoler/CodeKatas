@@ -3,6 +3,7 @@ function List(arrayData){
 	if(arrayData != undefined && arrayData != null){
 		data = arrayData;
 	}
+	var self = this;
 	this.count = function(){
 		return data.length;
 	};
@@ -43,5 +44,16 @@ function List(arrayData){
 			}
 		}
 		return true;
+	};
+	this.where = function(condition){
+		var result = new List();
+		var item;
+		for (var position = 0; position < self.count(); position ++) {
+			item = self.getItem(position);
+			if(condition(item)){
+				result.add(item);
+			}
+		}
+		return result;
 	};
 }
