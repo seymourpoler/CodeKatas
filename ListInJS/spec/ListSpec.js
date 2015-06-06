@@ -35,5 +35,10 @@ describe("list in javascript using TDD", function(){
 	      var result = numbers.take(3);
 	      expect(result.count()).to.eql(0);
 	    });
+	    it("Given array  with numbers when call Sum method then returns the sumatory", function(){
+	      var numbers = new List([5,3,7,9]);
+	      var result = numbers.take(2);
+	      expect(result.isEqual(new List([5,3]))).to.be(true);
+	    });
   	});
 });

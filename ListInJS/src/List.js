@@ -19,7 +19,25 @@ function List(arrayData){
 		};
 		return result;
 	};
-	this.take = function(position){
-		return new List();
+	this.take = function(numberOfElements){
+		var result = [];
+		for (var position = 0; position < this.count() && position < numberOfElements; position ++) {
+			result.push(data[position])
+		};
+		return new List(result);
+	};
+	this.getItem = function(position){
+		return data[position];
 	}
+	this.isEqual = function(list){
+		if(this.count() != list.count()){
+			return false;
+		}
+		for (var position = 0; position < this.count() ; position ++) {
+			if(data[position] != list.getItem(position)){
+				return false;
+			}
+		}
+		return true;
+	};
 }
