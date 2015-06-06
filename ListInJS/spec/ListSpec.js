@@ -59,6 +59,12 @@ describe("list in javascript using TDD", function(){
 		  var result = numbers.where(function(x){ return x > 458});
 		  expect(result.isEqual(new List())).to.be(true);
 	    });
+	    it("Given list  with numbers when call apply condition  with fluent api", function(){
+		  var result = new List([1,2,4,3,5,3,7,9])
+		  						.where(function(x){ return x > 3})
+		  						.where(function(x){ return x > 5});
+		  expect(result.isEqual(new List([7,9]))).to.be(true);
+	    });
   	});
   	describe(".union(<list>)", function(){
   		it("Given an empty list when call union method then returns an empty list", function(){
@@ -70,6 +76,13 @@ describe("list in javascript using TDD", function(){
 		  var numbers = new List([5,3,7,9]);
 		  var result = numbers.union(new List([1,2,3]));
 		  expect(result.isEqual(new List([5,3,7,9, 1,2,3]))).to.be(true);
+	    });
+	    it("Given a list with numbers when call union method then returns a new list with fluent api", function(){
+		  var numbers = new List([5,3,7,9]);
+		  var result = numbers
+		  					.union(new List([1,2,3]))
+		  					.union(new List([4,5,6,7]));
+		  expect(result.isEqual(new List([5,3,7,9, 1,2,3,4,5,6,7]))).to.be(true);
 	    });
 	});
 });
