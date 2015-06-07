@@ -91,12 +91,12 @@ describe("list in javascript using TDD", function(){
 		  expect(result.isEqual(new List([5,3,7,9, 1,2,3,4,5,6,7]))).to.be(true);
 	    });
 	});
-	describe(".reverse(<array>)", function(){
-		it("Given list  with numbers when call reverse method then returns a new array with the reverse of the elements", function(){
+	describe(".reverse(<list>)", function(){
+		it("Given list  with numbers when call reverse method then returns a new list with the reverse of the elements", function(){
 		  var result = new List([5,3,7,9]).reverse();
 		  expect(result.isEqual(new List([9,7,3,5]))).to.be(true);
 	    });
-		it("Given an empty array when call reverse method then returns an empty array", function(){
+		it("Given an empty list when call reverse method then returns an empty list", function(){
 		  var numbers = new List();
 		  var result = numbers.reverse();
 		  expect(result.isEqual(new List())).to.be(true);
@@ -107,6 +107,13 @@ describe("list in javascript using TDD", function(){
 		    var numbers = new List([5,3,7,9]);
 		    var result = numbers.select(function(x){return x+1;})
 		    expect(result.isEqual(new List([6,4,8,10]))).to.be(true);
+		});
+	});
+	describe(".remove(<condition>)", function(){
+		it("Given a list  with numbers when call remove method then returns a new list without the element ot be in the condition", function(){
+		    var numbers = new List([5,3,7,9]);
+		    var result = numbers.remove(function(x){return x > 5;});
+		    expect(result.isEqual(new List([7,9]))).to.be(true);
 		});
 	});
 });

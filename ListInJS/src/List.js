@@ -80,4 +80,13 @@ function List(arrayData){
 		};
 		return result;
 	};
+	this.remove = function (condition) {
+		var result = new List();
+		for(var position = 0; position < self.count(); position ++){
+			if(condition(data[position])){
+				result.add(data[position]);
+			}
+		}
+		return result;
+	}
 }
