@@ -115,5 +115,11 @@ describe("list in javascript using TDD", function(){
 		    var result = numbers.remove(function(x){return x > 5;});
 		    expect(result.isEqual(new List([7,9]))).to.be(true);
 		});
+		it("Given a list  with numbers when call remove method with fluent api", function(){
+		    var result = new List([1,2,3,4,5,3,7,9])
+					    		.remove(function(x){return x > 2;})
+					    		.remove(function(x){return x < 9;});
+		    expect(result.isEqual(new List([3,4,5,3,7]))).to.be(true);
+		});
 	});
 });
