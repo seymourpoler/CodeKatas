@@ -122,4 +122,11 @@ describe("list in javascript using TDD", function(){
 		    expect(result.isEqual(new List([3,4,5,3,7]))).to.be(true);
 		});
 	});
+	describe(".clear()", function(){
+	  	it("Given array  with numbers when call clear method then returns a new empty array", function(){
+		    var numbers = new List([5,3,7,9]);
+		    var result = numbers.clear();
+		    expect(numbers.isEqual(new List())).to.be(true);
+		});
+	});
 });
