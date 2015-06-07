@@ -102,4 +102,11 @@ describe("list in javascript using TDD", function(){
 		  expect(result.isEqual(new List())).to.be(true);
 	    });
 	});
+	describe(".select(<function>)", function(){
+	  it("Given a list  with numbers when call select method then returns a new list with the of the method applied to each element", function(){
+		    var numbers = new List([5,3,7,9]);
+		    var result = numbers.select(function(x){return x+1;})
+		    expect(result.isEqual(new List([6,4,8,10]))).to.be(true);
+		});
+	});
 });

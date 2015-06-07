@@ -71,4 +71,13 @@ function List(arrayData){
 		};
 		return result;
 	}
+	this.select = function(func){
+		var result = new List();
+		var item;
+		for (var position = 0; position < self.count(); position++) {
+			item = func(data[position]);
+			result.add(item);
+		};
+		return result;
+	};
 }
