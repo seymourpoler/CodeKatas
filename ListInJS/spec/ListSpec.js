@@ -134,8 +134,16 @@ describe("list in javascript using TDD", function(){
 			var list = new List(['dog', 'orange']);
 			expect(list.elementAt(1)).to.eql('orange');
 		});
-		it("Given empty array when call isEmpty method then returns true", function(){
+		it("Given empty list when call isEmpty method then returns true", function(){
 			expect(new List([]).elementAt(3)).to.eql(undefined);
+		});
+	});
+	describe(".isEmpty()", function(){
+		it("Given empty list when call isEmpty method then returns true", function(){
+			expect(new List([]).isEmpty()).to.eql(true);
+		});
+		it("Given an array with elements when call isEmpty method then returns false", function(){
+			expect(new List(['dog', 'orange']).isEmpty()).to.eql(false);
 		});
 	});
 });

@@ -96,5 +96,8 @@ function List(arrayData){
 
 	this.elementAt = function(position){
 		return self.getItem(position);
-	}
+	};
+	this.isEmpty = function(){
+		return self.count() == 0;
+	};
 }
