@@ -129,4 +129,13 @@ describe("list in javascript using TDD", function(){
 		    expect(numbers.isEqual(new List())).to.be(true);
 		});
 	});
+	describe(".elementAt(<position>)", function(){
+		it("Given an list with elements when call elementAt(<positiion>) method then returns the element at the position", function(){
+			var list = new List(['dog', 'orange']);
+			expect(list.elementAt(1)).to.eql('orange');
+		});
+		it("Given empty array when call isEmpty method then returns true", function(){
+			expect(new List([]).elementAt(3)).to.eql(undefined);
+		});
+	});
 });

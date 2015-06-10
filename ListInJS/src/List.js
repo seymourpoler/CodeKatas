@@ -4,6 +4,10 @@ function List(arrayData){
 		data = arrayData;
 	}
 	var self = this;
+
+	this.getItem = function(position){
+		return data[position];
+	};
 	this.count = function(){
 		return data.length;
 	};
@@ -30,10 +34,7 @@ function List(arrayData){
 	this.add = function(element){
 		data.push(element);
 		return new List(data);
-	}
-	this.getItem = function(position){
-		return data[position];
-	}
+	};
 	this.isEqual = function(list){
 		if(self.count() != list.count()){
 			return false;
@@ -91,5 +92,9 @@ function List(arrayData){
 	}
 	this.clear = function(){
 		data = [];
+	};
+
+	this.elementAt = function(position){
+		return self.getItem(position);
 	}
 }
