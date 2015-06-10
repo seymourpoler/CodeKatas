@@ -113,4 +113,18 @@ function List(arrayData){
 		}
 		return undefined;
 	};
+	this.last = function(condition){
+		if(typeof(condition) == 'undefined'){
+			var lasPosition = self.count() - 1;
+			return data[lasPosition];
+		}
+		var item;
+		for(var position = self.count()-1; position >= 0; position --){
+			item = data[position];
+			if(condition(item)){
+				return item;
+			}
+		}
+		return undefined;
+	}
 }

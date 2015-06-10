@@ -162,4 +162,24 @@ describe("list in javascript using TDD", function(){
 			.to.eql(undefined);
 		});
 	});
+	describe(".last(<condition>)", function(){
+		it("Given array with numbers when call last method then returns the last element", function(){
+			var numbers = new List([{number:5, letra:'e'},{number:3, letra:'q'},{number:1, letra:'a'},{number:9, letra:'w'},{number:4, letra:'r'},{number:7, letra:'t'}]);
+			expect(numbers.last()).to.eql({number:7, letra:'t'});
+		});
+		it("Given an empty array then returns undefined", function(){
+			var numbers = new List([]);
+			expect(numbers.last()).to.eql(undefined);
+		});
+		it("Given list with numbers when call last method then returns the last element that applied the condition", function(){
+			var numbers = new List([{number:5, letra:'e'},{number:3, letra:'q'},{number:1, letra:'a'},{number:9, letra:'w'},{number:4, letra:'r'},{number:7, letra:'t'}]);
+			expect(numbers.last(function(x){return x.number < 6; }))
+				  .to.eql({number:4, letra:'r'});
+		});
+		it("Given list with numbers when call last method then returns the last element that applied the condition", function(){
+			var numbers = new List([{number:5, letra:'e'},{number:3, letra:'q'},{number:1, letra:'a'},{number:9, letra:'w'},{number:4, letra:'r'},{number:7, letra:'t'}]);
+			expect(numbers.last(function(x){return x.letra == '?';}))
+			.to.eql(undefined);
+		});
+	});
 });
