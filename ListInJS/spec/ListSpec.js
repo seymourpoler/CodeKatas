@@ -182,4 +182,27 @@ describe("list in javascript using TDD", function(){
 			.to.eql(undefined);
 		});
 	});
+	describe(".orderAscending()", function(){
+		it("Given list with numbers when call orderAscending method then returns a list ordered ascending", function(){
+			var numbers = new List([5,3,1,9,4,7]);
+			expect(numbers.orderAscending().isEqual(new List([1,3,4,5,7,9]))).to.be(true);
+		});
+	});
+	describe(".orderDescending()", function(){
+		it("Given list with numbers when call orderAscending method then returns a list ordered descending", function(){
+			var numbers = new List([5,3,1,9,4,7]);
+			expect(numbers.orderDescending().isEqual(new List([9,7,5,4,3,1]))).to.be(true);
+		});
+	});
+	describe(".orderBy(<func>)", function(){
+		it("Given array with numbers when call orderAscending method then returns an array ordered descending", function(){
+			var numbers = new List([{number:5, letra:'e'},{number:3, letra:'q'},{number:1, letra:'a'},{number:9, letra:'w'},{number:4, letra:'r'},{number:7, letra:'t'}]);
+			var result = numbers.orderBy(function(x, y){
+								return (x.number - y.number);
+								});
+			debugger;
+			expect(result.isEqual(new List([{number:1, letra:'a'},{number:3, letra:'q'},{number:4, letra:'r'},{number:5, letra:'e'},{number:7, letra:'t'},{number:9, letra:'w'}])))
+				.to.be(true);
+		});
+	});
 });

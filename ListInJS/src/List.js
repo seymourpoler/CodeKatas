@@ -126,5 +126,18 @@ function List(arrayData){
 			}
 		}
 		return undefined;
-	}
+	};
+	this.orderAscending = function(){
+		return self.orderBy(function(x, y){
+			return (x - y);
+		});
+	};
+	this.orderDescending = function() {
+		return self.orderBy(function(x, y){
+			return (y - x);
+		});
+	};
+	this.orderBy = function(orderingFunction){
+		return new List(data.sort(orderingFunction));
+	};
 }
