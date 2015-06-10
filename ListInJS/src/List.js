@@ -89,4 +89,7 @@ function List(arrayData){
 		}
 		return result;
 	}
+	this.clear = function(){
+		data = [];
+	}
 }
