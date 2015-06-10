@@ -100,4 +100,17 @@ function List(arrayData){
 	this.isEmpty = function(){
 		return self.count() == 0;
 	};
+	this.first = function(condition){
+		if(typeof(condition) == 'undefined'){
+			return data[0];
+		}
+		var item;
+		for(var position = 0; position < self.count(); position ++){
+			item = data[position];
+			if(condition(item)){
+				return item;
+			}
+		}
+		return undefined;
+	};
 }

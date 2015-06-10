@@ -142,8 +142,24 @@ describe("list in javascript using TDD", function(){
 		it("Given empty list when call isEmpty method then returns true", function(){
 			expect(new List([]).isEmpty()).to.eql(true);
 		});
-		it("Given an array with elements when call isEmpty method then returns false", function(){
+		it("Given an list with elements when call isEmpty method then returns false", function(){
 			expect(new List(['dog', 'orange']).isEmpty()).to.eql(false);
+		});
+	});
+	describe(".first(<condition>)", function(){
+		it("return the first element", function(){
+			var numbers = new List(['One', 'Two', 'Three']);
+			expect(numbers.first()).to.eql('One');
+		});
+		it("Given list with numbers when call first method then returns the first element that applied the condition", function(){
+			var numbers = new List([{number:5, letra:'e'},{number:3, letra:'q'},{number:1, letra:'a'},{number:9, letra:'w'},{number:4, letra:'r'},{number:7, letra:'t'}]);
+			expect(numbers.first(function(x){return x.number < 4; }))
+				  .to.eql({number:3, letra:'q'});
+		});
+		it("Given list with numbers when call first method then returns the first element that applied the condition", function(){
+			var numbers = new List([{number:5, letra:'e'},{number:3, letra:'q'},{number:1, letra:'a'},{number:9, letra:'w'},{number:4, letra:'r'},{number:7, letra:'t'}]);
+			expect(numbers.first(function(x){return x.letra == '?';}))
+			.to.eql(undefined);
 		});
 	});
 });
