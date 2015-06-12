@@ -140,4 +140,18 @@ function List(arrayData){
 	this.orderBy = function(orderingFunction){
 		return new List(data.sort(orderingFunction));
 	};
+	this.skip = function(number){
+		var result = new List();
+		var position = 0;
+		for(var position = 0; position < self.count(); position++){
+				if(position >= number){
+				result.add(data[position]);
+			}
+		}
+		return result;
+	};
+	this.getRange = function(position, length){
+		return self.skip(position)
+				.take(length);
+	}
 }

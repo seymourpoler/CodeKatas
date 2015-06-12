@@ -123,7 +123,7 @@ describe("list in javascript using TDD", function(){
 		});
 	});
 	describe(".clear()", function(){
-	  	it("Given array  with numbers when call clear method then returns a new empty array", function(){
+	  	it("Given list  with numbers when call clear method then returns a new empty list", function(){
 		    var numbers = new List([5,3,7,9]);
 		    var result = numbers.clear();
 		    expect(numbers.isEqual(new List())).to.be(true);
@@ -163,11 +163,11 @@ describe("list in javascript using TDD", function(){
 		});
 	});
 	describe(".last(<condition>)", function(){
-		it("Given array with numbers when call last method then returns the last element", function(){
+		it("Given list with numbers when call last method then returns the last element", function(){
 			var numbers = new List([{number:5, letra:'e'},{number:3, letra:'q'},{number:1, letra:'a'},{number:9, letra:'w'},{number:4, letra:'r'},{number:7, letra:'t'}]);
 			expect(numbers.last()).to.eql({number:7, letra:'t'});
 		});
-		it("Given an empty array then returns undefined", function(){
+		it("Given an empty list then returns undefined", function(){
 			var numbers = new List([]);
 			expect(numbers.last()).to.eql(undefined);
 		});
@@ -195,7 +195,7 @@ describe("list in javascript using TDD", function(){
 		});
 	});
 	describe(".orderBy(<func>)", function(){
-		it("Given array with numbers when call orderAscending method then returns an array ordered descending", function(){
+		it("Given list with numbers when call orderAscending method then returns an list ordered descending", function(){
 			var numbers = new List([{number:5, letra:'e'},{number:3, letra:'q'},{number:1, letra:'a'},{number:9, letra:'w'},{number:4, letra:'r'},{number:7, letra:'t'}]);
 			var result = numbers.orderBy(function(x, y){
 								return (x.number - y.number);
@@ -205,4 +205,28 @@ describe("list in javascript using TDD", function(){
 				.to.be(true);
 		});
 	});
+	describe(".skip(<number>)", function(){
+    it("Given list with numbers when call skip method then return an empty list", function(){
+      var numbers = new List();
+	  var result = numbers.skip(3);
+      expect(result.isEqual(new List())).to.be(true);
+    });
+    it("Given list with numbers when call skip method then Ignores the specified number of items and returns a sequence starting at the item after the last skipped item (if any)", function(){
+      var numbers = new List([1,2,3,4,5,6,7,8]);
+	  var result = numbers.skip(3);
+      expect(result.isEqual(new List([4,5,6,7,8]))).to.be(true);
+    });
+  });
+  describe(".getRange(<position, length>)", function(){
+    it("Given an list with elements when call getRange(<position, length>) method then return a list with the elements in the range", function(){
+      var numbers = new List([1,2,3,4,54,62, 81]);
+	  var result = numbers.getRange(2,3);
+      expect(result.isEqual(new List([3,4,54]))).to.be(true);
+    });
+    it("Given an empty list when call getRange(<position, length>) method then return an empty list", function(){
+      var numbers = new List();
+	  var result = numbers.getRange(2,3);
+      expect(result.isEqual(new List())).to.be(true);
+    });
+  });
 });
