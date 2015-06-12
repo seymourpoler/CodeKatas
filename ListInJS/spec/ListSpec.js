@@ -189,13 +189,13 @@ describe("list in javascript using TDD", function(){
 		});
 	});
 	describe(".orderDescending()", function(){
-		it("Given list with numbers when call orderAscending method then returns a list ordered descending", function(){
+		it("Given list with numbers when call orderDescending method then returns a list ordered descending", function(){
 			var numbers = new List([5,3,1,9,4,7]);
 			expect(numbers.orderDescending().isEqual(new List([9,7,5,4,3,1]))).to.be(true);
 		});
 	});
 	describe(".orderBy(<func>)", function(){
-		it("Given list with numbers when call orderAscending method then returns an list ordered descending", function(){
+		it("Given list with numbers when call orderAscending method then returns an list ordered", function(){
 			var numbers = new List([{number:5, letra:'e'},{number:3, letra:'q'},{number:1, letra:'a'},{number:9, letra:'w'},{number:4, letra:'r'},{number:7, letra:'t'}]);
 			var result = numbers.orderBy(function(x, y){
 								return (x.number - y.number);
