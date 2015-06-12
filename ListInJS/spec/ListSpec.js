@@ -229,4 +229,18 @@ describe("list in javascript using TDD", function(){
       expect(result.isEqual(new List())).to.be(true);
     });
   });
+  describe(".isEqual(<list>)", function(){
+    it("Given an list with elements when call isEqual method, with the same elements, then return true", function(){
+      var numbers = new List([1,2]);
+      expect(numbers.isEqual(new List([1,2]))).to.be(true);
+    });
+	it("Given an empty list when call isEqual method, with another empty list then, return true", function(){
+      var numbers = new List();
+      expect(numbers.isEqual(new List())).to.be(true);
+    });
+    it("Given an list with numbers when call isEqual method, with a different numbers then, return false", function(){
+      var numbers = new List([1,3,4,5,6]);
+      expect(numbers.isEqual(new List([4,5,6,7,8,5,4,5,6]))).to.be(false);
+    });
+  });
 });
