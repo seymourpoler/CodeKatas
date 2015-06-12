@@ -243,4 +243,18 @@ describe("list in javascript using TDD", function(){
       expect(numbers.isEqual(new List([4,5,6,7,8,5,4,5,6]))).to.be(false);
     });
   });
+  describe(".join()", function(){
+    it("Given an list with elements when call join method, then return the elements joined", function(){
+      var numbers = new List([1,2]);
+      expect(numbers.join()).to.eql("12");
+    });
+    it("Given an empty list when call join method, return string empty", function(){
+      var numbers = new List([]);
+      expect(numbers.join()).to.eql("");
+    });
+    it("Given an list with numbers when call join method, with comma character then, return the elements joined", function(){
+      var numbers = new List([1,3,4,5,6]);
+      expect(numbers.join(",")).to.eql("1,3,4,5,6");
+    });
+  });
 });

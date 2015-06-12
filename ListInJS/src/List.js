@@ -153,5 +153,19 @@ function List(arrayData){
 	this.getRange = function(position, length){
 		return self.skip(position)
 				.take(length);
-	}
+	};
+	this.join = function(character){
+		var result = "";
+		if(typeof(character) == 'undefined'){
+			character = '';
+		}
+		for(var position = 0; position < self.count(); position++){
+			if(position + 1 < self.count()){
+				result = result +  data[position] + character;
+			}else{
+				result = result + data[position];
+			}
+		}
+		return result;
+	};
 }
