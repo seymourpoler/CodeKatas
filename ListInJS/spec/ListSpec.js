@@ -264,6 +264,12 @@ describe("list in javascript using TDD", function(){
 						.isEqual(numbers))
 		  .to.be(true);
 	});
+	it("Given an empty list with elements when call zip method with a list with elements, then return a list with the elements", function(){
+		  var numbers = new List();
+		  expect(numbers.zip(new List([1,2]))
+						.isEqual(new List([1,2])))
+		  .to.be(true);
+	});
 	it("Given an empty list when call zip method with empty list, return an empty list", function(){
       var numbers = new List([]);
       expect(numbers.zip(new List([]))

@@ -11,6 +11,9 @@ function List(arrayData){
 	this.count = function(){
 		return data.length;
 	};
+	this.any = function(){
+		return self.count() > 0;
+	};
 	this.sum = function(filter){
 		var result = 0;
 		var number;
@@ -169,6 +172,12 @@ function List(arrayData){
 		return result;
 	};
 	this.zip = function(list){
+		if(!list.any() && self.any()){
+			return self;
+		}
+		if(list.any() && !self.any()){
+			return list;
+		}
 		var maxLength = getMaxlength(list);
 		var result = new List();
 		for(var position = 0; position < maxLength; position ++){
