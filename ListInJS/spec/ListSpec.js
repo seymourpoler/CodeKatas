@@ -257,4 +257,22 @@ describe("list in javascript using TDD", function(){
       expect(numbers.join(",")).to.eql("1,3,4,5,6");
     });
   });
+  describe(".zip(<list>)", function(){
+	  it("Given an list with elements when call zip method with empty list, then return the same list", function(){
+		  var numbers = new List([1,2]);
+		  expect(numbers.zip(new List())
+						.isEqual(numbers))
+		  .to.be(true);
+	});
+	it("Given an empty list when call zip method with empty list, return an empty list", function(){
+      var numbers = new List([]);
+      expect(numbers.zip(new List([]))
+					.isEqual(new List([])))
+	 .to.be(true);
+    });
+	it("Given an list with numbers when call join method, with comma character then, return the elements joined", function(){
+      var numbers = new List([1,3,5]);
+      expect(numbers.zip(new List([2,4,5])).isEqual(new list([1,2,3,4,5,6]))).to.be(true);
+    });
+  });
 });
