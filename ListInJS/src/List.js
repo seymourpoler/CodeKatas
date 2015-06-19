@@ -172,13 +172,14 @@ function List(arrayData){
 		var maxLength = getMaxlength(list);
 		var result = new List();
 		for(var position = 0; position < maxLength; position ++){
-			if(position< data.count() && (position % 2 == 0)){
+			if(position < data.count() && (position % 2 == 0)){
 				result.add(data[position]);
-			}else if(position < list.count() && (position % 2 != 0))
+			}else if(position < list.count() && (position % 2 != 0)){
 				result.add(list.getItem(position))
 			}
 		}
 		return result;
+		
 		
 		function getMaxlength(list){
 			if(data.count() <= list.count()){
