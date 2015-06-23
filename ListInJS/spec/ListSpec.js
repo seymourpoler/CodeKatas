@@ -200,7 +200,6 @@ describe("list in javascript using TDD", function(){
 			var result = numbers.orderBy(function(x, y){
 								return (x.number - y.number);
 								});
-			debugger;
 			expect(result.isEqual(new List([{number:1, letra:'a'},{number:3, letra:'q'},{number:4, letra:'r'},{number:5, letra:'e'},{number:7, letra:'t'},{number:9, letra:'w'}])))
 				.to.be(true);
 		});
@@ -285,6 +284,11 @@ describe("list in javascript using TDD", function(){
       var numbers = new List([1,3,5]);
 	  var result = numbers.zip(new List([2,4]));
       expect(result.isEqual(new List([1,2,3,4,5]))).to.be(true);
+    });
+    it("Given different lists with numbers when call zip method, return a list with zipped elements", function(){
+      var numbers = new List([1,3]);
+	  var result = numbers.zip(new List([2,4,6]));
+      expect(result.isEqual(new List([1,2,3,4,6]))).to.be(true);
     });
   });
 });

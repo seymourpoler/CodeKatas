@@ -180,7 +180,7 @@ function List(arrayData){
 		}
 		var maxLength = getMaxlength(list);
 		var result = new List();
-		for(var position = 0; position < self.count(); position ++){
+		for(var position = 0; position < maxLength; position ++){
 			if(data[position] != undefined){
 				result.add(data[position]);
 			}
@@ -191,7 +191,10 @@ function List(arrayData){
 		return result;
 		
 		function getMaxlength(list){
-			return list.count() + self.count();
+			if (list.count() >= self.count()){
+				return list.count();
+			}
+			return self.count();
 		}
 	};
 }
