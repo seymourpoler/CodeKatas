@@ -43,7 +43,7 @@ function List(arrayData){
 			return false;
 		}
 		for (var position = 0; position < self.count() ; position ++) {
-			if(data[position] != list.getItem(position)){
+			if(JSON.stringify(data[position]) != JSON.stringify(list.getItem(position))){
 				return false;
 			}
 		}
