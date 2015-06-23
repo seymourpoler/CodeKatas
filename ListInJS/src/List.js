@@ -181,8 +181,12 @@ function List(arrayData){
 		var maxLength = getMaxlength(list);
 		var result = new List();
 		for(var position = 0; position < self.count(); position ++){
-			result.add(data[position]);
-			result.add(list.getItem(position))
+			if(data[position] != undefined){
+				result.add(data[position]);
+			}
+			if(list.getItem(position)){
+				result.add(list.getItem(position))
+			}
 		}
 		return result;
 		

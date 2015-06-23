@@ -281,5 +281,10 @@ describe("list in javascript using TDD", function(){
 	  var result = numbers.zip(new List([2,4,6]));
       expect(result.isEqual(new List([1,2,3,4,5,6]))).to.be(true);
     });
+    it("Given different lists with numbers when call zip method, return a list with zipped elements", function(){
+      var numbers = new List([1,3,5]);
+	  var result = numbers.zip(new List([2,4]));
+      expect(result.isEqual(new List([1,2,3,4,5]))).to.be(true);
+    });
   });
 });
