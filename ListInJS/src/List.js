@@ -180,7 +180,7 @@ function List(arrayData){
 		var maxLength = getMaxlength(list);
 		var result = new List();
 		for(var position = 0; position < maxLength; position ++){
-			if(data[position] != undefined){
+			if(self.getItem(position) != undefined){
 				result.add(self.getItem(position));
 			}
 			if(list.getItem(position)){
