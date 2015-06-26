@@ -19,10 +19,10 @@ function List(arrayData){
 		var number;
 		for (var position = 0; position < self.count(); position ++) {
 			if(filter != 'undefined' && typeof(filter) === 'function'){
-				result = result + filter(data[position]);
+				result = result + filter(self.getItem(position));
 			}
-			else if(typeof(data[position]) === 'number'){
-				result = result + data[position];
+			else if(typeof(self.getItem(position)) === 'number'){
+				result = result + self.getItem(position);
 			}
 		};
 		return result;
@@ -30,7 +30,7 @@ function List(arrayData){
 	this.take = function(numberOfElements){
 		var result = new List([]);
 		for (var position = 0; position < self.count() && position < numberOfElements; position ++) {
-			result.add(data[position])
+			result.add(self.getItem(position))
 		};
 		return result;
 	};
@@ -43,7 +43,7 @@ function List(arrayData){
 			return false;
 		}
 		for (var position = 0; position < self.count() ; position ++) {
-			if(JSON.stringify(data[position]) != JSON.stringify(list.getItem(position))){
+			if(JSON.stringify(self.getItem(position)) != JSON.stringify(list.getItem(position))){
 				return false;
 			}
 		}
@@ -79,7 +79,7 @@ function List(arrayData){
 		var result = new List();
 		var item;
 		for (var position = 0; position < self.count(); position++) {
-			item = func(data[position]);
+			item = func(self.getItem(position));
 			result.add(item);
 		};
 		return result;
@@ -87,16 +87,15 @@ function List(arrayData){
 	this.remove = function (condition) {
 		var result = new List();
 		for(var position = 0; position < self.count(); position ++){
-			if(condition(data[position])){
-				result.add(data[position]);
+			if(condition(self.getItem(position))){
+				result.add(self.getItem(position));
 			}
 		}
 		return result;
-	}
+	};
 	this.clear = function(){
 		data = [];
 	};
-
 	this.elementAt = function(position){
 		return self.getItem(position);
 	};
@@ -105,11 +104,11 @@ function List(arrayData){
 	};
 	this.first = function(condition){
 		if(typeof(condition) == 'undefined'){
-			return data[0];
+			return self.getItem(0);
 		}
 		var item;
 		for(var position = 0; position < self.count(); position ++){
-			item = data[position];
+			item = self.getItem(position);
 			if(condition(item)){
 				return item;
 			}
@@ -119,11 +118,11 @@ function List(arrayData){
 	this.last = function(condition){
 		if(typeof(condition) == 'undefined'){
 			var lasPosition = self.count() - 1;
-			return data[lasPosition];
+			return self.getItem(lasPosition);
 		}
 		var item;
 		for(var position = self.count()-1; position >= 0; position --){
-			item = data[position];
+			item = self.getItem(position);
 			if(condition(item)){
 				return item;
 			}
@@ -148,7 +147,7 @@ function List(arrayData){
 		var position = 0;
 		for(var position = 0; position < self.count(); position++){
 				if(position >= number){
-				result.add(data[position]);
+				result.add(self.getItem(position));
 			}
 		}
 		return result;
@@ -164,9 +163,9 @@ function List(arrayData){
 		}
 		for(var position = 0; position < self.count(); position++){
 			if(position + 1 < self.count()){
-				result = result +  data[position] + character;
+				result = result +  self.getItem(position) + character;
 			}else{
-				result = result + data[position];
+				result = result + self.getItem(position);
 			}
 		}
 		return result;
@@ -182,7 +181,7 @@ function List(arrayData){
 		var result = new List();
 		for(var position = 0; position < maxLength; position ++){
 			if(data[position] != undefined){
-				result.add(data[position]);
+				result.add(self.getItem(position));
 			}
 			if(list.getItem(position)){
 				result.add(list.getItem(position))
@@ -196,5 +195,9 @@ function List(arrayData){
 			}
 			return self.count();
 		}
+	};
+	this.distinct = function(){
+		var result = new List();
+		return new List();
 	};
 }
