@@ -291,4 +291,11 @@ describe("list in javascript using TDD", function(){
       expect(result.isEqual(new List([1,2,3,4,6]))).to.be(true);
     });
   });
+  describe(".distinct()", function(){
+	  it("Given an empty list with elements when call distinct method with, then return an empty list", function(){
+		  var numbers = new List();
+		  var result = numbers.distinct();
+		  expect(result.isEqual(new List())).to.be(true);
+	});
+  });
 });
