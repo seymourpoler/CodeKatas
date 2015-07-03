@@ -315,6 +315,9 @@ describe("list in javascript using TDD", function(){
 	});
   });
 	describe(".indexOf(<element>)", function(){
-
+		it("Given an empty list and call a indexOf, returns -1", function(){
+			var numbers = new List();
+			expect(numbers.indexOf(3)).to.be(-1);
+		});
 	});
 });

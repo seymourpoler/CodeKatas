@@ -214,4 +214,9 @@ function List(arrayData){
 		}
 		return result;
 	};
+	this.indexOf = function(element){
+		var result = -1;
+
+		return result;
+	}
 }
