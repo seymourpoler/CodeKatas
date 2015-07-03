@@ -327,5 +327,9 @@ describe("list in javascript using TDD", function(){
 			var numbers = new List([1,2,3,7]);
 			expect(numbers.indexOf(5)).to.be(-1);
 		});
+		it("Given a list with objects, call indexOf then returns the position of the object in the list", function(){
+			var numbers = new List([{number:1, letter:'a'},{number:2, letter:'b'},{number:4, letter:'c'},{number:3, letter:'f'}]);
+			expect(numbers.indexOf({number:2, letter:'b'})).to.be(1);
+		});
 	});
 });

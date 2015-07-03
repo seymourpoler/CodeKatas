@@ -219,7 +219,7 @@ function List(arrayData){
 		var item;
 		for(var position=0; position<self.count(); position++){
 			item = self.getItem(position);
-			if(item == element){
+			if(JSON.stringify(item) == JSON.stringify(element)){
 				return position;
 			}
 		}
