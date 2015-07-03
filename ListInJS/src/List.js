@@ -216,7 +216,13 @@ function List(arrayData){
 	};
 	this.indexOf = function(element){
 		var result = -1;
-
+		var item;
+		for(var position=0; position<self.count(); position++){
+			item = self.getItem(position);
+			if(item == element){
+				return position;
+			}
+		}
 		return result;
 	}
 }

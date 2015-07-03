@@ -319,5 +319,13 @@ describe("list in javascript using TDD", function(){
 			var numbers = new List();
 			expect(numbers.indexOf(3)).to.be(-1);
 		});
+		it("Given a list with elements, return the element in de position", function(){
+			var numbers = new List([1,2,3,4,5,6,7,8,9]);
+			expect(numbers.indexOf(5)).to.be(4);
+		});
+		it("Given a list with elements, call indexOf with an number that doesn´ t exists, return -1", function(){
+			var numbers = new List([1,2,3,7]);
+			expect(numbers.indexOf(5)).to.be(-1);
+		});
 	});
 });
