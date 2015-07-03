@@ -199,7 +199,7 @@ function List(arrayData){
 
 	function isUniqueElementIn(list, element){
 		return list.where(function(x){ 
-							return x == element;
+							return JSON.stringify(x) == JSON.stringify(element);
 						}).isEmpty();
 	}
 

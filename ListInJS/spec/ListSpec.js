@@ -297,15 +297,21 @@ describe("list in javascript using TDD", function(){
 		var result = numbers.distinct();
 		expect(result.isEqual(new List())).to.be(true);
 	});
-	it("Given an list with elements when call distinct method with, then return a list vwith unique elements", function(){
+	it("Given an list with elements when call distinct method with, then return a list with unique elements", function(){
 		var numbers = new List([1,2,3,4]);
 		var result = numbers.distinct();
 		expect(result.isEqual(new List([1,2,3,4]))).to.be(true);
 	});
-	it("Given an list with repeated elements when call distinct method with, then return a list vwith unique elements", function(){
+	it("Given an list with repeated elements when call distinct method with, then return a list with unique elements", function(){
 		var numbers = new List([1,2,4,3,4]);
 		var result = numbers.distinct();
 		expect(result.isEqual(new List([1,2,4,3]))).to.be(true);
+	});
+	it("Given an list with repeated objects when call distinct method with, then return a list with unique objects", function(){
+		var numbers = new List([{number:1, letter:'a'},{number:2, letter:'b'},{number:4, letter:'c'},{number:3, letter:'f'},{number:4, letter:'c'}]);
+		var result = numbers.distinct();
+		var expected = new List([{number:1, letter:'a'},{number:2, letter:'b'},{number:4, letter:'c'},{number:3, letter:'f'}]);
+		expect(result.isEqual(expected)).to.be(true);		
 	});
   });
 });
