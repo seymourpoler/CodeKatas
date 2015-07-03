@@ -196,8 +196,22 @@ function List(arrayData){
 			return self.count();
 		}
 	};
+
+	function isUniqueElementIn(list, element){
+		return list.where(function(x){ 
+							return x == element;
+						}).isEmpty();
+	}
+
 	this.distinct = function(){
 		var result = new List();
-		return new List();
+		var element;
+		for(var position = 0; position < self.count(); position++){
+			element = self.getItem(position);
+			if(isUniqueElementIn(result, element)){
+				result.add(element);
+			}
+		}
+		return result;
 	};
 }
