@@ -314,4 +314,7 @@ describe("list in javascript using TDD", function(){
 		expect(result.isEqual(expected)).to.be(true);		
 	});
   });
+	describe(".indexOf(<element>)", function(){
+
+	});
 });
