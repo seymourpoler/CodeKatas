@@ -1,0 +1,30 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TripServiceKata/Trip/TripService.cs">
+    <Files>
+      <File FileName="TripServiceKata.Tests/TripServiceTest.cs" Line="11" Column="37" />
+      <File FileName="TripServiceKata/Trip/TripService.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="TripServiceKata" expanded="True">
+            <Node name="Trip" expanded="True">
+              <Node name="TripService.cs" selected="True" />
+            </Node>
+          </Node>
+          <Node name="TripServiceKata.Tests" expanded="True">
+            <Node name="Properties" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.NUnit.TestPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

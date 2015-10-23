@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestRecord xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Results>
+    <UnitTestResult>
+      <TestDate>2015-10-23T21:27:34</TestDate>
+      <Status />
+      <Passed>0</Passed>
+      <Errors>1</Errors>
+      <Failures>0</Failures>
+      <Inconclusive>0</Inconclusive>
+      <NotRunnable>0</NotRunnable>
+      <Skipped>0</Skipped>
+      <Ignored>0</Ignored>
+      <Time />
+      <Message>One or more child tests had errors</Message>
+    </UnitTestResult>
+  </Results>
+  <Tests>
+    <TestRecord Name="TripServiceKata">
+      <Results>
+        <UnitTestResult>
+          <TestDate>2015-10-23T21:27:34</TestDate>
+          <Status />
+          <Passed>0</Passed>
+          <Errors>1</Errors>
+          <Failures>0</Failures>
+          <Inconclusive>0</Inconclusive>
+          <NotRunnable>0</NotRunnable>
+          <Skipped>0</Skipped>
+          <Ignored>0</Ignored>
+          <Time />
+          <Message>One or more child tests had errors</Message>
+        </UnitTestResult>
+      </Results>
+      <Tests>
+        <TestRecord Name="Tests">
+          <Results>
+            <UnitTestResult>
+              <TestDate>2015-10-23T21:27:34</TestDate>
+              <Status />
+              <Passed>0</Passed>
+              <Errors>1</Errors>
+              <Failures>0</Failures>
+              <Inconclusive>0</Inconclusive>
+              <NotRunnable>0</NotRunnable>
+              <Skipped>0</Skipped>
+              <Ignored>0</Ignored>
+              <Time />
+              <Message>One or more child tests had errors</Message>
+            </UnitTestResult>
+          </Results>
+          <Tests>
+            <TestRecord Name="TripServiceTest">
+              <Results>
+                <UnitTestResult>
+                  <TestDate>2015-10-23T21:27:34</TestDate>
+                  <Status />
+                  <Passed>0</Passed>
+                  <Errors>1</Errors>
+                  <Failures>0</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>One or more child tests had errors</Message>
+                </UnitTestResult>
+              </Results>
+              <Tests>
+                <TestRecord Name="pp">
+                  <Results>
+                    <UnitTestResult>
+                      <TestDate>2015-10-23T21:27:34</TestDate>
+                      <Status />
+                      <Passed>0</Passed>
+                      <Errors>1</Errors>
+                      <Failures>0</Failures>
+                      <Inconclusive>0</Inconclusive>
+                      <NotRunnable>0</NotRunnable>
+                      <Skipped>0</Skipped>
+                      <Ignored>0</Ignored>
+                      <Time />
+                      <Message>TripServiceKata.Exception.DependendClassCallDuringUnitTestException : UserSession.GetLoggedUser() should not be called in an unit test</Message>
+                      <StackTrace>  at TripServiceKata.User.UserSession.GetLoggedUser () [0x00006] in /media/luis/7A1CF7811CF736AB/Users/luis/Documents/Code/SoftwareCrafstmanShip/Katas/TripService/trip-service-kata/c#/TripServiceKata/TripServiceKata/User/UserSession.cs:24 
+  at TripServiceKata.Trip.TripService.GetTripsByUser (TripServiceKata.User.User user) [0x0000c] in /media/luis/7A1CF7811CF736AB/Users/luis/Documents/Code/SoftwareCrafstmanShip/Katas/TripService/trip-service-kata/c#/TripServiceKata/TripServiceKata/Trip/TripService.cs:12 
+  at TripServiceKata.Tests.TripServiceTest.pp () [0x0000d] in /media/luis/7A1CF7811CF736AB/Users/luis/Documents/GitHub/CodeKatas/TripService/trip-service-kata/c#/TripServiceKata/TripServiceKata.Tests/TripServiceTest.cs:14 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&amp;)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] in &lt;filename unknown&gt;:0 </StackTrace>
+                      <ConsoleOutput />
+                      <ConsoleError />
+                    </UnitTestResult>
+                  </Results>
+                </TestRecord>
+              </Tests>
+            </TestRecord>
+          </Tests>
+        </TestRecord>
+      </Tests>
+    </TestRecord>
+  </Tests>
+</TestRecord>
