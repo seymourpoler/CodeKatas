@@ -6,6 +6,10 @@ namespace TripServiceKata.Trip
 {
     public class TripService
     {
+		public TripService()
+		{
+		}
+
         public List<Trip> GetTripsByUser(User.User user)
         {
             List<Trip> tripList = new List<Trip>();
