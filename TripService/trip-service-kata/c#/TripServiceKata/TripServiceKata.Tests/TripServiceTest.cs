@@ -20,5 +20,17 @@
 
 			Assert.Fail("UserNotLoggedInException expected");
 		}
+
+		[Test]
+		public void ShoukldReturnEmptyTripListOfFriends()
+		{
+			var userSession = new Mock<UserSession> ();
+			var service = new TripService (userSession.Object);
+			userSession.Setup (x => x.GetLoggedUser()).Returns(new User());
+
+			var tripsOfFiends = service.GetTripsByUser (new User ());
+
+			Assert.IsEmpty (tripsOfFiends);
+		}
     }
 }
