@@ -19,7 +19,7 @@ namespace TripServiceKata.User
                 "UserSession.IsUserLoggedIn() should not be called in an unit test");
         }
 
-        public User GetLoggedUser()
+        public virtual User GetLoggedUser()
         {
             throw new DependendClassCallDuringUnitTestException(
                 "UserSession.GetLoggedUser() should not be called in an unit test");
