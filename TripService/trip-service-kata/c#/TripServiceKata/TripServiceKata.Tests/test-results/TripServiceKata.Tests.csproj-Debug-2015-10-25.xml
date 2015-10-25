@@ -16,6 +16,21 @@
 
 Execution time: 0.54ms</Message>
     </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2015-10-25T13:23:39</TestDate>
+      <Status />
+      <Passed>3</Passed>
+      <Errors>0</Errors>
+      <Failures>0</Failures>
+      <Inconclusive>0</Inconclusive>
+      <NotRunnable>0</NotRunnable>
+      <Skipped>0</Skipped>
+      <Ignored>0</Ignored>
+      <Time />
+      <Message>Test successful
+
+Execution time: 0.48ms</Message>
+    </UnitTestResult>
   </Results>
   <Tests>
     <TestRecord Name="TripServiceKata">
@@ -60,6 +75,21 @@ Execution time: 0.54ms</Message>
           <Message>Test successful
 
 Execution time: 0.53ms</Message>
+        </UnitTestResult>
+        <UnitTestResult>
+          <TestDate>2015-10-25T13:23:39</TestDate>
+          <Status />
+          <Passed>3</Passed>
+          <Errors>0</Errors>
+          <Failures>0</Failures>
+          <Inconclusive>0</Inconclusive>
+          <NotRunnable>0</NotRunnable>
+          <Skipped>0</Skipped>
+          <Ignored>0</Ignored>
+          <Time />
+          <Message>Test successful
+
+Execution time: 0.47ms</Message>
         </UnitTestResult>
       </Results>
       <Tests>
@@ -106,6 +136,21 @@ Execution time: 0.53ms</Message>
 
 Execution time: 0.53ms</Message>
             </UnitTestResult>
+            <UnitTestResult>
+              <TestDate>2015-10-25T13:23:39</TestDate>
+              <Status />
+              <Passed>3</Passed>
+              <Errors>0</Errors>
+              <Failures>0</Failures>
+              <Inconclusive>0</Inconclusive>
+              <NotRunnable>0</NotRunnable>
+              <Skipped>0</Skipped>
+              <Ignored>0</Ignored>
+              <Time />
+              <Message>Test successful
+
+Execution time: 0.47ms</Message>
+            </UnitTestResult>
           </Results>
           <Tests>
             <TestRecord Name="TripServiceTest">
@@ -150,6 +195,21 @@ Execution time: 0.53ms</Message>
                   <Message>Test successful
 
 Execution time: 0.53ms</Message>
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2015-10-25T13:23:39</TestDate>
+                  <Status />
+                  <Passed>3</Passed>
+                  <Errors>0</Errors>
+                  <Failures>0</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>Test successful
+
+Execution time: 0.46ms</Message>
                 </UnitTestResult>
               </Results>
               <Tests>
@@ -306,7 +366,25 @@ Execution time: 0.01ms</Message>
                       <ConsoleOutput />
                       <ConsoleError />
                     </UnitTestResult>
+                    <UnitTestResult>
+                      <TestDate>2015-10-25T13:23:39</TestDate>
+                      <Status />
+                      <Passed>1</Passed>
+                      <Errors>0</Errors>
+                      <Failures>0</Failures>
+                      <Inconclusive>0</Inconclusive>
+                      <NotRunnable>0</NotRunnable>
+                      <Skipped>0</Skipped>
+                      <Ignored>0</Ignored>
+                      <Time />
+                      <Message>Test successful
+
+Execution time: 0.01ms</Message>
+                      <ConsoleOutput />
+                      <ConsoleError />
+                    </UnitTestResult>
                   </Results>
+                  <Tests />
                 </TestRecord>
                 <TestRecord Name="ShoukldReturnEmptyTripListOfFriends">
                   <Results>
@@ -324,6 +402,45 @@ Execution time: 0.01ms</Message>
                       <Message>Test successful
 
 Execution time: 0.42ms</Message>
+                      <ConsoleOutput />
+                      <ConsoleError />
+                    </UnitTestResult>
+                    <UnitTestResult>
+                      <TestDate>2015-10-25T13:23:39</TestDate>
+                      <Status />
+                      <Passed>1</Passed>
+                      <Errors>0</Errors>
+                      <Failures>0</Failures>
+                      <Inconclusive>0</Inconclusive>
+                      <NotRunnable>0</NotRunnable>
+                      <Skipped>0</Skipped>
+                      <Ignored>0</Ignored>
+                      <Time />
+                      <Message>Test successful
+
+Execution time: 0.36ms</Message>
+                      <ConsoleOutput />
+                      <ConsoleError />
+                    </UnitTestResult>
+                  </Results>
+                  <Tests />
+                </TestRecord>
+                <TestRecord Name="ShouldReturnEmptyTripListOfFriendsWhenLoggedUserIsNotTheFriend">
+                  <Results>
+                    <UnitTestResult>
+                      <TestDate>2015-10-25T13:23:39</TestDate>
+                      <Status />
+                      <Passed>1</Passed>
+                      <Errors>0</Errors>
+                      <Failures>0</Failures>
+                      <Inconclusive>0</Inconclusive>
+                      <NotRunnable>0</NotRunnable>
+                      <Skipped>0</Skipped>
+                      <Ignored>0</Ignored>
+                      <Time />
+                      <Message>Test successful
+
+Execution time: 0.01ms</Message>
                       <ConsoleOutput />
                       <ConsoleError />
                     </UnitTestResult>

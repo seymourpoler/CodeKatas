@@ -7,7 +7,7 @@ namespace TripServiceKata.User
         private List<Trip.Trip> trips = new List<Trip.Trip>();
         private List<User> friends = new List<User>();
 
-        public List<User> GetFriends()
+        public virtual List<User> GetFriends()
         {
             return friends;
         } 
