@@ -145,6 +145,37 @@ Could not find a parameterless constructor.</Message>
                       <ConsoleOutput />
                       <ConsoleError />
                     </UnitTestResult>
+                    <UnitTestResult>
+                      <TestDate>2015-10-25T09:26:34</TestDate>
+                      <Status />
+                      <Passed>0</Passed>
+                      <Errors>0</Errors>
+                      <Failures>1</Failures>
+                      <Inconclusive>0</Inconclusive>
+                      <NotRunnable>0</NotRunnable>
+                      <Skipped>0</Skipped>
+                      <Ignored>0</Ignored>
+                      <Time />
+                      <Message>An unexpected exception type was thrown
+Expected: TripServiceKata.Exception.UserNotLoggedInException
+ but was: Castle.DynamicProxy.InvalidProxyConstructorArgumentsException : Can not instantiate proxy of class: TripServiceKata.User.UserSession.
+Could not find a parameterless constructor.</Message>
+                      <StackTrace>  at Castle.DynamicProxy.ProxyGenerator.CreateClassProxyInstance (System.Type proxyType, System.Collections.Generic.List`1 proxyArguments, System.Type classToProxy, System.Object[] constructorArguments) [0x00000] in &lt;filename unknown&gt;:0 
+  at Castle.DynamicProxy.ProxyGenerator.CreateClassProxy (System.Type classToProxy, System.Type[] additionalInterfacesToProxy, Castle.DynamicProxy.ProxyGenerationOptions options, System.Object[] constructorArguments, Castle.DynamicProxy.IInterceptor[] interceptors) [0x00000] in &lt;filename unknown&gt;:0 
+  at Moq.Proxy.CastleProxyFactory.CreateProxy (System.Type mockType, ICallInterceptor interceptor, System.Type[] interfaces, System.Object[] arguments) [0x00000] in &lt;filename unknown&gt;:0 
+  at Moq.Mock`1[TripServiceKata.User.UserSession].&lt;InitializeInstance&gt;b__2 () [0x00000] in &lt;filename unknown&gt;:0 
+  at Moq.PexProtector.Invoke (System.Action action) [0x00000] in &lt;filename unknown&gt;:0 
+  at Moq.Mock`1[TripServiceKata.User.UserSession].InitializeInstance () [0x00000] in &lt;filename unknown&gt;:0 
+  at Moq.Mock`1[TripServiceKata.User.UserSession].OnGetObject () [0x00000] in &lt;filename unknown&gt;:0 
+  at Moq.Mock.GetObject () [0x00000] in &lt;filename unknown&gt;:0 
+  at Moq.Mock.get_Object () [0x00000] in &lt;filename unknown&gt;:0 
+  at Moq.Mock`1[TripServiceKata.User.UserSession].get_Object () [0x00000] in &lt;filename unknown&gt;:0 
+  at TripServiceKata.Tests.TripServiceTest.ShouldReturnUserNotLoggedInExceptionWhenLoggedUserIsNull () [0x00008] in /media/luis/7A1CF7811CF736AB/Users/luis/Documents/GitHub/CodeKatas/TripService/trip-service-kata/c#/TripServiceKata/TripServiceKata.Tests/TripServiceTest.cs:17 
+  at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&amp;)
+  at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] in &lt;filename unknown&gt;:0 </StackTrace>
+                      <ConsoleOutput />
+                      <ConsoleError />
+                    </UnitTestResult>
                   </Results>
                 </TestRecord>
               </Tests>
