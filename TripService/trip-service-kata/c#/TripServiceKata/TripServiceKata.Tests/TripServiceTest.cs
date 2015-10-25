@@ -41,7 +41,7 @@
 			var service = new TripService (userSession.Object);
 			userSession.Setup (x => x.GetLoggedUser()).Returns(new User());
 			var user = new Mock<User>();
-			user.Setup (x => x.GetFriends()).Returns (new List<User> ());
+			user.Setup (x => x.GetFriends()).Returns (new List<User> {new User(), new User()});
 
 			var tripsOfFiends = service.GetTripsByUser (user.Object);
 
