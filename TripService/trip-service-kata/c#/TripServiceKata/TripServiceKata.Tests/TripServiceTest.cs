@@ -14,7 +14,7 @@
 		public void ShouldReturnUserNotLoggedInExceptionWhenLoggedUserIsNull()
 		{
 			var userSession = new Mock<UserSession> ();
-			var service = new TripService ();
+			var service = new TripService (userSession.Object);
 			var result = service.GetTripsByUser (new User ());
 
 			Assert.IsNotNull (result);
