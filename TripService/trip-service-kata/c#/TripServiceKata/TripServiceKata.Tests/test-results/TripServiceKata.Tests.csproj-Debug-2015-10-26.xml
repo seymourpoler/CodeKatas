@@ -59,6 +59,21 @@ Execution time: 0.58ms</Message>
 
 Execution time: 0.58ms</Message>
     </UnitTestResult>
+    <UnitTestResult>
+      <TestDate>2015-10-26T19:54:07</TestDate>
+      <Status />
+      <Passed>4</Passed>
+      <Errors>0</Errors>
+      <Failures>0</Failures>
+      <Inconclusive>0</Inconclusive>
+      <NotRunnable>0</NotRunnable>
+      <Skipped>0</Skipped>
+      <Ignored>0</Ignored>
+      <Time />
+      <Message>Test successful
+
+Execution time: 0.56ms</Message>
+    </UnitTestResult>
   </Results>
   <Tests>
     <TestRecord Name="TripServiceKata">
@@ -120,6 +135,21 @@ Execution time: 0.57ms</Message>
           <Message>Test successful
 
 Execution time: 0.57ms</Message>
+        </UnitTestResult>
+        <UnitTestResult>
+          <TestDate>2015-10-26T19:54:07</TestDate>
+          <Status />
+          <Passed>4</Passed>
+          <Errors>0</Errors>
+          <Failures>0</Failures>
+          <Inconclusive>0</Inconclusive>
+          <NotRunnable>0</NotRunnable>
+          <Skipped>0</Skipped>
+          <Ignored>0</Ignored>
+          <Time />
+          <Message>Test successful
+
+Execution time: 0.55ms</Message>
         </UnitTestResult>
       </Results>
       <Tests>
@@ -183,6 +213,21 @@ Execution time: 0.56ms</Message>
 
 Execution time: 0.57ms</Message>
             </UnitTestResult>
+            <UnitTestResult>
+              <TestDate>2015-10-26T19:54:07</TestDate>
+              <Status />
+              <Passed>4</Passed>
+              <Errors>0</Errors>
+              <Failures>0</Failures>
+              <Inconclusive>0</Inconclusive>
+              <NotRunnable>0</NotRunnable>
+              <Skipped>0</Skipped>
+              <Ignored>0</Ignored>
+              <Time />
+              <Message>Test successful
+
+Execution time: 0.55ms</Message>
+            </UnitTestResult>
           </Results>
           <Tests>
             <TestRecord Name="TripServiceTest">
@@ -244,6 +289,21 @@ Execution time: 0.56ms</Message>
                   <Message>Test successful
 
 Execution time: 0.56ms</Message>
+                </UnitTestResult>
+                <UnitTestResult>
+                  <TestDate>2015-10-26T19:54:07</TestDate>
+                  <Status />
+                  <Passed>4</Passed>
+                  <Errors>0</Errors>
+                  <Failures>0</Failures>
+                  <Inconclusive>0</Inconclusive>
+                  <NotRunnable>0</NotRunnable>
+                  <Skipped>0</Skipped>
+                  <Ignored>0</Ignored>
+                  <Time />
+                  <Message>Test successful
+
+Execution time: 0.55ms</Message>
                 </UnitTestResult>
               </Results>
               <Tests>
@@ -317,6 +377,23 @@ Execution time: 0.41ms</Message>
                       <ConsoleOutput />
                       <ConsoleError />
                     </UnitTestResult>
+                    <UnitTestResult>
+                      <TestDate>2015-10-26T19:54:07</TestDate>
+                      <Status />
+                      <Passed>1</Passed>
+                      <Errors>0</Errors>
+                      <Failures>0</Failures>
+                      <Inconclusive>0</Inconclusive>
+                      <NotRunnable>0</NotRunnable>
+                      <Skipped>0</Skipped>
+                      <Ignored>0</Ignored>
+                      <Time />
+                      <Message>Test successful
+
+Execution time: 0.40ms</Message>
+                      <ConsoleOutput />
+                      <ConsoleError />
+                    </UnitTestResult>
                   </Results>
                 </TestRecord>
                 <TestRecord Name="ShouldReturnEmptyTripListOfFriendsWhenLoggedUserIsNotTheFriend">
@@ -374,6 +451,23 @@ Execution time: 0.01ms</Message>
                     </UnitTestResult>
                     <UnitTestResult>
                       <TestDate>2015-10-26T19:39:53</TestDate>
+                      <Status />
+                      <Passed>1</Passed>
+                      <Errors>0</Errors>
+                      <Failures>0</Failures>
+                      <Inconclusive>0</Inconclusive>
+                      <NotRunnable>0</NotRunnable>
+                      <Skipped>0</Skipped>
+                      <Ignored>0</Ignored>
+                      <Time />
+                      <Message>Test successful
+
+Execution time: 0.01ms</Message>
+                      <ConsoleOutput />
+                      <ConsoleError />
+                    </UnitTestResult>
+                    <UnitTestResult>
+                      <TestDate>2015-10-26T19:54:07</TestDate>
                       <Status />
                       <Passed>1</Passed>
                       <Errors>0</Errors>
@@ -481,6 +575,23 @@ Execution time: 0.03ms</Message>
                       <ConsoleOutput />
                       <ConsoleError />
                     </UnitTestResult>
+                    <UnitTestResult>
+                      <TestDate>2015-10-26T19:54:07</TestDate>
+                      <Status />
+                      <Passed>1</Passed>
+                      <Errors>0</Errors>
+                      <Failures>0</Failures>
+                      <Inconclusive>0</Inconclusive>
+                      <NotRunnable>0</NotRunnable>
+                      <Skipped>0</Skipped>
+                      <Ignored>0</Ignored>
+                      <Time />
+                      <Message>Test successful
+
+Execution time: 0.03ms</Message>
+                      <ConsoleOutput />
+                      <ConsoleError />
+                    </UnitTestResult>
                   </Results>
                 </TestRecord>
                 <TestRecord Name="ShouldReturnUserNotLoggedInExceptionWhenLoggedUserIsNull">
@@ -538,6 +649,23 @@ Execution time: 0.01ms</Message>
                     </UnitTestResult>
                     <UnitTestResult>
                       <TestDate>2015-10-26T19:39:53</TestDate>
+                      <Status />
+                      <Passed>1</Passed>
+                      <Errors>0</Errors>
+                      <Failures>0</Failures>
+                      <Inconclusive>0</Inconclusive>
+                      <NotRunnable>0</NotRunnable>
+                      <Skipped>0</Skipped>
+                      <Ignored>0</Ignored>
+                      <Time />
+                      <Message>Test successful
+
+Execution time: 0.01ms</Message>
+                      <ConsoleOutput />
+                      <ConsoleError />
+                    </UnitTestResult>
+                    <UnitTestResult>
+                      <TestDate>2015-10-26T19:54:07</TestDate>
                       <Status />
                       <Passed>1</Passed>
                       <Errors>0</Errors>
