@@ -51,5 +51,18 @@
 
 			Assert.IsEmpty (tripsOfFiends);
 		}
+
+		[Test]
+		public void ShouldReturnTripsByLoggedUser()
+		{
+			var friend = new User ();
+			userSession.Setup (x => x.GetLoggedUser()).Returns(friend);
+			var user = new Mock<User>();
+			user.Setup (x => x.GetFriends()).Returns (new List<User> {friend, friend});
+
+			var tripsOfFiends = tripService.GetTripsByUser (user.Object);
+
+			Assert.IsNotEmpty (tripsOfFiends);
+		}
     }
 }
