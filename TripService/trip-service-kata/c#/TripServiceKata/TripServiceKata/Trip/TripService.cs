@@ -7,6 +7,7 @@ namespace TripServiceKata.Trip
     public class TripService
     {
 		private readonly UserSession userSession;
+		private readonly TripDAO tripDao;
 
 		public TripService()
 		{
