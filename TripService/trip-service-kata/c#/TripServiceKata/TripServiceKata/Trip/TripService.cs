@@ -21,11 +21,7 @@ namespace TripServiceKata.Trip
 
         public List<Trip> GetTripsByUser(User.User user)
         {
-            User.User loggedUser = userSession.GetLoggedUser();
-
-			if (loggedUser == null) {
-				throw new UserNotLoggedInException();
-			}
+			var loggedUser = GetLoggedUser();
 
 			foreach(User.User friend in user.GetFriends())
 			{
@@ -36,5 +32,15 @@ namespace TripServiceKata.Trip
 			}
 			return new List<Trip>();
         }
-    }
+
+		private User.User GetLoggedUser ()
+		{
+			var loggedUser = userSession.GetLoggedUser();
+
+			if (loggedUser == null) {
+				throw new UserNotLoggedInException();
+			}
+			return loggedUser;
+		}
+	}
 }
