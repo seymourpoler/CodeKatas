@@ -13,9 +13,10 @@ namespace TripServiceKata.Trip
 		{
 		}
 
-		public TripService(UserSession userSession)
+		public TripService(UserSession userSession, TripDAO tripDao)
 		{
 			this.userSession = userSession;
+			this.tripDao = tripDao;
 		}
 
         public List<Trip> GetTripsByUser(User.User user)
@@ -35,7 +36,7 @@ namespace TripServiceKata.Trip
                 }
                 if (isFriend)
                 {
-                    tripList = TripDAO.FindTripsByUser(user);
+                    tripList = tripDao.FindTripsByUser(user);
                 }
                 return tripList;
             }

@@ -12,12 +12,14 @@
     {
 		private TripService tripService;
 		private Mock<UserSession> userSession;
+		private Mock<TripDAO> tripDao;
 
 		[SetUp]
 		public void SetUp()
 		{
 			userSession = new Mock<UserSession> ();
-			tripService = new TripService (userSession.Object);
+			tripDao = new Mock<TripDAO> ();
+			tripService = new TripService (userSession.Object, tripDao.Object);
 		}
 
 
@@ -56,9 +58,11 @@
 		public void ShouldReturnTripsByLoggedUser()
 		{
 			var friend = new User ();
+			var trip = new Trip ();
 			userSession.Setup (x => x.GetLoggedUser()).Returns(friend);
 			var user = new Mock<User>();
 			user.Setup (x => x.GetFriends()).Returns (new List<User> {friend, friend});
+			tripDao.Setup (x => x.FindTripsByUser (It.IsAny<User> ())).Returns (new List<Trip> { trip });
 
 			var tripsOfFiends = tripService.GetTripsByUser (user.Object);
 
