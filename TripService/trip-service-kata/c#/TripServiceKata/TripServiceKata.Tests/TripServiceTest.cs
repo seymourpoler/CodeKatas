@@ -66,7 +66,7 @@
 
 			var tripsOfFiends = tripService.GetTripsByUser (user.Object);
 
-			Assert.IsNotEmpty (tripsOfFiends);
+			Assert.AreEqual(1, tripsOfFiends.Count);
 		}
     }
 }

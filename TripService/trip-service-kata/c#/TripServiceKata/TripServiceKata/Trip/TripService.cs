@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using TripServiceKata.Exception;
 using TripServiceKata.User;
+using System.Linq;
 
 namespace TripServiceKata.Trip
 {
@@ -44,6 +45,11 @@ namespace TripServiceKata.Trip
 					return tripDao.FindTripsByUser(user);
 				}
 			}
+			return NoTrips ();
+		}
+
+		private List<Trip> NoTrips()
+		{
 			return new List<Trip>();
 		}
 	}
