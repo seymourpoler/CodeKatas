@@ -20,4 +20,8 @@ describe("Cash Register", function() {
     var billResult = cashRegister.with('cherry').with('apple').getTheBill();
     expect(billResult.totalPrice).toEqual(165);
   });
+  it("the price for apple and bannana", function(){
+    var billResult = cashRegister.with('apple').with('bannana').getTheBill();
+    expect(billResult.totalPrice).toEqual(175);
+  });
 });
