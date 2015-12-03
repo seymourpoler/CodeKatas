@@ -16,4 +16,8 @@ describe("Cash Register", function() {
     var billResult = cashRegister.with('cherry').getTheBill();
     expect(billResult.totalPrice).toEqual(90);
   });
+  it("the price for cherry and apple", function(){
+    var billResult = cashRegister.with('cherry').with('apple').getTheBill();
+    expect(billResult.totalPrice).toEqual(165);
+  });
 });
