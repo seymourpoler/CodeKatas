@@ -24,4 +24,8 @@ describe("Cash Register", function() {
     var billResult = cashRegister.with('apple').with('bannana').getTheBill();
     expect(billResult.totalPrice).toEqual(175);
   });
+  it("the price for apple, bannana and cherry", function(){
+    var billResult = cashRegister.with('apple').with('bannana').with('cherry').getTheBill();
+    expect(billResult.totalPrice).toEqual(265);
+  });
 });
