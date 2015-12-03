@@ -43,7 +43,7 @@ function CashRegister()
 			numberOfCherrys ++;
 			return calculatePriceForCherry(numberOfCherrys);
 		}
-		throw 'kind of fruit not implemented for getPriceFor'
+		return 0;
 
 		function calculatePriceForCherry(numberOfCherrys){
 			if(numberOfCherrys % 2 == 0)
