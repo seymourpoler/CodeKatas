@@ -4,6 +4,8 @@ bannanna -> 100€
 apple -> 75€
 cherry -> 90€
 
+2 unit cherrys -> 50%
+
 Restricciones:
 1. solo un nivel de identación por método
 2. no se permite el uso de ELSE

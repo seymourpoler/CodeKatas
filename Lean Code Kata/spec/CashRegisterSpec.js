@@ -28,4 +28,14 @@ describe("Cash Register", function() {
     var billResult = cashRegister.with('apple').with('bannana').with('cherry').getTheBill();
     expect(billResult.totalPrice).toEqual(265);
   });
+  it("the price for apple, bannana and cherry", function(){
+    var billResult = cashRegister.with('apple').with('bannana').with('cherry').getTheBill();
+    expect(billResult.totalPrice).toEqual(265);
+  });
+  it("second cherry have price", function(){
+    var billResult = cashRegister.with('cherry')
+                                  .with('cherry')
+                                  .getTheBill();
+    expect(billResult.totalPrice).toEqual(135);
+  });
 });

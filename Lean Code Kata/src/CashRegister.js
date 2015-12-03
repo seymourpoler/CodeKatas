@@ -2,6 +2,7 @@ function CashRegister()
 {
 	var fruits = [];
 	var self = this;
+	var numberOfCherrys = 0;
 
 	self.with = function(fruit){
 		fruits.push(fruit);
@@ -26,6 +27,11 @@ function CashRegister()
 			return 75;
 		}
 		if('cherry' == fruit){
+			numberOfCherrys ++;
+			if(numberOfCherrys % 2 == 0)
+			{
+				return 45;
+			}
 			return 90;
 		}
 		throw 'kind of fruit not implemented for getPriceFor'
