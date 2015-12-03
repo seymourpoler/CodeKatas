@@ -280,5 +280,56 @@ describe("list in javascript using TDD", function(){
 	  var result = numbers.zip(new List([2,4,6]));
       expect(result.isEqual(new List([1,2,3,4,5,6]))).to.be(true);
     });
+    it("Given different lists with numbers when call zip method, return a list with zipped elements", function(){
+      var numbers = new List([1,3,5]);
+	  var result = numbers.zip(new List([2,4]));
+      expect(result.isEqual(new List([1,2,3,4,5]))).to.be(true);
+    });
+    it("Given different lists with numbers when call zip method, return a list with zipped elements", function(){
+      var numbers = new List([1,3]);
+	  var result = numbers.zip(new List([2,4,6]));
+      expect(result.isEqual(new List([1,2,3,4,6]))).to.be(true);
+    });
   });
+  describe(".distinct()", function(){
+	it("Given an empty list with elements when call distinct method with, then return an empty list", function(){
+		var numbers = new List();
+		var result = numbers.distinct();
+		expect(result.isEqual(new List())).to.be(true);
+	});
+	it("Given an list with elements when call distinct method with, then return a list with unique elements", function(){
+		var numbers = new List([1,2,3,4]);
+		var result = numbers.distinct();
+		expect(result.isEqual(new List([1,2,3,4]))).to.be(true);
+	});
+	it("Given an list with repeated elements when call distinct method with, then return a list with unique elements", function(){
+		var numbers = new List([1,2,4,3,4]);
+		var result = numbers.distinct();
+		expect(result.isEqual(new List([1,2,4,3]))).to.be(true);
+	});
+	it("Given an list with repeated objects when call distinct method with, then return a list with unique objects", function(){
+		var numbers = new List([{number:1, letter:'a'},{number:2, letter:'b'},{number:4, letter:'c'},{number:3, letter:'f'},{number:4, letter:'c'}]);
+		var result = numbers.distinct();
+		var expected = new List([{number:1, letter:'a'},{number:2, letter:'b'},{number:4, letter:'c'},{number:3, letter:'f'}]);
+		expect(result.isEqual(expected)).to.be(true);		
+	});
+  });
+	describe(".indexOf(<element>)", function(){
+		it("Given an empty list and call a indexOf, returns -1", function(){
+			var numbers = new List();
+			expect(numbers.indexOf(3)).to.be(-1);
+		});
+		it("Given a list with elements, return the element in de position", function(){
+			var numbers = new List([1,2,3,4,5,6,7,8,9]);
+			expect(numbers.indexOf(5)).to.be(4);
+		});
+		it("Given a list with elements, call indexOf with an number that doesn´ t exists, return -1", function(){
+			var numbers = new List([1,2,3,7]);
+			expect(numbers.indexOf(5)).to.be(-1);
+		});
+		it("Given a list with objects, call indexOf then returns the position of the object in the list", function(){
+			var numbers = new List([{number:1, letter:'a'},{number:2, letter:'b'},{number:4, letter:'c'},{number:3, letter:'f'}]);
+			expect(numbers.indexOf({number:2, letter:'b'})).to.be(1);
+		});
+	});
 });
