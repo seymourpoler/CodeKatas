@@ -28,12 +28,16 @@ function CashRegister()
 		}
 		if('cherry' == fruit){
 			numberOfCherrys ++;
+			return calculatePriceForCherry(numberOfCherrys);
+		}
+		throw 'kind of fruit not implemented for getPriceFor'
+
+		function calculatePriceForCherry(numberOfCherrys){
 			if(numberOfCherrys % 2 == 0)
 			{
 				return 45;
 			}
 			return 90;
 		}
-		throw 'kind of fruit not implemented for getPriceFor'
 	}
 }
