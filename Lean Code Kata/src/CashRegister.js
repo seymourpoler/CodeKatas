@@ -23,6 +23,9 @@ function CashRegister()
 		if('bannana' == fruit){
 			return 100;
 		}
+		if('platano' == fruit){
+			return 105;
+		}
 		if('apple' == fruit){
 			return 75;
 		}

@@ -38,4 +38,8 @@ describe("Cash Register", function() {
                                   .getTheBill();
     expect(billResult.totalPrice).toEqual(135);
   });
+  it("the price for a type of bannana, is platano", function(){
+    var billResult = cashRegister.with('platano').getTheBill();
+    expect(billResult.totalPrice).toEqual(105);
+  });
 });
