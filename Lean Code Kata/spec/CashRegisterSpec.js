@@ -74,4 +74,12 @@ describe("Cash Register", function() {
     
     expect(billResult.totalPrice).toEqual(300);
   });
+  it("fruits in csv format", function(){
+    var fruits = PLANTANO + ';' + PLANTANO + ';' + CHERRY + ';' + APPLE;
+
+    var billResult = cashRegister.withCSV(fruits)
+                                  .getTheBill();
+    
+    expect(billResult.totalPrice).toEqual(375);
+  });
 });

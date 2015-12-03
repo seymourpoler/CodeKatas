@@ -9,6 +9,16 @@ function CashRegister()
 		return self;
 	};
 
+	self.withCSV = function(fruitsInCSVFormat){
+		var fruitsFromCSV = fruitsInCSVFormat.split(';');
+		var fruit;
+		for(var position = 0; position < fruitsFromCSV.length; position++){
+			fruit = fruitsFromCSV[position];
+			fruits.push(fruit);
+		}
+		return self;
+	};
+
 	self.getTheBill = function(){
 		var totalPriceToPay = 0;
 		var fruit;
