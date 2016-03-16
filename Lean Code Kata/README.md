@@ -1,6 +1,8 @@
 Lean code kata: http://www.meetup.com/es/madswcraft/events/225893262/
 
 bannanna -> 100€
+platano -> 105
+
 apple -> 75€
 cherry -> 90€
 
