@@ -1,0 +1,28 @@
+{
+  "name": "Functional_programming_workshop_in_CodeMotion_2014",
+  "version": "0.0.1",
+  "description": "A workshop of functional programming in CodeMotion 2014",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seymourpoler"
+  },
+  "keywords": [
+    "grunt",
+    "javascript",
+    "jshint"
+  ],
+  "author": "Seymour Poler",
+  "license": "GPL v2 or later",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "mocha": "~1.21.4",
+    "grunt-mocha-test": "~0.11.0",
+    "expect.js": "~0.3.1"
+  }
+}

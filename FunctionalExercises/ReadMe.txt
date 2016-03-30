@@ -1,0 +1,1 @@
+https://github.com/dialelo/practical-fp-intro-workshop

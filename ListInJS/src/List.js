@@ -196,8 +196,33 @@ function List(arrayData){
 			return self.count();
 		}
 	};
+
+	function isUniqueElementIn(list, element){
+		return list.where(function(x){ 
+							return JSON.stringify(x) == JSON.stringify(element);
+						}).isEmpty();
+	}
+
 	this.distinct = function(){
 		var result = new List();
-		return new List();
+		var element;
+		for(var position = 0; position < self.count(); position++){
+			element = self.getItem(position);
+			if(isUniqueElementIn(result, element)){
+				result.add(element);
+			}
+		}
+		return result;
 	};
+	this.indexOf = function(element){
+		var result = -1;
+		var item;
+		for(var position=0; position<self.count(); position++){
+			item = self.getItem(position);
+			if(JSON.stringify(item) == JSON.stringify(element)){
+				return position;
+			}
+		}
+		return result;
+	}
 }
