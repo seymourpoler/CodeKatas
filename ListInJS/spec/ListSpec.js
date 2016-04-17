@@ -122,6 +122,15 @@ describe("list in javascript using TDD", function(){
 		    expect(result.isEqual(new List([3,4,5,3,7]))).to.be(true);
 		});
 	});
+	describe(".removeAt(position)", function(){
+		it("Given an empty list, returns undefined element", function(){
+			var list = new List([]);
+
+			var result = list.removeAt(1);
+
+			expect(result).to.be(undefined);
+		});
+	});
 	describe(".clear()", function(){
 	  	it("Given list  with numbers when call clear method then returns a new empty list", function(){
 		    var numbers = new List([5,3,7,9]);

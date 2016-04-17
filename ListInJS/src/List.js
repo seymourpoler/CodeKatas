@@ -93,6 +93,11 @@ function List(arrayData){
 		}
 		return result;
 	};
+	this.removeAt = function(position){
+		if(self.isEmpty()){
+			return undefined;
+		}
+	};
 	this.clear = function(){
 		data = [];
 	};
