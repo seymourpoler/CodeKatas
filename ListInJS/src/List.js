@@ -95,11 +95,18 @@ function List(arrayData){
 	};
 	this.removeAt = function(position){
 		if(self.isEmpty()){
-			return undefined;
+			return self;
 		}
 		if(position >= self.count()){
-			return undefined;
+			return self;
 		}
+		var result = new List([]);
+		for(var index = 0; index < self.count(); index ++){
+			if(index != position){
+				result.add(self.getItem(index));
+			}
+		}
+		return result;
 	};
 	this.clear = function(){
 		data = [];

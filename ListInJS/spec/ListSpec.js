@@ -123,19 +123,26 @@ describe("list in javascript using TDD", function(){
 		});
 	});
 	describe(".removeAt(position)", function(){
-		it("Given an empty list, returns undefined element", function(){
+		it("Given an empty list, returns the same list", function(){
 			var list = new List([]);
 
 			var result = list.removeAt(1);
 
-			expect(result).to.be(undefined);
+			expect(result.isEqual(new List([]))).to.be(true);
 		});
-		it("Given a list, when removes at outside position ,returns undefined element", function(){
+		it("Given a list, when removes at outside position ,returns the same list", function(){
 			var list = new List([1,2]);
 			
 			var result = list.removeAt(2);
 
-			expect(result).to.be(undefined);
+			expect(result.isEqual(new List([1,2]))).to.be(true);
+		});
+		it("Given a list, remove at position, returns the same list without the element in the position", function(){
+			var list = new List([1,2,4,5,6,7]);
+
+			var result = list.removeAt(2);
+
+			expect(result.isEqual(new List([1,2,5,6,7]))).to.be(true);
 		});
 	});
 	describe(".clear()", function(){
