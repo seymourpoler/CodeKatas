@@ -97,6 +97,9 @@ function List(arrayData){
 		if(self.isEmpty()){
 			return undefined;
 		}
+		if(position >= self.count()){
+			return undefined;
+		}
 	};
 	this.clear = function(){
 		data = [];

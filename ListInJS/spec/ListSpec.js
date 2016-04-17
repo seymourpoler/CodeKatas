@@ -130,6 +130,13 @@ describe("list in javascript using TDD", function(){
 
 			expect(result).to.be(undefined);
 		});
+		it("Given a list, when removes at outside position ,returns undefined element", function(){
+			var list = new List([1,2]);
+			
+			var result = list.removeAt(2);
+
+			expect(result).to.be(undefined);
+		});
 	});
 	describe(".clear()", function(){
 	  	it("Given list  with numbers when call clear method then returns a new empty list", function(){
