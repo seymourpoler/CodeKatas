@@ -8,12 +8,15 @@ function List(arrayData){
 	this.getItem = function(position){
 		return data[position];
 	};
+
 	this.count = function(){
 		return data.length;
 	};
+
 	this.any = function(){
 		return self.count() > 0;
 	};
+
 	this.sum = function(filter){
 		var result = 0;
 		var number;
@@ -27,6 +30,7 @@ function List(arrayData){
 		};
 		return result;
 	};
+
 	this.take = function(numberOfElements){
 		var result = new List([]);
 		for (var position = 0; position < self.count() && position < numberOfElements; position ++) {
@@ -34,10 +38,12 @@ function List(arrayData){
 		};
 		return result;
 	};
+
 	this.add = function(element){
 		data.push(element);
 		return new List(data);
 	};
+
 	this.addAt = function(position, element){
 		var realPosition = position;	
 		if(realPosition < 0){
@@ -69,6 +75,7 @@ function List(arrayData){
 		}
 		return true;
 	};
+
 	this.where = function(condition){
 		var result = new List();
 		var item;
@@ -80,12 +87,14 @@ function List(arrayData){
 		}
 		return result;
 	};
+
 	this.union = function(list){
 		for (var position = 0; position < list.count(); position ++) {
 			self.add(list.getItem(position));
 		};
 		return self;
-	}
+	};
+
 	this.reverse = function(){
 		var result = new List();
 		var item;
@@ -94,7 +103,8 @@ function List(arrayData){
 			result.add(item)
 		};
 		return result;
-	}
+	};
+
 	this.select = function(func){
 		var result = new List();
 		var item;
@@ -104,6 +114,7 @@ function List(arrayData){
 		};
 		return result;
 	};
+
 	this.remove = function (condition) {
 		var result = new List();
 		for(var position = 0; position < self.count(); position ++){
@@ -128,15 +139,19 @@ function List(arrayData){
 		}
 		return result;
 	};
+
 	this.clear = function(){
 		data = [];
 	};
+
 	this.elementAt = function(position){
 		return self.getItem(position);
 	};
+
 	this.isEmpty = function(){
 		return self.count() == 0;
 	};
+
 	this.first = function(condition){
 		if(typeof(condition) == 'undefined'){
 			return self.getItem(0);
@@ -150,6 +165,7 @@ function List(arrayData){
 		}
 		return undefined;
 	};
+
 	this.last = function(condition){
 		if(typeof(condition) == 'undefined'){
 			var lasPosition = self.count() - 1;
@@ -164,16 +180,19 @@ function List(arrayData){
 		}
 		return undefined;
 	};
+
 	this.orderAscending = function(){
 		return self.orderBy(function(x, y){
 			return (x - y);
 		});
 	};
+
 	this.orderDescending = function() {
 		return self.orderBy(function(x, y){
 			return (y - x);
 		});
 	};
+
 	this.orderBy = function(orderingFunction){
 		return new List(data.sort(orderingFunction));
 	};
@@ -187,10 +206,12 @@ function List(arrayData){
 		}
 		return result;
 	};
+
 	this.getRange = function(position, length){
 		return self.skip(position)
 				.take(length);
 	};
+
 	this.join = function(character){
 		var result = "";
 		if(typeof(character) == 'undefined'){
@@ -205,6 +226,7 @@ function List(arrayData){
 		}
 		return result;
 	};
+
 	this.zip = function(list){
 		return zip(self, list);
 
@@ -225,12 +247,6 @@ function List(arrayData){
 		}
 	};
 
-	function isUniqueElementIn(list, element){
-		return list.where(function(x){ 
-							return JSON.stringify(x) == JSON.stringify(element);
-						}).isEmpty();
-	}
-
 	this.distinct = function(){
 		var result = new List();
 		var element;
@@ -241,7 +257,14 @@ function List(arrayData){
 			}
 		}
 		return result;
+
+		function isUniqueElementIn(list, element){
+				return list.where(function(x){ 
+									return JSON.stringify(x) == JSON.stringify(element);
+								}).isEmpty();
+			}
 	};
+
 	this.indexOf = function(element){
 		var result = -1;
 		var item;
