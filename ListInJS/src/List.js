@@ -38,6 +38,26 @@ function List(arrayData){
 		data.push(element);
 		return new List(data);
 	};
+	this.addAt = function(position, element){
+		var realPosition = position;	
+		if(realPosition < 0){
+			realPosition = 0;
+		}
+		if(realPosition >= self.count()){
+			return self.add(element);
+		}
+		if(self.isEmpty()){
+			return self.add(element);
+		}
+		var result = [];
+		for(var index = 0; index < self.count(); index++){
+			if(realPosition == index){
+				result.push(element);
+			}
+			result.push(self.getItem(index));
+		}
+		return new List(result);
+	};
 	this.isEqual = function(list){
 		if(self.count() != list.count()){
 			return false;
@@ -186,29 +206,22 @@ function List(arrayData){
 		return result;
 	};
 	this.zip = function(list){
-		if(!list.any() && self.any()){
-			return self;
-		}
-		if(list.any() && !self.any()){
-			return list;
-		}
-		var maxLength = getMaxlength(list);
-		var result = new List();
-		for(var position = 0; position < maxLength; position ++){
-			if(self.getItem(position) != undefined){
-				result.add(self.getItem(position));
+		return zip(self, list);
+
+		function zip(listOne, listTwo){
+			if(listOne.isEmpty()){
+				return listTwo;
 			}
-			if(list.getItem(position)){
-				result.add(list.getItem(position))
+			if(listTwo.isEmpty()){
+				return listOne;
 			}
-		}
-		return result;
-		
-		function getMaxlength(list){
-			if (list.count() >= self.count()){
-				return list.count();
-			}
-			return self.count();
+			var headOne = listOne.first();
+			var restOfOne = listOne.removeAt(0);
+			var headTwo = listTwo.first();
+			var restOfTwo = listTwo.removeAt(0);
+			var result = zip(restOfOne, restOfTwo);
+			return result.addAt(0,headTwo)
+						 .addAt(0,headOne);
 		}
 	};
 

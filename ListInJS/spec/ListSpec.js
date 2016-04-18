@@ -54,6 +54,43 @@ describe("list in javascript using TDD", function(){
   			expect(result.isEqual(new List([3,4,5,6,1,7]))).to.be(true);
   		});
   	});
+	describe(".addAt(position, element)", function(){
+		it("Given an empty array, when position is under the limit, returns a list with this element", function(){
+			var list = new List([]);
+
+			var result = list.addAt(-1, 3);
+
+  			expect(result.isEqual(new List([3]))).to.be(true);
+		});
+		it("Given an array with numbers, when position is under the limit, returns a list with this element", function(){
+			var list = new List([4,5]);
+
+			var result = list.addAt(-1, 3);
+
+  			expect(result.isEqual(new List([3,4,5]))).to.be(true);
+		});
+		it("Given an enmpty array , when the position is over the limit, returns a list with this element", function(){
+			var list = new List([]);
+
+			var result = list.addAt(5, 3);
+
+  			expect(result.isEqual(new List([3]))).to.be(true);
+		});
+		it("Given an array with numbers, when the position is over the limit, returns a list with this element", function(){
+			var list = new List([4,5,6,7]);
+
+			var result = list.addAt(9, 3);
+
+  			expect(result.isEqual(new List([4,5,6,7,3]))).to.be(true);
+		});
+		it("Given an array with numbers, add an element in a position, returns a list with this element", function(){
+			var list = new List([4,5,6,7]);
+
+			var result = list.addAt(0, 3);
+
+  			expect(result.isEqual(new List([3,4,5,6,7]))).to.be(true);
+		});
+	});
   	describe(".where(<condition>)", function(){
 		it("Given list  with numbers when call where with a condition method then returns a new list with applied the condition", function(){
 		  var numbers = new List([5,3,7,9]);
@@ -262,12 +299,14 @@ describe("list in javascript using TDD", function(){
     });
     it("Given an list with numbers when call isEqual method, with a different numbers then, return false", function(){
       var numbers = new List([1,3,4,5,6]);
+
       expect(numbers.isEqual(new List([4,5,6,7,8,5,4,5,6]))).to.be(false);
     });
   });
   describe(".join()", function(){
     it("Given an list with elements when call join method, then return the elements joined", function(){
       var numbers = new List([1,2]);
+
       expect(numbers.join()).to.eql("12");
     });
     it("Given an empty list when call join method, return string empty", function(){
@@ -282,47 +321,61 @@ describe("list in javascript using TDD", function(){
   describe(".zip(<list>)", function(){
 	  it("Given an list with elements when call zip method with empty list, then return the same list", function(){
 		  var numbers = new List([1,2]);
-		  expect(numbers.zip(new List())
-						.isEqual(numbers))
-		  .to.be(true);
+
+		  expect(numbers.zip(new List()).isEqual(numbers)).to.be(true);
 	});
 	it("Given an empty list with elements when call zip method with a list with elements, then return a list with the elements", function(){
 		  var numbers = new List();
-		  expect(numbers.zip(new List([1,2]))
-						.isEqual(new List([1,2])))
-		  .to.be(true);
+
+		  expect(numbers.zip(new List([1,2])).isEqual(new List([1,2]))).to.be(true);
 	});
 	it("Given an empty list when call zip method with empty list, return an empty list", function(){
       var numbers = new List([]);
-      expect(numbers.zip(new List([]))
-					.isEqual(new List([])))
-	 .to.be(true);
+
+      expect(numbers.zip(new List([])).isEqual(new List([]))).to.be(true);
+    });
+	it("Given an list with numbers when call zip method, return the elements zipped", function(){
+      var numbers = new List([1]);
+
+	  var result = numbers.zip(new List([2]));
+	
+      expect(result.isEqual(new List([1,2]))).to.be(true);
     });
 	it("Given an list with numbers when call zip method, return the elements zipped", function(){
       var numbers = new List([1,3,5]);
+
 	  var result = numbers.zip(new List([2,4,6]));
+
       expect(result.isEqual(new List([1,2,3,4,5,6]))).to.be(true);
     });
     it("Given different lists with numbers when call zip method, return a list with zipped elements", function(){
       var numbers = new List([1,3,5]);
+
 	  var result = numbers.zip(new List([2,4]));
+
       expect(result.isEqual(new List([1,2,3,4,5]))).to.be(true);
     });
     it("Given different lists with numbers when call zip method, return a list with zipped elements", function(){
       var numbers = new List([1,3]);
+
 	  var result = numbers.zip(new List([2,4,6]));
+
       expect(result.isEqual(new List([1,2,3,4,6]))).to.be(true);
     });
   });
   describe(".distinct()", function(){
 	it("Given an empty list with elements when call distinct method with, then return an empty list", function(){
 		var numbers = new List();
+
 		var result = numbers.distinct();
+
 		expect(result.isEqual(new List())).to.be(true);
 	});
 	it("Given an list with elements when call distinct method with, then return a list with unique elements", function(){
 		var numbers = new List([1,2,3,4]);
+
 		var result = numbers.distinct();
+
 		expect(result.isEqual(new List([1,2,3,4]))).to.be(true);
 	});
 	it("Given an list with repeated elements when call distinct method with, then return a list with unique elements", function(){
