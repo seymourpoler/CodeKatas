@@ -31,3 +31,6 @@ Entrada	Salida
 "222 277772"	"casa"
 "222 2 7777 2"	"casa"
 "4444446665552"	"hola"
+
+files watcher:  npm run test -- --watch
+run test one time: npm run test
