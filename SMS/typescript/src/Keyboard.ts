@@ -56,9 +56,15 @@ export class Keyboard {
 		this.characters.set("99999", "9");
 	}
 	public ConvertTo(numbers: string): string{
+		let result = "";
 		if(numbers == ""){
-			return "";
+			return result;
 		}
-		return this.characters.get(numbers);
+		numbers
+			.split(" ")
+			.forEach((number:string) =>{
+				result = result + this.characters.get(number);
+			});
+		return result;
 	}
 }

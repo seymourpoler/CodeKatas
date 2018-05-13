@@ -35,4 +35,10 @@ describe("Keyboard", () => {
 
 		"l".should.be.equal(result);
 	});
+
+	it("returns a word", () =>{
+		let result = keyboard.ConvertTo("6 666 66 666");
+
+		"mono".should.be.equal(result);
+	});
 });
