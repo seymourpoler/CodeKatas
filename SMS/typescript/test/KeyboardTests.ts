@@ -13,14 +13,20 @@ describe("Keyboard", () => {
 	});
 	
 	it("returns string empty when there is no numbers", () =>{
-		var result = keyboard.ConvertTo("");
+		let result = keyboard.ConvertTo("");
 
 		"".should.be.equal(result);
 	});
 
 	it("returns character from number", () =>{
-		var result = keyboard.ConvertTo("0");
+		let result = keyboard.ConvertTo("0");
 
 		"-".should.be.equal(result);
+	});
+
+	it("returns character from two number", ()=>{
+		let result = keyboard.ConvertTo("22");
+
+		"b".should.be.equal(result);
 	});
 });
