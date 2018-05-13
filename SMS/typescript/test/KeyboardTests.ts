@@ -17,4 +17,10 @@ describe("Keyboard", () => {
 
 		"".should.be.equal(result);
 	});
+
+	it("returns character from number", () =>{
+		var result = keyboard.ConvertTo("0");
+
+		"-".should.be.equal(result);
+	});
 });
