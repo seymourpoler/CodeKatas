@@ -24,9 +24,15 @@ describe("Keyboard", () => {
 		"-".should.be.equal(result);
 	});
 
-	it("returns character from two number", ()=>{
+	it("returns character from two numbers", ()=>{
 		let result = keyboard.ConvertTo("22");
 
 		"b".should.be.equal(result);
+	});
+
+	it("returns character from three numbers", ()=>{
+		let result = keyboard.ConvertTo("555");
+
+		"l".should.be.equal(result);
 	});
 });
