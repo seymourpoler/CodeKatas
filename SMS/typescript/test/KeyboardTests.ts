@@ -41,4 +41,10 @@ describe("Keyboard", () => {
 
 		"mono".should.be.equal(result);
 	});
+
+	it("returns two words", () =>{
+		let result = keyboard.ConvertTo("6 666 66 666 111 222 2 7777 2");
+
+		"mono casa".should.be.equal(result);
+	});
 });
