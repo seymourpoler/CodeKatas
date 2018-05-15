@@ -60,11 +60,35 @@ export class Keyboard {
 		if(numbers == ""){
 			return result;
 		}
-		numbers
+		let text = this.SeparateWithWhiteSpaces(numbers)
+		text
 			.split(" ")
 			.forEach((number:string) =>{
 				result = result + this.characters.get(number);
 			});
+		return result;
+	}
+
+	private SeparateWithWhiteSpaces(text: string): string{
+		let result = '';
+		let characterBefore = text.charAt(0);
+		let currentCharacter = text.charAt(0);
+		for(let position = 0; position < text.length; position++){
+			currentCharacter = text.charAt(position);
+			if(currentCharacter == ' '  || currentCharacter == ''){
+				result = result + currentCharacter;
+			}
+			else if(characterBefore == ' ' || characterBefore == ''){
+				result = result + currentCharacter;
+			}
+			else if(currentCharacter != characterBefore){
+				result = result + ' ' + currentCharacter;
+			}
+			else{
+				result = result + currentCharacter;
+			}
+			characterBefore = currentCharacter;
+		}
 		return result;
 	}
 }

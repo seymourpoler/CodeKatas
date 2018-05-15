@@ -47,4 +47,10 @@ describe("Keyboard", () => {
 
 		"mono casa".should.be.equal(result);
 	});
+
+	it("returns a word without white spaces", () => {
+		let result = keyboard.ConvertTo("446665552");
+
+		"hola".should.be.equal(result);
+	});
 });
