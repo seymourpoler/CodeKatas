@@ -8,11 +8,11 @@ namespace ObjectLiteralToQueryString
     {
 		public string ToQueryString(Hashtable hashtable)
 		{
-			if(hashtable is null)
+			if(hashtable.IsNull())
 			{
 				return String.Empty;
 			}
-			if(hashtable.Count == 0)
+			if(hashtable.IsEmpty())
 			{
 				return String.Empty;
 			}
@@ -21,7 +21,7 @@ namespace ObjectLiteralToQueryString
 			{
 				values.Add($"{key}={hashtable[key]}");
 			}
-
+			values.Reverse();
 			return String.Join("&", values);
 		}
     }
