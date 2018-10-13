@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace ObjectLiteralToQueryString
 {
-    public class ObjectLiteralToQueryString
+	public class ObjectLiteralToQueryString
     {
 		public string ToQueryString(Hashtable hashtable)
 		{
@@ -11,8 +12,17 @@ namespace ObjectLiteralToQueryString
 			{
 				return String.Empty;
 			}
+			if(hashtable.Count == 0)
+			{
+				return String.Empty;
+			}
+			var values = new List<string>();
+			foreach(var key in hashtable.Keys)
+			{
+				values.Add($"{key}={hashtable[key]}");
+			}
 
-			throw new NotImplementedException();
+			return String.Join("&", values);
 		}
     }
 }

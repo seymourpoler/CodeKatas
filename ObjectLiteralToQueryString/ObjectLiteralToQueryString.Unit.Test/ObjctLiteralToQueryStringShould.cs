@@ -1,25 +1,43 @@
-﻿using NUnit.Framework;
+﻿using System;
+using System.Collections;
+using NUnit.Framework;
 using Shouldly;
 
 namespace ObjectLiteralToQueryString.Unit.Test
 {
     [TestFixture]
-	public class ObjctLiteralToQueryStringShould
+    public class ObjctLiteralToQueryStringShould
     {
-		ObjectLiteralToQueryString objectLiteralToQueryString;
+        ObjectLiteralToQueryString objectLiteralToQueryString;
 
-		[SetUp]
+        [SetUp]
         public void SetUp()
-		{
-			objectLiteralToQueryString = new ObjectLiteralToQueryString();
-		}
+        {
+            objectLiteralToQueryString = new ObjectLiteralToQueryString();
+        }
 
-		[Test]
+        [Test]
         public void ReturnsEmptyStringWhenIsNull()
-		{
-			var result = objectLiteralToQueryString.ToQueryString(null);
+        {
+            var result = objectLiteralToQueryString.ToQueryString(null);
 
-			result.ShouldBe(string.Empty);
-		}
+            result.ShouldBe(String.Empty);
+        }
+
+        [Test]
+        public void ReturnsEmptyStringWhenIsEmpty()
+        {
+            var result = objectLiteralToQueryString.ToQueryString(new Hashtable());
+
+            result.ShouldBe(String.Empty);
+        }
+
+        [Test]
+        public void ReturnsQueryStringWithStringObjectLiteral()
+        {
+            var result = objectLiteralToQueryString.ToQueryString(new Hashtable{{"a", "b"}});
+
+            result.ShouldBe("a=b");
+        }
     }
 }

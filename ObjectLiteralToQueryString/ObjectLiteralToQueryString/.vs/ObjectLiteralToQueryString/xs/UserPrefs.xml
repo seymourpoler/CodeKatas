@@ -1,8 +1,9 @@
 ﻿<Properties StartupConfiguration="{9E1B1CBF-2F87-444D-8D84-9E88ACCA7204}|Unit Tests">
-  <MonoDevelop.Ide.Workbench ActiveDocument="../ObjectLiteralToQueryString.Unit.Test/ObjctLiteralToQueryStringShould.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="ObjectLiteralToQueryString/README.txt">
     <Files>
-      <File FileName="../ObjectLiteralToQueryString.Unit.Test/ObjctLiteralToQueryStringShould.cs" Line="19" Column="57" />
+      <File FileName="../ObjectLiteralToQueryString.Unit.Test/ObjctLiteralToQueryStringShould.cs" Line="40" Column="43" />
       <File FileName="ObjectLiteralToQueryString/ObjectLiteralToQueryString.cs" Line="9" Column="4" />
+      <File FileName="ObjectLiteralToQueryString/README.txt" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.ObjectLiteralToQueryString.Unit.Test PreferredExecutionTarget="MonoDevelop.Default" />
