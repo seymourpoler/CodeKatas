@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\ObjectLiteralToQueryString\packages\NUnit.3.11.0\build\NUnit.props" Condition="Exists('..\ObjectLiteralToQueryString\packages\NUnit.3.11.0\build\NUnit.props')" />
   <Import Project="..\ObjectLiteralToQueryString\packages\Microsoft.NET.Test.Sdk.15.9.0\build\net45\Microsoft.Net.Test.Sdk.props" Condition="Exists('..\ObjectLiteralToQueryString\packages\Microsoft.NET.Test.Sdk.15.9.0\build\net45\Microsoft.Net.Test.Sdk.props')" />
   <Import Project="..\ObjectLiteralToQueryString\packages\Microsoft.CodeCoverage.15.9.0\build\netstandard1.0\Microsoft.CodeCoverage.props" Condition="Exists('..\ObjectLiteralToQueryString\packages\Microsoft.CodeCoverage.15.9.0\build\netstandard1.0\Microsoft.CodeCoverage.props')" />
   <Import Project="..\ObjectLiteralToQueryString\packages\NUnit3TestAdapter.3.10.0\build\net35\NUnit3TestAdapter.props" Condition="Exists('..\ObjectLiteralToQueryString\packages\NUnit3TestAdapter.3.10.0\build\net35\NUnit3TestAdapter.props')" />
@@ -33,10 +34,10 @@
     <Reference Include="Microsoft.VisualStudio.CodeCoverage.Shim, Version=15.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\ObjectLiteralToQueryString\packages\Microsoft.CodeCoverage.15.9.0\lib\net45\Microsoft.VisualStudio.CodeCoverage.Shim.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
-    <Reference Include="nunit.framework">
-      <HintPath>..\ObjectLiteralToQueryString\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+    <Reference Include="nunit.framework, Version=3.11.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb, processorArchitecture=MSIL">
+      <HintPath>..\ObjectLiteralToQueryString\packages\NUnit.3.11.0\lib\net45\nunit.framework.dll</HintPath>
     </Reference>
+    <Reference Include="System" />
     <Reference Include="Shouldly">
       <HintPath>..\ObjectLiteralToQueryString\packages\Shouldly.3.0.1\lib\net451\Shouldly.dll</HintPath>
     </Reference>
@@ -64,6 +65,7 @@
     <Error Condition="!Exists('..\ObjectLiteralToQueryString\packages\Microsoft.CodeCoverage.15.9.0\build\netstandard1.0\Microsoft.CodeCoverage.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\ObjectLiteralToQueryString\packages\Microsoft.CodeCoverage.15.9.0\build\netstandard1.0\Microsoft.CodeCoverage.targets'))" />
     <Error Condition="!Exists('..\ObjectLiteralToQueryString\packages\Microsoft.NET.Test.Sdk.15.9.0\build\net45\Microsoft.Net.Test.Sdk.props')" Text="$([System.String]::Format('$(ErrorText)', '..\ObjectLiteralToQueryString\packages\Microsoft.NET.Test.Sdk.15.9.0\build\net45\Microsoft.Net.Test.Sdk.props'))" />
     <Error Condition="!Exists('..\ObjectLiteralToQueryString\packages\Microsoft.NET.Test.Sdk.15.9.0\build\net45\Microsoft.Net.Test.Sdk.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\ObjectLiteralToQueryString\packages\Microsoft.NET.Test.Sdk.15.9.0\build\net45\Microsoft.Net.Test.Sdk.targets'))" />
+    <Error Condition="!Exists('..\ObjectLiteralToQueryString\packages\NUnit.3.11.0\build\NUnit.props')" Text="$([System.String]::Format('$(ErrorText)', '..\ObjectLiteralToQueryString\packages\NUnit.3.11.0\build\NUnit.props'))" />
   </Target>
   <Import Project="..\ObjectLiteralToQueryString\packages\Microsoft.CodeCoverage.15.9.0\build\netstandard1.0\Microsoft.CodeCoverage.targets" Condition="Exists('..\ObjectLiteralToQueryString\packages\Microsoft.CodeCoverage.15.9.0\build\netstandard1.0\Microsoft.CodeCoverage.targets')" />
   <Import Project="..\ObjectLiteralToQueryString\packages\Microsoft.NET.Test.Sdk.15.9.0\build\net45\Microsoft.Net.Test.Sdk.targets" Condition="Exists('..\ObjectLiteralToQueryString\packages\Microsoft.NET.Test.Sdk.15.9.0\build\net45\Microsoft.Net.Test.Sdk.targets')" />
