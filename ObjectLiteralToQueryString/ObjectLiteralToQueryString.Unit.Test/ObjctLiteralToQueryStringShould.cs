@@ -47,6 +47,7 @@ namespace ObjectLiteralToQueryString.Unit.Test
 
             result.ShouldBe("keyOne=valueOne&keyTwo=valueTwo");
         }
+<<<<<<< HEAD
 
 		[Test]
 		public void ReturnQueryStringWithObjectLiteral()
@@ -55,5 +56,14 @@ namespace ObjectLiteralToQueryString.Unit.Test
 
 			result.ShouldBe("keyOne[a]=b");
 		}
+=======
+        [Test]
+        public void ReturnsQueryStringWithObjectLiterals()
+        {
+            var result = objectLiteralToQueryString.ToQueryString(new Hashtable { { "keyOne", new Hashtable { { "a", "b" } } } });
+
+            result.ShouldBe("keyOne[a]=b");
+        }
+>>>>>>> 80a49857d55fcb3cb25eac86bbf066a684ffa34b
     }
 }

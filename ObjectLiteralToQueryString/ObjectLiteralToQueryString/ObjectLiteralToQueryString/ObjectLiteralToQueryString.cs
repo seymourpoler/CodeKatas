@@ -36,7 +36,7 @@ namespace ObjectLiteralToQueryString
 			{
 				values.Add($"{item}[{key}]={hashtable[key]}");
 			}
-			values.Reverse();
+			//values.Reverse();
 			return String.Join("&", values);
 		}
     }
