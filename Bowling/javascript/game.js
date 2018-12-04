@@ -1,13 +1,14 @@
 function Game(){
     var self = this;
     var frames = [];
+    var score = 0;
 
     self.roll = function(pins){
-        throw 'not implemented';
+       score = score + pins;
     };
 
     self.getScore = function(){
-        return 0;
+       return score;
     };
 }
 
