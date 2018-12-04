@@ -1,7 +1,7 @@
 {
-  "name": "bowling kata in javascript",
+  "name": "bowling",
   "version": "0.0.1",
-  "description": "",
+  "description": "bowling kata in javascript",
   "main": "index.js",
   "scripts": {
     "test": "jest --verbose  --notify  --watchAll=false",
