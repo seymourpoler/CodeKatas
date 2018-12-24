@@ -4,8 +4,8 @@
   "description": "bowling kata in javascript",
   "main": "index.js",
   "scripts": {
-    "test": "jest --verbose  --notify  --watchAll=false",
-    "test:watch": "jest --verbose --notify --watchAll"
+    "test": "node node_modules/jest/bin/jest.js --verbose  --notify  --watchAll=false",
+    "test:watch": "node node_modules/jest/bin/jest.js --verbose --notify --watchAll"
   },
   "author": "seymourpoler@gmail.com",
   "license": "ISC",

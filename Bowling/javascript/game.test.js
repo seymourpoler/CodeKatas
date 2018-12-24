@@ -12,8 +12,8 @@ describe('Game', function(){
 
         it('returns zero score with zero pins', function(){
             let game = new Game();
-
             game.roll(0);
+
             let score = game.getScore();
 
             expect(score).toBe(0);
@@ -28,6 +28,17 @@ describe('Game', function(){
             let score = game.getScore();
 
             expect(score).toBe(20);
+        });
+
+        it('returns score with one spare pin', function(){
+            let game = new Game();
+            game.roll(5);
+            game.roll(5);
+            game.roll(3);
+
+            let score = game.getScore();
+
+            expect(score).toBe(16);
         });
     });
 });
