@@ -5,7 +5,7 @@ describe('Game', function(){
         it('returns score if is just created', function(){
             let game = new Game();
 
-            let score = game.getScore();
+            const score = game.getScore();
 
             expect(score).toBe(0);
         });
@@ -14,7 +14,7 @@ describe('Game', function(){
             let game = new Game();
             game.roll(0);
 
-            let score = game.getScore();
+            const score = game.getScore();
 
             expect(score).toBe(0);
         });
@@ -25,7 +25,7 @@ describe('Game', function(){
                 game.roll(1);
             }
 
-            let score = game.getScore();
+            const score = game.getScore();
 
             expect(score).toBe(20);
         });
@@ -36,7 +36,7 @@ describe('Game', function(){
             game.roll(5);
             game.roll(3);
 
-            let score = game.getScore();
+            const score = game.getScore();
 
             expect(score).toBe(16);
         });
@@ -47,7 +47,7 @@ describe('Game', function(){
             game.roll(3);
             game.roll(4);
 
-            let score = game.getScore();
+            const score = game.getScore();
 
             expect(score).toBe(24);
         });
