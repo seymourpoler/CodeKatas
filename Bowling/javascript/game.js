@@ -7,24 +7,22 @@ function Game(){
     };
  
     self.getScore = function(){
-        const spare = 10;
+        const numberOfPinsPerSpare = 10;
         const numberOfPinsPerStrike = 10;
         let framePosition = 0;
         let score = 0;
         while(framePosition < frames.length){
-          if(isStrike(framePosition)){
-              score = score + numberOfPinsPerStrike + frames[framePosition+1] + frames[framePosition+2];
-              framePosition = framePosition + 1;
-          }
-            else if(isSpare(framePosition))
-          {
-              framePosition = framePosition + 2;
-              score = score + spare;
-              score = score + frames[framePosition];
-          }else{
+            if(isStrike(framePosition)){
+                score = score + numberOfPinsPerStrike + frames[framePosition+1] + frames[framePosition+2];
+                framePosition = framePosition + 1;
+            }
+            else if(isSpare(framePosition)){
+                score = score + numberOfPinsPerSpare + frames[framePosition + 2];
+                framePosition = framePosition + 2;
+            }else{
               score = score + frames[framePosition];
               framePosition = framePosition + 1;
-          }
+            }
         }
         
        return score;
@@ -33,7 +31,7 @@ function Game(){
            if(position == frames.length){
                return false;
            }
-            return frames[position] + frames[position+1] == spare;
+            return frames[position] + frames[position+1] == numberOfPinsPerSpare;
        }
 
        function isStrike(position){
