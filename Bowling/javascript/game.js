@@ -5,14 +5,18 @@ function Game(){
     self.roll = function(pins){
        frames.push(pins);
     };
-
+ 
     self.getScore = function(){
-      const maximumNumberOfFrames = 10;
         const spare = 10;
+        const numberOfPinsPerStrike = 10;
         let framePosition = 0;
         let score = 0;
         while(framePosition < frames.length){
-          if(isSpare(framePosition))
+          if(isStrike(framePosition)){
+              score = score + numberOfPinsPerStrike + frames[framePosition+1] + frames[framePosition+2];
+              framePosition = framePosition + 1;
+          }
+            else if(isSpare(framePosition))
           {
               framePosition = framePosition + 2;
               score = score + spare;
@@ -30,6 +34,11 @@ function Game(){
                return false;
            }
             return frames[position] + frames[position+1] == spare;
+       }
+
+       function isStrike(position){
+           const numberOfPinsPerStrike = 10;
+           return frames[position] === numberOfPinsPerStrike;
        }
         
     };

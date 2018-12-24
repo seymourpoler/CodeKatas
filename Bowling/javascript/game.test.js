@@ -40,5 +40,16 @@ describe('Game', function(){
 
             expect(score).toBe(16);
         });
+
+        it('returns score with one strike', function(){
+            let game = new Game();
+            game.roll(10);
+            game.roll(3);
+            game.roll(4);
+
+            let score = game.getScore();
+
+            expect(score).toBe(24);
+        });
     });
 });
