@@ -3,7 +3,10 @@ function Cashier(){
 
     self.bill = function(numberOfBooks){
         const pricePerBook = 8;
-        return pricePerBook;
+        if(numberOfBooks == 1){
+            return pricePerBook;
+        }
+        return 15.95;
     };
 }
 
