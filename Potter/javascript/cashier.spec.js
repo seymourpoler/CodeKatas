@@ -82,6 +82,13 @@ describe('Cashier', function(){
     });
 
     describe('when the price is requested with all purchased books', function(){
+        it('returns the price with null books', function(){
+            const freePrice = 0;
+            const result = cashier.calculatePrice(null);
+    
+            expect(result).toBe(freePrice);
+        });
+
         it('returns the price with no books', function(){
             const freePrice = 0;
             const result = cashier.calculatePrice([]);

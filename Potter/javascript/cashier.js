@@ -18,6 +18,9 @@ function Cashier(){
 
     self.calculatePrice = function(books){
         const freePrice = 0;
+        if(!books){
+            return freePrice;
+        }
         if(books.length == 0){
             return freePrice;
         }
