@@ -1,38 +1,19 @@
 function Cashier(){
     let self = this;
+    const discounts = [0, 0, 5, 10, 15, 20, 30, 45];
 
     self.bill = function(numberOfBooks){
         const pricePerBook = 8;
-        const noPrice = 0;
-        if(numberOfBooks == 0){
-            return noPrice;
+        const percentageDiscount = calculatePercentageDiscount(numberOfBooks);
+        const price = (pricePerBook * numberOfBooks)
+        const priceWithPercentageDiscount =  price - percentageDiscount;
+        return priceWithPercentageDiscount;
+
+        function calculatePercentageDiscount(numberOfBooks){
+            const percent = 100;
+            const discount = discounts[numberOfBooks];
+            return discount / percent;
         }
-        if(numberOfBooks == 1){
-            return pricePerBook;
-        }
-        if(numberOfBooks == 2){
-            const result = pricePerBook * numberOfBooks - (5/100);
-            return result;
-        }
-        if(numberOfBooks == 3){
-            const result = pricePerBook * numberOfBooks - (10/100);
-            return result;
-        }
-        if(numberOfBooks == 4){
-            const result = pricePerBook * numberOfBooks - (15/100);
-        return result;
-        }
-        if(numberOfBooks == 5){
-            const result = pricePerBook * numberOfBooks - (20/100);
-            return result;    
-        }
-        if(numberOfBooks == 6){
-            const result = pricePerBook * numberOfBooks - (30/100);
-            return result;    
-        }
-        
-        const result = pricePerBook * numberOfBooks - (45/100);
-        return result;
     };
 }
 
