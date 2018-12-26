@@ -1,6 +1,5 @@
 function Cashier(){
     let self = this;
-    const discounts = [0, 0, 5, 10, 15, 20, 30, 45];
 
     self.bill = function(numberOfBooks){
         const pricePerBook = 8;
@@ -10,6 +9,7 @@ function Cashier(){
         return priceWithPercentageDiscount;
 
         function calculatePercentageDiscount(numberOfBooks){
+            const discounts = [0, 0, 5, 10, 15, 20, 30, 45];
             const percent = 100;
             const discount = discounts[numberOfBooks];
             return discount / percent;
