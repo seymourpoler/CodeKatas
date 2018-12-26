@@ -1,8 +1,9 @@
 function Cashier(){
     let self = this;
+    const pricePerBook = 8;
 
     self.bill = function(numberOfBooks){
-        const pricePerBook = 8;
+        
         const percentageDiscount = calculatePercentageDiscount(numberOfBooks);
         const price = (pricePerBook * numberOfBooks)
         const priceWithPercentageDiscount =  price - percentageDiscount;
@@ -23,6 +24,10 @@ function Cashier(){
         }
         if(books.length == 0){
             return freePrice;
+        }
+
+        if(books.length == 0){
+            return pricePerBook;
         }
         throw 'not implemented';    
     }

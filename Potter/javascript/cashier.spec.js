@@ -95,8 +95,12 @@ describe('Cashier', function(){
     
             expect(result).toBe(freePrice);
         });
-    });
-    
-    
 
+        it('returns the price with one books', function(){
+            const pricePerBook = 8;
+            const result = cashier.calculatePrice([2]);
+    
+            expect(result).toBe(pricePerBook);
+        });
+    });
 });
