@@ -26,8 +26,12 @@ function Cashier(){
             const result = pricePerBook * numberOfBooks - (20/100);
             return result;    
         }
+        if(numberOfBooks == 6){
+            const result = pricePerBook * numberOfBooks - (30/100);
+            return result;    
+        }
         
-        const result = pricePerBook * numberOfBooks - (30/100);
+        const result = pricePerBook * numberOfBooks - (45/100);
         return result;
     };
 }
