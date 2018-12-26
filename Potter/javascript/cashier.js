@@ -18,7 +18,12 @@ function Cashier(){
             const result = pricePerBook * numberOfBooks - (10/100);
             return result;
         }
-        const result = pricePerBook * numberOfBooks - (15/100);
+        if(numberOfBooks == 4){
+            const result = pricePerBook * numberOfBooks - (15/100);
+        return result;
+        }
+
+        const result = pricePerBook * numberOfBooks - (20/100);
         return result;
         
     };
