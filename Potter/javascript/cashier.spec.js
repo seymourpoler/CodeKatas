@@ -10,6 +10,7 @@ describe('Cashier', function(){
     it('returns zero if there is no books', function(){
         const numberOfBooks = 0;
         const noPrice = 0;
+        
         const price = cashier.bill(numberOfBooks);
         
         expect(price).toBe(noPrice);
