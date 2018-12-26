@@ -25,9 +25,15 @@ function Cashier(){
         if(books.length == 0){
             return freePrice;
         }
-
-        if(books.length == 0){
+        if(books.length == 1){
             return pricePerBook;
+        }
+        if(books.length == 2){
+            if(books[0] != books[1]){
+                const result = self.bill(2);
+                return result;
+            }
+            
         }
         throw 'not implemented';    
     }

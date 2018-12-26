@@ -84,6 +84,7 @@ describe('Cashier', function(){
     describe('when the price is requested with all purchased books', function(){
         it('returns the price with null books', function(){
             const freePrice = 0;
+
             const result = cashier.calculatePrice(null);
     
             expect(result).toBe(freePrice);
@@ -91,6 +92,7 @@ describe('Cashier', function(){
 
         it('returns the price with no books', function(){
             const freePrice = 0;
+
             const result = cashier.calculatePrice([]);
     
             expect(result).toBe(freePrice);
@@ -98,9 +100,19 @@ describe('Cashier', function(){
 
         it('returns the price with one books', function(){
             const pricePerBook = 8;
+
             const result = cashier.calculatePrice([2]);
     
             expect(result).toBe(pricePerBook);
+        });
+
+        it('returns the price with two different books', function(){
+            const pricePerBook = 8;
+            const totalPrice = 15.95;
+
+            const result = cashier.calculatePrice([2, 5]);
+    
+            expect(result).toBe(totalPrice);
         });
     });
 });
