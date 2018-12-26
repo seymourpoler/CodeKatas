@@ -60,5 +60,14 @@ describe('Cashier', function(){
         
         expect(price).toBe(totalPrice);
     });
+
+    it('returns the price with discount for six books', function(){
+        const numberOfBooks = 6;
+        const totalPrice = 47.7;
+        
+        const price = cashier.bill(numberOfBooks);
+        
+        expect(price).toBe(totalPrice);
+    });
     
 });
