@@ -33,7 +33,8 @@ function Cashier(){
                 const result = self.bill(2);
                 return result;
             }
-            
+            const result = pricePerBook * 2;
+            return result;
         }
         throw 'not implemented';    
     }

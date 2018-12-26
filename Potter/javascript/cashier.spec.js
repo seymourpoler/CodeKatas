@@ -107,10 +107,17 @@ describe('Cashier', function(){
         });
 
         it('returns the price with two different books', function(){
-            const pricePerBook = 8;
             const totalPrice = 15.95;
 
             const result = cashier.calculatePrice([2, 5]);
+    
+            expect(result).toBe(totalPrice);
+        });
+
+        it('returns the price with two same books', function(){
+            const totalPrice = 16;
+
+            const result = cashier.calculatePrice([5, 5]);
     
             expect(result).toBe(totalPrice);
         });
