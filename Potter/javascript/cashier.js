@@ -15,6 +15,14 @@ function Cashier(){
             return discount / percent;
         }
     };
+
+    self.calculatePrice = function(books){
+        const freePrice = 0;
+        if(books.length == 0){
+            return freePrice;
+        }
+        throw 'not implemented';    
+    }
 }
 
 module.exports = Cashier;
