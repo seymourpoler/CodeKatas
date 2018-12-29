@@ -28,31 +28,40 @@ function Cashier(){
         if(books.length == 1){
             return pricePerBook;
         }
-        if(books.length == 2){
-            if(books[0] != books[1]){
-                const result = self.bill(books.length);
-                return result;
-            }
-            const result = pricePerBook * books.length;
-            return result;
+
+        var currentBooks = clone(books);
+        var result = 0;
+        while(currentBooks.length > 0){
+            const notDuplicated = findNotDuplicated(currentBooks);
+            currentBooks = removeDuplicated(notDuplicated, currentBooks);
+            result = result + self.bill(notDuplicated.length);
         }
-        if(books.length === 3){
-            if(books[0] !== books[1] !== books[2] && books[0] !== books[2]){
-                const result = self.bill(books.length);
-                return result;
-            }
-            if(books[0] !== books[1] && books[0] === books[2]){
-                const result = self.bill(2) + pricePerBook;
-                return result;
-            }
-            if(books[0] === books[1] && books[0] === books[2] && books[1] === books[2]){
-                const result = books.length * pricePerBook;
-                return result;
-            }
-            throw 'not implemented'; 
+        return result;
+    }
+
+    function clone(elements){
+        const result = elements.slice(0);
+        return result;
+    }
+
+    function findNotDuplicated(elements){
+        let result = [];
+        for (let position = 0; position < elements.length; position++)
+            if (result.indexOf(elements[position]) === -1 && elements[position] !== '')
+                result.push(elements[position]);
+        return result;
+    }
+
+    function removeDuplicated(source, target){
+        let result = clone(target);
+        for(let position=0; position<source.length; position++){
+            result = removeElement(result, source[position]);
         }
-        throw 'not implemented';    
+        return result;
+    }
+
+    function removeElement(elements, element){
+        const result = elements.splice( elements.indexOf(element), 1);
+        return result;
     }
 }
-
-module.exports = Cashier;
