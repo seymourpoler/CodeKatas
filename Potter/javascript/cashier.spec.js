@@ -121,5 +121,21 @@ describe('Cashier', function(){
     
             expect(result).toBe(totalPrice);
         });
+
+        it('returns the price with three different books', function(){
+            const totalPrice = 23.9;
+
+            const result = cashier.calculatePrice([2, 5, 1]);
+    
+            expect(result).toBe(totalPrice);
+        });
+
+        it('returns the price with two different books', function(){
+            const totalPrice = 23.95;
+
+            const result = cashier.calculatePrice([2, 5, 2]);
+    
+            expect(result).toBe(totalPrice);
+        });
     });
 });

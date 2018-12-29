@@ -30,11 +30,22 @@ function Cashier(){
         }
         if(books.length == 2){
             if(books[0] != books[1]){
-                const result = self.bill(2);
+                const result = self.bill(books.length);
                 return result;
             }
-            const result = pricePerBook * 2;
+            const result = pricePerBook * books.length;
             return result;
+        }
+        if(books.length === 3){
+            if(books[0] !== books[1] !== books[2] && books[0] !== books[2]){
+                const result = self.bill(books.length);
+                return result;
+            }
+            if(books[0] !== books[1] && books[0] === books[2]){
+                const result = self.bill(2) + pricePerBook;
+                return result;
+            }
+            throw 'not implemented'; 
         }
         throw 'not implemented';    
     }
