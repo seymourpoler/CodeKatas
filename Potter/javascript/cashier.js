@@ -45,6 +45,10 @@ function Cashier(){
                 const result = self.bill(2) + pricePerBook;
                 return result;
             }
+            if(books[0] === books[1] && books[0] === books[2] && books[1] === books[2]){
+                const result = books.length * pricePerBook;
+                return result;
+            }
             throw 'not implemented'; 
         }
         throw 'not implemented';    

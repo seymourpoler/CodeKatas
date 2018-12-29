@@ -137,5 +137,13 @@ describe('Cashier', function(){
     
             expect(result).toBe(totalPrice);
         });
+
+        it('returns the price with the same three books', function(){
+            const totalPrice = 24;
+
+            const result = cashier.calculatePrice([2, 2, 2]);
+    
+            expect(result).toBe(totalPrice);
+        });
     });
 });
