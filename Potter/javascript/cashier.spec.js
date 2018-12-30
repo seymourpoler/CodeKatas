@@ -113,7 +113,6 @@ describe('Cashier', function(){
         });
 
         it('returns the price with two same books', function(){
-            debugger;
             const totalPrice = 16;
 
             const result = cashier.calculatePrice([5, 5]);
