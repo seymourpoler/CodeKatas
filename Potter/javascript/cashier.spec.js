@@ -5,7 +5,7 @@ describe('Cashier', function(){
         cashier = new Cashier();
     });
 
-    describe('when the biil is requested with number of different books', function(){
+    describe('when the bill is requested with number of different books', function(){
         it('returns zero if there is no books', function(){
             const numberOfBooks = 0;
             const noPrice = 0;
