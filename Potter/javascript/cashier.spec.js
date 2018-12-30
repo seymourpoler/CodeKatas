@@ -112,7 +112,7 @@ describe('Cashier', function(){
             expect(result).toBe(totalPrice);
         });
 
-        it('returns the price with two same books', function(){
+        it('returns the price with two equal books', function(){
             const totalPrice = 16;
 
             const result = cashier.calculatePrice([5, 5]);
@@ -128,7 +128,7 @@ describe('Cashier', function(){
             expect(result).toBe(totalPrice);
         });
 
-        it('returns the price with two different books', function(){
+        it('returns the price with three books and two are different', function(){
             const totalPrice = 23.95;
 
             const result = cashier.calculatePrice([2, 5, 2]);
@@ -136,10 +136,18 @@ describe('Cashier', function(){
             expect(result).toBe(totalPrice);
         });
 
-        it('returns the price with the same three books', function(){
+        it('returns the price with three equal books', function(){
             const totalPrice = 24;
 
             const result = cashier.calculatePrice([2, 2, 2]);
+    
+            expect(result).toBe(totalPrice);
+        });
+
+        it('returns the price with four different books', function(){
+            const totalPrice = 31.85;
+
+            const result = cashier.calculatePrice([1, 2, 3, 4]);
     
             expect(result).toBe(totalPrice);
         });
