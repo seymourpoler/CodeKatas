@@ -4,7 +4,7 @@ function wordWrap(text, numberOfColumns){
     }
     const wrapText = text.substring(0, numberOfColumns);
     const remainText = text.substring(numberOfColumns, text.length);
-    return wrapText + '\n' + remain;
+    return wrapText + '\n' + remainText;
     
     throw 'not implemented';
 }
