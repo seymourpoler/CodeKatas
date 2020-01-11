@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{9E6BABB5-97F3-4734-AE7A-FAD7666DC53D}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="CodeKataFizzBuzz_Test/NumberTest.cs">
+    <Files>
+      <File FileName="CodeKataFizzBuzz/Program.cs" Line="1" Column="1" />
+      <File FileName="CodeKataFizzBuzz/Number.cs" Line="1" Column="1" />
+      <File FileName="CodeKataFizzBuzz_Test/NumberTest.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CodeKataFizzBuzz" expanded="True">
+            <Node name="CodeKataFizzBuzz" expanded="True" />
+            <Node name="CodeKataFizzBuzz_Test" expanded="True">
+              <Node name="NumberTest.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
