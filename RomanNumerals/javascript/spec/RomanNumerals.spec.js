@@ -1,5 +1,5 @@
-const fizzBuzz = require('../src/RomanNumerals');
-//import {fizzBuzz} from '../src/FizzBuzz';
+const romanNumerals = require('../src/RomanNumerals');
+//import { romanNumerals } from '../src/RomanNumerals';
 
 describe('roman numerals kata', () => {
     it('works', () => {
