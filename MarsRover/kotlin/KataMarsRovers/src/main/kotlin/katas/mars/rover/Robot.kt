@@ -1,50 +1,41 @@
 package katas.mars.rover
 
 class Robot(x: Int, y: Int, direction: String) {
-    private var position : Point = Point(x, y)
-    private var direction: Directions = Directions.from(direction)
 
-    fun getPositionX(): Int {
-        return position.getX()
+    private var direction: Direction = Direction.of(direction)
+    private var position : Position = Position(x, y)
+
+    fun isInPosition(x:Int, y: Int): Boolean {
+        return this.position == Position(x, y)
     }
 
-    fun getPositionY(): Int {
-        return position.getY()
+    private fun forward() {
+        position = direction.forward(position)
     }
 
-    fun move(vararg actions: String) {
-        actions.forEach{ action ->
-            val movement = Movements.from(action)
-            executeMovement(movement)
+    private fun backwards() {
+        position = direction.backward(position)
+    }
+
+    private fun rotate(direction: String) {
+        this.direction = Direction.of(direction)
+    }
+
+    fun move(vararg movements: String) {
+        movements.forEach { movement ->
+            move(movement)
         }
     }
 
-    private fun executeMovement(movement : Movements){
-        when (movement) {
-            Movements.North -> {
-                direction = Directions.North
-                return
-            }
-            Movements.South -> {
-                direction = Directions.South
-                return
-            }
-            Movements.East -> {
-                direction = Directions.East
-                return
-            }
-            Movements.West -> {
-                direction = Directions.West
-                return
-            }
-            Movements.Forward -> {
-                position = position.forward(direction)
-                return
-            }
-            else -> {
-                position = position.backward(direction)
-                return
-            }
+    private fun move (movement: String){
+        if(movement == "F") {
+            forward()
+            return
         }
+        if(movement == "B") {
+            backwards()
+            return
+        }
+        rotate(movement)
     }
 }

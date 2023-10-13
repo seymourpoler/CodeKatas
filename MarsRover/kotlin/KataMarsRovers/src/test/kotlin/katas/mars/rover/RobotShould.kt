@@ -1,173 +1,127 @@
 package katas.mars.rover
 
 import org.assertj.core.api.Assertions.assertThat
-import kotlin.test.Test
+import org.junit.jupiter.api.Test
 
 class RobotShould {
+    //Consideration:
+    //I avoid using parameterized tests, because I´ve trained name tests.
+    //I don't write all possible scenarios, but most representative
+    //I´ve faced very basic movement
+
     @Test
-    fun `receive a starting point and direction`(){
-        val x = 0
-        val y = 0
+    fun `set up a robot in a position with a direction`(){
+        val robot = Robot(0,0, "N");
 
-        val robot = Robot(x, y, "N");
-
-        assertThat(robot.getPositionX()).isEqualTo(x)
-        assertThat(robot.getPositionY()).isEqualTo(y)
+        assertThat(robot).isNotNull()
+        assertThat(robot.isInPosition(0, 0)).isTrue()
     }
 
     @Test
-    fun `move to the north when direction is north and go forward`(){
-        val x = 0
-        val y = 0
-        val robot = Robot(x, y, "N");
+    fun `moves up when faces north and goes forward`(){
+        val robot = Robot(0, 0, "N")
 
-        robot.move("f")
+        robot.move("F")
 
-        val expectedY = 1
-        assertThat(robot.getPositionX()).isEqualTo(x)
-        assertThat(robot.getPositionY()).isEqualTo(expectedY)
+        assertThat(robot.isInPosition(0, 1)).isTrue()
     }
 
     @Test
-    fun `move to the north when direction is south and go backward`(){
-        val x = 0
-        val y = 0
-        val robot = Robot(x, y, "S");
+    fun `moves down when faces north and goes backward`(){
+        val robot = Robot(0, 0, "N")
 
-        robot.move("b")
+        robot.move("B")
 
-        val expectedY = 1
-        assertThat(robot.getPositionX()).isEqualTo(x)
-        assertThat(robot.getPositionY()).isEqualTo(expectedY)
+        assertThat(robot.isInPosition(0, -1)).isTrue()
     }
 
     @Test
-    fun `move to the north when direction is south, change to north and go forward`(){
-        val x = 0
-        val y = 0
-        val robot = Robot(x, y, "S");
+    fun `move down when face south and goes forward`(){
+        val robot = Robot(0, 0, "S")
 
-        robot.move("N", "f")
+        robot.move("F")
 
-        val expectedY = 1
-        assertThat(robot.getPositionX()).isEqualTo(x)
-        assertThat(robot.getPositionY()).isEqualTo(expectedY)
+        assertThat(robot.isInPosition(0, -1)).isTrue()
     }
 
     @Test
-    fun `move to the south when direction is north and go backward`(){
-        val x = 0
-        val y = 0
-        val robot = Robot(x, y, "N");
+    fun `move up when face south and goes backward`(){
+        val robot = Robot(0, 0, "S")
 
-        robot.move("b")
+        robot.move("B")
 
-        val expectedY = -1
-        assertThat(robot.getPositionX()).isEqualTo(x)
-        assertThat(robot.getPositionY()).isEqualTo(expectedY)
+        assertThat(robot.isInPosition(0, 1)).isTrue()
     }
 
     @Test
-    fun `move to the south when direction is south and go forward`(){
-        val x = 0
-        val y = 0
-        val robot = Robot(x, y, "S");
+    fun `move right when faces east and goes forward`(){
+        val robot = Robot(0, 0, "E")
 
-        robot.move("f")
+        robot.move("F")
 
-        val expectedY = -1
-        assertThat(robot.getPositionX()).isEqualTo(x)
-        assertThat(robot.getPositionY()).isEqualTo(expectedY)
+        assertThat(robot.isInPosition(1, 0)).isTrue()
     }
 
     @Test
-    fun `move to the south when direction is north, change to south and go forward`(){
-        val x = 0
-        val y = 0
-        val robot = Robot(x, y, "N");
+    fun `move left when faces east and goes backward`(){
+        val robot = Robot(0, 0, "E")
 
-        robot.move("S","f")
+        robot.move("B")
 
-        val expectedY = -1
-        assertThat(robot.getPositionX()).isEqualTo(x)
-        assertThat(robot.getPositionY()).isEqualTo(expectedY)
+        assertThat(robot.isInPosition(-1, 0)).isTrue()
     }
 
     @Test
-    fun `move to the east when direction is east and go forward`(){
-        val x = 0
-        val y = 0
-        val robot = Robot(x, y, "E");
+    fun `move left when faces west and goes forward`(){
+        val robot = Robot(0, 0, "W")
 
-        robot.move("f")
+        robot.move("F")
 
-        val expectedX = 1
-        assertThat(robot.getPositionX()).isEqualTo(expectedX)
-        assertThat(robot.getPositionY()).isEqualTo(y)
+        assertThat(robot.isInPosition(-1, 0)).isTrue()
     }
 
     @Test
-    fun `move to the east when direction is west and go backward`(){
-        val x = 0
-        val y = 0
-        val robot = Robot(x, y, "W");
+    fun `move right when faces west and goes backward`(){
+        val robot = Robot(0, 0, "W")
 
-        robot.move("b")
+        robot.move("B")
 
-        val expectedX = 1
-        assertThat(robot.getPositionX()).isEqualTo(expectedX)
-        assertThat(robot.getPositionY()).isEqualTo(y)
+        assertThat(robot.isInPosition(1, 0)).isTrue()
     }
 
     @Test
-    fun `move to the east when direction is north, change to east and go forward`(){
-        val x = 0
-        val y = 0
-        val robot = Robot(x, y, "N");
+    fun `facing north then rotates to west and goes forward moves left`(){
+        val robot = Robot(0, 0, "N")
 
-        robot.move("E", "f")
+        robot.move("W", "F")
 
-        val expectedX = 1
-        assertThat(robot.getPositionX()).isEqualTo(expectedX)
-        assertThat(robot.getPositionY()).isEqualTo(y)
+        assertThat(robot.isInPosition(-1, 0)).isTrue()
     }
 
     @Test
-    fun `move to the west when direction is east and go backward`(){
-        val x = 0
-        val y = 0
-        val robot = Robot(x, y, "E");
+    fun `facing north then rotate to south and goes forward moves down`(){
+        val robot = Robot(0, 0, "N")
 
-        robot.move("b")
+        robot.move("S", "F")
 
-        val expectedX = -1
-        assertThat(robot.getPositionX()).isEqualTo(expectedX)
-        assertThat(robot.getPositionY()).isEqualTo(y)
+        assertThat(robot.isInPosition(0, -1)).isTrue()
     }
 
     @Test
-    fun `move to the west when direction is west and go forward`(){
-        val x = 0
-        val y = 0
-        val robot = Robot(x, y, "W");
+    fun `facing north then rotate to south and goes forward moves down twice`(){
+        val robot = Robot(0, 0, "N")
 
-        robot.move("f")
+        robot.move("S", "F", "F")
 
-        val expectedX = -1
-        assertThat(robot.getPositionX()).isEqualTo(expectedX)
-        assertThat(robot.getPositionY()).isEqualTo(y)
+        assertThat(robot.isInPosition(0, -2)).isTrue()
     }
 
     @Test
-    fun `move to the west when direction is south, change to west and go forward`(){
-        val x = 0
-        val y = 0
-        val robot = Robot(x, y, "S");
+    fun `facing north then rotate to south and goes backward moves up`(){
+        val robot = Robot(0, 0, "N")
 
-        robot.move("W","f")
+        robot.move("S", "B")
 
-        val expectedX = -1
-        assertThat(robot.getPositionX()).isEqualTo(expectedX)
-        assertThat(robot.getPositionY()).isEqualTo(y)
+        assertThat(robot.isInPosition(0, 1)).isTrue()
     }
 }
